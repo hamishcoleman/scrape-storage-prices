@@ -75,6 +75,33 @@ sub normalise1product {
         $data->{brand} = 'WD';
     }
 
+    # TODO - ensure price starts with a dollarsign
+    $data->{date} = 'FIXME';
+    $data->{interface} = 'FIXME';
+    $data->{supplier} = 'CPL';
+
+    if ($data->{price} && $data->{gig}) {
+        $data->{sgig} = $data->{price} / $data->{gig};
+    } else {
+        $data->{sgig} = '?';
+    }
+
+    if (!defined($data->{rpm})) {
+        $data->{rpm} = "?";
+    }
+
+    if (!defined($data->{form})) {
+        $data->{form} = "?";
+    }
+
+    if (!defined($data->{gig})) {
+        $data->{gig} = "?";
+    }
+
+    if (!defined($data->{brand})) {
+        $data->{brand} = "?";
+    }
+
     return $data;
 }
 
