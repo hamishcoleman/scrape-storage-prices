@@ -168,5 +168,13 @@ for my $url (@urls) {
 
 @products = normaliseproducts(@products);
 
-print Dumper(@products);
+my @fields = qw(date price form interface rpm gig sgig brand supplier comment);
+
+print(join(',', @fields), "\n");
+
+for my $prod (@products) {
+    print(join(',', map({$prod->{$_}} @fields)), "\n");
+}
+
+#print Dumper(@products);
 
