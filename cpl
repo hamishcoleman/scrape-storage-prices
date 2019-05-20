@@ -43,6 +43,52 @@ sub url2tree {
     return $tree;
 }
 
+sub normalise1product {
+    my $data = shift;
+
+    $data->{price} =~ s/^\$//;
+
+    my $t = $data->{title};
+
+    if ($t =~ m/ (\d+)rpm/i) {
+        $data->{rpm} = $1;
+    } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
+        $data->{rpm} = $1 * 1000;
+    }
+
+    if ($t =~ m/ 3.5\" /) {
+        $data->{form} = '3.5"';
+    } elsif ($t =~ m/ 3.5in /i) {
+        $data->{form} = '3.5"';
+    } elsif ($t =~ m/ 2.5\" /) {
+        $data->{form} = '2.5"';
+    } elsif ($t =~ m/ 2.5in /i) {
+        $data->{form} = '2.5"';
+    }
+
+    if ($t =~ m/ (\d+)tb /i) {
+        $data->{gig} = $1 * 1000;
+    }
+
+    if ($t =~ m/seagate /i) {
+        $data->{brand} = 'Seagate';
+    } elsif ($t =~ m/toshiba /i) {
+        $data->{brand} = 'Toshiba';
+    } elsif ($t =~ m/wd /i) {
+        $data->{brand} = 'WD';
+    }
+
+    return $data;
+}
+
+sub normaliseproducts {
+    my @products;
+    while (my $prod = shift) {
+        push @products, normalise1product($prod);
+    }
+    return @products;
+}
+
 sub scrape1product {
     my $node = shift;
     my $data = {};
@@ -92,6 +138,8 @@ sub scrape2products {
 
 my $tree = url2tree();
 my @products = scrape2products($tree);
+
+@products = normaliseproducts(@products);
 
 print Dumper(@products);
 
