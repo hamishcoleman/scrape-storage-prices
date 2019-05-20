@@ -45,7 +45,7 @@ sub normalise1product {
 
     $data->{price} =~ s/^\$//;
 
-    my $t = $data->{title};
+    my $t = $data->{comment};
 
     if ($t =~ m/ (\d+)rpm/i) {
         $data->{rpm} = $1;
@@ -96,7 +96,7 @@ sub scrape1product {
         return undef;
     }
 
-    $data->{title} = $url->attr('title');
+    $data->{comment} = $url->attr('title');
     $data->{url} = $url->attr('href');
     
     my $price = $node->look_down('_tag', 'span', 'class', 'price');
