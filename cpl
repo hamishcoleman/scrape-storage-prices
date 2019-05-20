@@ -18,18 +18,15 @@ $Data::Dumper::Indent = 1;
 $Data::Dumper::Sortkeys = 1;
 $Data::Dumper::Quotekeys = 0;
 
-use HC::Common;
-
-my $option = {
-    url => 'https://cplonline.com.au/hard-drives/desktop-hard-drives.html',
-};
-my @option_list = (
-    'debug',
-    'url=s',
+my @urls = (
+    'https://cplonline.com.au/hard-drives/desktop-hard-drives.html',
+    'https://cplonline.com.au/hard-drives/laptop-hard-drives.html',
+    'https://cplonline.com.au/hard-drives/ssd.html',
+    'https://cplonline.com.au/hard-drives/enterprise-hard-drives.html'
 );
 
 sub url2tree {
-    my $url = shift || $option->{url};
+    my $url = shift;
 
     my $mech = WWW::Mechanize->new(autocheck=>0);
     $mech->get($url);
@@ -136,8 +133,11 @@ sub scrape2products {
     return @products;
 }
 
-my $tree = url2tree();
-my @products = scrape2products($tree);
+my @products;
+for my $url (@urls) {
+    my $tree = url2tree($url);
+    push @products, scrape2products($tree);
+}
 
 @products = normaliseproducts(@products);
 
