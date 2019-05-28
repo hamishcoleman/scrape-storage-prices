@@ -45,7 +45,9 @@ sub url2tree {
 sub normalise1product {
     my $data = shift;
 
+    # Normalise the price field
     $data->{price} =~ s/^\$//;
+    $data->{price} =~ s/,//;
 
     my $t = $data->{comment};
 
@@ -103,6 +105,9 @@ sub normalise1product {
     if (!defined($data->{brand})) {
         $data->{brand} = "?";
     }
+
+    # commas annoy my dodgy not-quite-csv
+    $data->{comment} =~ s/,/_/g;
 
     return $data;
 }
