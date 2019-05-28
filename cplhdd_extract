@@ -60,8 +60,30 @@ sub normalise1product {
         ' 3.5" '        => { form => '3.5"' },
         ' 2.5in( |$)'   => { form => '2.5"' },
         ' 3.5in '       => { form => '3.5"' },
-        'M.2 2280'      => { form => 'M.2' },
+        ' M.2 '         => { form => 'M.2' },
         'PCIE M2'       => { form => 'M.2', interface => 'NVME' },
+        ' mSATA'        => { form => 'mSATA', interface => 'SATA' },
+
+        # interface
+        'nvme '         => { interface => 'NVME' },
+        'SAS '          => { interface => 'SAS' },
+
+        # brand
+        'seagate '      => { brand => 'Seagate' },
+        'toshiba '      => { brand => 'Toshiba' },
+        'samsung '      => { brand => 'Samsung' },
+        'crucial '      => { brand => 'Crucial' },
+        'sandisk '      => { brand => 'SanDisk' },
+        'hitachi '      => { brand => 'Hitachi' },
+        'kingston '     => { brand => 'Kingston' },
+        'micron '       => { brand => 'Micron' },
+        'qnap '         => { brand => 'Qnap' },
+        'intel '        => { brand => 'Intel' },
+        'adata '        => { brand => 'Adata' },
+        'gigabyte '     => { brand => 'Gigabyte' },
+        'team '         => { brand => 'Team' },
+        'hp '           => { brand => 'HP' },
+        'wd '           => { brand => 'WD' },
     };
 
     while (my ($re,$entry) = each(%{$table})) {
@@ -92,44 +114,6 @@ sub normalise1product {
         $data->{gig} = $1 * 1000;
     } elsif ($t =~ m/ ([0-9][0-9.]+)tb /i) {
         $data->{gig} = $1 * 1000;
-    }
-
-    if ($t =~ m/seagate /i) {
-        $data->{brand} = 'Seagate';
-    } elsif ($t =~ m/toshiba /i) {
-        $data->{brand} = 'Toshiba';
-    } elsif ($t =~ m/samsung /i) {
-        $data->{brand} = 'Samsung';
-    } elsif ($t =~ m/crucial /i) {
-        $data->{brand} = 'Crucial';
-    } elsif ($t =~ m/sandisk /i) {
-        $data->{brand} = 'SanDisk';
-    } elsif ($t =~ m/hitachi /i) {
-        $data->{brand} = 'Hitachi';
-    } elsif ($t =~ m/kingston /i) {
-        $data->{brand} = 'Kingston';
-    } elsif ($t =~ m/micron /i) {
-        $data->{brand} = 'Micron';
-    } elsif ($t =~ m/qnap /i) {
-        $data->{brand} = 'Qnap';
-    } elsif ($t =~ m/intel /i) {
-        $data->{brand} = 'Intel';
-    } elsif ($t =~ m/adata /i) {
-        $data->{brand} = 'Adata';
-    } elsif ($t =~ m/gigabyte /i) {
-        $data->{brand} = 'Gigabyte';
-    } elsif ($t =~ m/team /i) {
-        $data->{brand} = 'Team';
-    } elsif ($t =~ m/hp /i) {
-        $data->{brand} = 'HP';
-    } elsif ($t =~ m/wd /i) {
-        $data->{brand} = 'WD';
-    }
-
-    if ($t =~ m/nvme /i) {
-        $data->{interface} = 'NVME';
-    } elsif ($t =~ m/SAS /i) {
-        $data->{interface} = 'SAS';
     }
 
     # TODO - ensure price starts with a dollarsign
