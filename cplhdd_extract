@@ -53,21 +53,29 @@ sub normalise1product {
 
     my $table = {
         # rpm
-        ' SSD ' => { rpm => 'SSD' },
+        ' SSD( |,|$)'   => { rpm => 'SSD' },
 
         # form factor
         ' 2.5" '        => { form => '2.5"' },
         ' 3.5" '        => { form => '3.5"' },
+        " 2.5'' "       => { form => '2.5"' },
         " 3.5' "        => { form => '3.5"' },
+        ' 3.5 '         => { form => '3.5"' },
         ' 2.5in( |$)'   => { form => '2.5"' },
         ' 3.5in '       => { form => '3.5"' },
+        ' 2.5 Inch '    => { form => '2.5"' },
+        ' 2.5-Inch '    => { form => '2.5"' },
         ' M.2 '         => { form => 'M.2' },
-        'PCIE M2'       => { form => 'M.2', interface => 'NVME' },
+        ' M2( |$)'      => { form => 'M.2' },
         ' mSATA'        => { form => 'mSATA', interface => 'SATA' },
 
         # interface
-        'nvme '         => { interface => 'NVME' },
-        'SAS '          => { interface => 'SAS' },
+        ' nvme '        => { interface => 'NVME' },
+        ' pcie( |$)'    => { interface => 'NVME' },
+        ' SAS( |$)'     => { interface => 'SAS' },
+        ' SATA( |,|$)'  => { interface => 'SATA' },
+        ' SATA3( |$)'   => { interface => 'SATA' },
+        ' SATAIII '     => { interface => 'SATA' },
 
         # brand
         'seagate '      => { brand => 'Seagate' },
