@@ -51,27 +51,35 @@ sub normalise1product {
 
     my $t = $data->{comment};
 
+    my $table = {
+        # rpm
+        ' SSD ' => { rpm => 'SSD' },
+
+        # form factor
+        ' 2.5" '        => { form => '2.5"' },
+        ' 3.5" '        => { form => '3.5"' },
+        ' 2.5in( |$)'   => { form => '2.5"' },
+        ' 3.5in '       => { form => '3.5"' },
+        'M.2 2280'      => { form => 'M.2' },
+        'PCIE M2'       => { form => 'M.2', interface => 'NVME' },
+    };
+
+    while (my ($re,$entry) = each(%{$table})) {
+        if ($t =~ m/$re/i) {
+            while (my ($k,$v) = each(%{$entry})) {
+                if (defined($data->{$k})) {
+                    die("Duplicate match $re $k");
+                } else {
+                    $data->{$k} = $v;
+                }
+            }
+        }
+    }
+
     if ($t =~ m/ (\d+)rpm/i) {
         $data->{rpm} = $1;
     } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
         $data->{rpm} = $1 * 1000;
-    } elsif ($t =~ m/ SSD /i) {
-        $data->{rpm} = 'SSD';
-    }
-
-    if ($t =~ m/ 3.5\" /) {
-        $data->{form} = '3.5"';
-    } elsif ($t =~ m/ 3.5in /i) {
-        $data->{form} = '3.5"';
-    } elsif ($t =~ m/ 2.5\" /) {
-        $data->{form} = '2.5"';
-    } elsif ($t =~ m/ 2.5in( |$)/i) {
-        $data->{form} = '2.5"';
-    } elsif ($t =~ m/M.2 2280/i) {
-        $data->{form} = 'M.2';
-    } elsif ($t =~ m/PCIE M2/i) {
-        $data->{form} = 'M.2';
-        $data->{interface} = 'NVME';
     }
 
     if ($t =~ m/ (\d+)tb( |,|$)/i) {
