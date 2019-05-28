@@ -18,6 +18,8 @@ $Data::Dumper::Indent = 1;
 $Data::Dumper::Sortkeys = 1;
 $Data::Dumper::Quotekeys = 0;
 
+# TODO
+# - turn this into a file processer, something else can do the downloads ..
 my @urls = (
     'https://cplonline.com.au/hard-drives/desktop-hard-drives.html',
     'https://cplonline.com.au/hard-drives/laptop-hard-drives.html',
