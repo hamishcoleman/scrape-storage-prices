@@ -32,18 +32,22 @@ sub file2tree {
     return $tree;
 }
 
+sub default {
+    my $data = shift;
+    my $key = shift;
+    my $val = shift;
+
+    if (!defined($data->{$key})) {
+        $data->{$key} = $val;
+    }
+}
+
 sub normalise1product {
     my $data = shift;
 
     # Normalise the price field
     $data->{price} =~ s/^\$//;
     $data->{price} =~ s/,//;
-
-    # Set some default values
-    $data->{rpm} = '?';
-    $data->{form} = '?';
-    $data->{brand} = '?';
-    $data->{interface} = '?';
 
     my $t = $data->{comment};
 
@@ -126,13 +130,15 @@ sub normalise1product {
 
     if ($data->{price} && $data->{gig}) {
         $data->{sgig} = $data->{price} / $data->{gig};
-    } else {
-        $data->{sgig} = '?';
     }
 
-    if (!defined($data->{gig})) {
-        $data->{gig} = "?";
-    }
+    # Set some default values
+    default($data,'brand','?');
+    default($data,'form','?');
+    default($data,'gig','?');
+    default($data,'interface','?');
+    default($data,'rpm','?');
+    default($data,'sgig','?');
 
     # commas annoy my dodgy not-quite-csv
     $data->{comment} =~ s/,/_/g;
