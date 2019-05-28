@@ -39,12 +39,20 @@ sub normalise1product {
     $data->{price} =~ s/^\$//;
     $data->{price} =~ s/,//;
 
+    # Set some default values
+    $data->{rpm} = '?';
+    $data->{form} = '?';
+    $data->{brand} = '?';
+    $data->{interface} = '?';
+
     my $t = $data->{comment};
 
     if ($t =~ m/ (\d+)rpm/i) {
         $data->{rpm} = $1;
     } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
         $data->{rpm} = $1 * 1000;
+    } elsif ($t =~ m/ SSD /i) {
+        $data->{rpm} = 'SSD';
     }
 
     if ($t =~ m/ 3.5\" /) {
@@ -53,8 +61,13 @@ sub normalise1product {
         $data->{form} = '3.5"';
     } elsif ($t =~ m/ 2.5\" /) {
         $data->{form} = '2.5"';
-    } elsif ($t =~ m/ 2.5in /i) {
+    } elsif ($t =~ m/ 2.5in( |$)/i) {
         $data->{form} = '2.5"';
+    } elsif ($t =~ m/M.2 2280/i) {
+        $data->{form} = 'M.2';
+    } elsif ($t =~ m/PCIE M2/i) {
+        $data->{form} = 'M.2';
+        $data->{interface} = 'NVME';
     }
 
     if ($t =~ m/ (\d+)tb( |,|$)/i) {
@@ -89,15 +102,26 @@ sub normalise1product {
         $data->{brand} = 'Qnap';
     } elsif ($t =~ m/intel /i) {
         $data->{brand} = 'Intel';
+    } elsif ($t =~ m/adata /i) {
+        $data->{brand} = 'Adata';
+    } elsif ($t =~ m/gigabyte /i) {
+        $data->{brand} = 'Gigabyte';
+    } elsif ($t =~ m/team /i) {
+        $data->{brand} = 'Team';
     } elsif ($t =~ m/hp /i) {
         $data->{brand} = 'HP';
     } elsif ($t =~ m/wd /i) {
         $data->{brand} = 'WD';
     }
 
+    if ($t =~ m/nvme /i) {
+        $data->{interface} = 'NVME';
+    } elsif ($t =~ m/SAS /i) {
+        $data->{interface} = 'SAS';
+    }
+
     # TODO - ensure price starts with a dollarsign
     $data->{date} = 'FIXME';
-    $data->{interface} = 'FIXME';
     $data->{supplier} = 'CPL';
 
     if ($data->{price} && $data->{gig}) {
@@ -106,20 +130,8 @@ sub normalise1product {
         $data->{sgig} = '?';
     }
 
-    if (!defined($data->{rpm})) {
-        $data->{rpm} = "?";
-    }
-
-    if (!defined($data->{form})) {
-        $data->{form} = "?";
-    }
-
     if (!defined($data->{gig})) {
         $data->{gig} = "?";
-    }
-
-    if (!defined($data->{brand})) {
-        $data->{brand} = "?";
     }
 
     # commas annoy my dodgy not-quite-csv
