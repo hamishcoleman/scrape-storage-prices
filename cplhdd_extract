@@ -58,6 +58,7 @@ sub normalise1product {
         # form factor
         ' 2.5" '        => { form => '2.5"' },
         ' 3.5" '        => { form => '3.5"' },
+        " 3.5' "        => { form => '3.5"' },
         ' 2.5in( |$)'   => { form => '2.5"' },
         ' 3.5in '       => { form => '3.5"' },
         ' M.2 '         => { form => 'M.2' },
