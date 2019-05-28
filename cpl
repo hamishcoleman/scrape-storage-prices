@@ -83,6 +83,24 @@ sub normalise1product {
         $data->{brand} = 'Seagate';
     } elsif ($t =~ m/toshiba /i) {
         $data->{brand} = 'Toshiba';
+    } elsif ($t =~ m/samsung /i) {
+        $data->{brand} = 'Samsung';
+    } elsif ($t =~ m/crucial /i) {
+        $data->{brand} = 'Crucial';
+    } elsif ($t =~ m/sandisk /i) {
+        $data->{brand} = 'SanDisk';
+    } elsif ($t =~ m/hitachi /i) {
+        $data->{brand} = 'Hitachi';
+    } elsif ($t =~ m/kingston /i) {
+        $data->{brand} = 'Kingston';
+    } elsif ($t =~ m/micron /i) {
+        $data->{brand} = 'Micron';
+    } elsif ($t =~ m/qnap /i) {
+        $data->{brand} = 'Qnap';
+    } elsif ($t =~ m/intel /i) {
+        $data->{brand} = 'Intel';
+    } elsif ($t =~ m/hp /i) {
+        $data->{brand} = 'HP';
     } elsif ($t =~ m/wd /i) {
         $data->{brand} = 'WD';
     }
