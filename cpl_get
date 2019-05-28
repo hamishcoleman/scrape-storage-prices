@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Get the CPL raw html files, ready for processing with the extractor
+#
+
+
+(cat <<EOF
+cplhdd-desktop.html    https://cplonline.com.au/hard-drives/desktop-hard-drives.html
+cplhdd-laptop.html     https://cplonline.com.au/hard-drives/laptop-hard-drives.html
+cplhdd-ssd.html        https://cplonline.com.au/hard-drives/ssd.html
+cplhdd-enterprise.html https://cplonline.com.au/hard-drives/enterprise-hard-drives.html
+EOF
+) | while read name url; do
+    curl $url >$name
+done
+

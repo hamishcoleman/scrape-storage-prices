@@ -10,32 +10,22 @@ use FindBin;
 use lib "$FindBin::RealBin/lib";
 use lib "/home/hamish/s/bin/lib";
 
-use WWW::Mechanize;
 use HTML::TreeBuilder;
+use IO::HTML;
 
 use Data::Dumper;
 $Data::Dumper::Indent = 1;
 $Data::Dumper::Sortkeys = 1;
 $Data::Dumper::Quotekeys = 0;
 
-# TODO
-# - turn this into a file processer, something else can do the downloads ..
-my @urls = (
-    'https://cplonline.com.au/hard-drives/desktop-hard-drives.html',
-    'https://cplonline.com.au/hard-drives/laptop-hard-drives.html',
-    'https://cplonline.com.au/hard-drives/ssd.html',
-    'https://cplonline.com.au/hard-drives/enterprise-hard-drives.html'
-);
+sub file2tree {
+    my $file = shift;
 
-sub url2tree {
-    my $url = shift;
-
-    my $mech = WWW::Mechanize->new(autocheck=>0);
-    $mech->get($url);
-    return undef if (!$mech->success());
+    my $fh = html_file($file);
+    return undef if (!$fh);
 
     my $tree = HTML::TreeBuilder->new;
-    $tree->parse($mech->content());
+    $tree->parse_file($fh);
     $tree->eof;
     $tree->elementify;
 
@@ -194,8 +184,8 @@ sub scrape2products {
 }
 
 my @products;
-for my $url (@urls) {
-    my $tree = url2tree($url);
+for my $file (@ARGV) {
+    my $tree = file2tree($file);
     push @products, scrape2products($tree);
 }
 
