@@ -43,6 +43,18 @@ sub default {
     }
 }
 
+sub normalise_blank_fields {
+    my $data = shift;
+
+    # Set some default values
+    default($data,'brand','?');
+    default($data,'form','?');
+    default($data,'gig','?');
+    default($data,'interface','?');
+    default($data,'speed','?');
+    default($data,'sgig','?');
+}
+
 # Table of regular expressions that can extract data from the comment
 my $matchtable = {
     # speed
@@ -94,6 +106,13 @@ my $matchtable = {
     'wd '           => { brand => 'WD' },
 };
 
+# A list of regular expresions to match problem entries
+my $table_skip = {
+    'Bay Rafter 2.5 Inch to 3.5 Inch Convertor' => 'Not storage',
+    '2.5" PCIe 3.1 x4_ OPTANE_ W/ M.2' => 'Too many matching size buzzwords',
+    # TODO - find a way to allow this HDD without making all the regex horrid
+};
+
 sub normalise1product {
     my $data = shift;
 
@@ -107,6 +126,18 @@ sub normalise1product {
     my $t = $data->{comment};
 
     my $errors = 0;
+
+    # TODO - ensure price starts with a dollarsign
+    $data->{date} = strftime("%Y-%m-%d", gmtime($data->{timestamp}));
+    $data->{supplier} = 'CPL';
+
+    while (my ($re,$entry) = each(%{$table_skip})) {
+        if ($t =~ m/$re/i) {
+            $data->{speed} = $entry;
+            normalise_blank_fields($data);
+            return $data;
+        }
+    }
 
     while (my ($re,$entry) = each(%{$matchtable})) {
         if ($t =~ m/$re/i) {
@@ -151,21 +182,11 @@ sub normalise1product {
         }
     }
 
-    # TODO - ensure price starts with a dollarsign
-    $data->{date} = strftime("%Y-%m-%d", gmtime($data->{timestamp}));
-    $data->{supplier} = 'CPL';
-
     if ($data->{price} && $data->{gig}) {
         $data->{sgig} = sprintf("%.3f",$data->{price} / $data->{gig});
     }
 
-    # Set some default values
-    default($data,'brand','?');
-    default($data,'form','?');
-    default($data,'gig','?');
-    default($data,'interface','?');
-    default($data,'speed','?');
-    default($data,'sgig','?');
+    normalise_blank_fields($data);
 
     if ($errors) {
         die("Errors during normalisation");
@@ -174,8 +195,12 @@ sub normalise1product {
 }
 
 sub normaliseproducts {
+    my %seen;
     my @products;
     while (my $prod = shift) {
+        $seen{$prod->{comment}} ++;
+        next if ($seen{$prod->{comment}} > 1);
+
         push @products, normalise1product($prod);
     }
     return @products;
