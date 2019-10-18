@@ -140,6 +140,14 @@ sub normalise1product {
         $data->{gig} = $1 * 1000;
     }
 
+    # If we are an old hard drive form factor, we are probably SATA
+    # TODO - what about IDE?
+    if (defined($data->{form}) && !defined($data->{interface})) {
+        if ($data->{form} eq '2.5"' || $data->{form} eq '3.5"') {
+            $data->{interface} = "SATA?";
+        }
+    }
+
     # TODO - ensure price starts with a dollarsign
     $data->{date} = strftime("%Y-%m-%d", gmtime($data->{timestamp}));
     $data->{supplier} = 'CPL';
