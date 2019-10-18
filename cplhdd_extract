@@ -95,11 +95,17 @@ sub normalise1product {
         'wd '           => { brand => 'WD' },
     };
 
+    my $errors = 0;
+
     while (my ($re,$entry) = each(%{$table})) {
         if ($t =~ m/$re/i) {
             while (my ($k,$v) = each(%{$entry})) {
                 if (defined($data->{$k})) {
-                    die("Duplicate match $re $k");
+                    warn("WARN: Duplicate key match");
+                    print(" re: $re\n");
+                    print(" key: $k\n");
+                    print(" data: ",Dumper($data));
+                    $errors++;
                 } else {
                     $data->{$k} = $v;
                 }
@@ -144,6 +150,9 @@ sub normalise1product {
     # commas annoy my dodgy not-quite-csv
     $data->{comment} =~ s/,/_/g;
 
+    if ($errors) {
+        die("Errors during normalisation");
+    }
     return $data;
 }
 
