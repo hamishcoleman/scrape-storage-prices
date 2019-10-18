@@ -156,7 +156,7 @@ sub normalise1product {
     $data->{supplier} = 'CPL';
 
     if ($data->{price} && $data->{gig}) {
-        $data->{sgig} = $data->{price} / $data->{gig};
+        $data->{sgig} = sprintf("%.3f",$data->{price} / $data->{gig});
     }
 
     # Set some default values
