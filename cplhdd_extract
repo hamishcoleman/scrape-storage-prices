@@ -12,6 +12,7 @@ use lib "/home/hamish/s/bin/lib";
 
 use HTML::TreeBuilder;
 use IO::HTML;
+use POSIX qw(strftime);
 
 use Data::Dumper;
 $Data::Dumper::Indent = 1;
@@ -133,7 +134,7 @@ sub normalise1product {
     }
 
     # TODO - ensure price starts with a dollarsign
-    $data->{date} = 'FIXME';
+    $data->{date} = strftime("%Y-%m-%d", gmtime($data->{timestamp}));
     $data->{supplier} = 'CPL';
 
     if ($data->{price} && $data->{gig}) {
@@ -191,6 +192,7 @@ sub scrape1product {
 
 sub scrape2products {
     my $tree = shift;
+    my $timestamp = shift;
 
     my $products = $tree->look_down(
         '_tag', 'div',
@@ -206,7 +208,9 @@ sub scrape2products {
             '_tag', 'li',
             'class', qr/item/,
         )) {
-        push @products, scrape1product($node);
+        my $data = scrape1product($node);
+        $data->{timestamp} = $timestamp;
+        push @products, $data;
     }
 
     return @products;
@@ -221,8 +225,9 @@ sub main {
 
     my @products;
     for my $file (@ARGV) {
+        my $mtime = (stat($file))[9];
         my $tree = file2tree($file);
-        push @products, scrape2products($tree);
+        push @products, scrape2products($tree, $mtime);
     }
 
     @products = normaliseproducts(@products);
