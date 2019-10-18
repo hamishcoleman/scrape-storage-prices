@@ -122,12 +122,10 @@ sub normalise1product {
         }
     }
 
-    if (!defined($data->{speed})) {
-        if ($t =~ m/ (\d+)rpm/i) {
-            $data->{speed} = $1;
-        } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
-            $data->{speed} = $1 * 1000;
-        }
+    if ($t =~ m/ (\d+)rpm/i) {
+        $data->{speed} = sprintf("RPM: %5i",$1);
+    } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
+        $data->{speed} = sprintf("RPM: %5i",$1 * 1000);
     }
 
     if (!defined($data->{gig})) {
