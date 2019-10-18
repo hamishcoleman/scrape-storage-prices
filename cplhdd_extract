@@ -75,6 +75,7 @@ my $matchtable = {
     # brand
     'adata '        => { brand => 'Adata' },
     'crucial '      => { brand => 'Crucial' },
+    'galax '        => { brand => 'Galax' },
     'gigabyte '     => { brand => 'Gigabyte' },
     'hitachi '      => { brand => 'Hitachi' },
     'hp '           => { brand => 'HP' },
@@ -87,6 +88,7 @@ my $matchtable = {
     'seagate '      => { brand => 'Seagate' },
     'team '         => { brand => 'Team' },
     'toshiba '      => { brand => 'Toshiba' },
+    'transcend '    => { brand => 'Transcend' },
     'wd '           => { brand => 'WD' },
 };
 
