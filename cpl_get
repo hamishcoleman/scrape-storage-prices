@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Get the CPL raw html files, ready for processing with the extractor
+#
+# TODO
+# - these pages are paginated and have more items on the next pages
+
+PREFIX="$1"
+if [ -n "$PREFIX" ]; then
+    PREFIX="$PREFIX/"
+fi
+
+set -e
+
+(cat <<EOF
+cplhdd-desktop.html     https://cplonline.com.au/hard-drives/desktop-hard-drives.html
+cplhdd-laptop.html      https://cplonline.com.au/hard-drives/laptop-hard-drives.html
+cplhdd-ssd.html         https://cplonline.com.au/hard-drives/ssd.html
+cplhdd-enterprise.html  https://cplonline.com.au/hard-drives/enterprise-hard-drives.html
+EOF
+) | while read name url; do
+    curl "$url" -o $PREFIX$name
+    sleep 10s
+done
+

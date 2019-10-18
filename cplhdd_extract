@@ -1,0 +1,272 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+#
+# Grab the hard drives data from CPL
+#
+
+# allow the libs to be in the bin dir
+use FindBin;
+use lib "$FindBin::RealBin/lib";
+use lib "/home/hamish/s/bin/lib";
+
+use HTML::TreeBuilder;
+use IO::HTML;
+use POSIX qw(strftime);
+
+use Data::Dumper;
+$Data::Dumper::Indent = 1;
+$Data::Dumper::Sortkeys = 1;
+$Data::Dumper::Quotekeys = 0;
+
+sub file2tree {
+    my $file = shift;
+
+    my $fh = html_file($file);
+    return undef if (!$fh);
+
+    my $tree = HTML::TreeBuilder->new;
+    $tree->parse_file($fh);
+    $tree->eof;
+    $tree->elementify;
+
+    return $tree;
+}
+
+sub default {
+    my $data = shift;
+    my $key = shift;
+    my $val = shift;
+
+    if (!defined($data->{$key})) {
+        $data->{$key} = $val;
+    }
+}
+
+# Table of regular expressions that can extract data from the comment
+my $matchtable = {
+    # speed
+    ' gen3x4 '      => { speed => 'PCIe3 x4'},
+    ' pcie 3\.0 '   => { speed => 'PCIe3'},
+    ' pcie 3x4 '    => { speed => 'PCIe3 x4'},
+
+    # form factor
+    ' 2.5 Inch '    => { form => '2.5"' },
+    ' 2.5" '        => { form => '2.5"' },
+    ' 2.5-Inch '    => { form => '2.5"' },
+    ' 2.5\'\' '     => { form => '2.5"' },
+    ' 2.5in( |$)'   => { form => '2.5"' },
+    ' 3.5 '         => { form => '3.5"' },
+    ' 3.5" '        => { form => '3.5"' },
+    ' 3.5\' '       => { form => '3.5"' },
+    ' 3.5in '       => { form => '3.5"' },
+    ' M.2( |$)'     => { form => 'M.2' },
+    ' M.2\(2280\)'  => { form => 'M.2' },
+    ' M2( |$)'      => { form => 'M.2' },
+    ' mSATA'        => { form => 'mSATA', interface => 'SATA' },
+
+    # interface
+    ' nvme '        => { interface => 'NVME' },
+    ' pcie 3.0'     => { interface => 'NVME' },
+    ' pcie gen3x4'  => { interface => 'NVME' },
+    ' sas( |$)'     => { interface => 'SAS' },
+    ' sata( |_|$)'  => { interface => 'SATA', speed => 'SATA' },
+    ' sata3( |$)'   => { interface => 'SATA', speed => 'SATA3' },
+    ' sataiii '     => { interface => 'SATA', speed => 'SATA3' },
+
+    # brand
+    'adata '        => { brand => 'Adata' },
+    'crucial '      => { brand => 'Crucial' },
+    'galax '        => { brand => 'Galax' },
+    'gigabyte '     => { brand => 'Gigabyte' },
+    'hitachi '      => { brand => 'Hitachi' },
+    'hp '           => { brand => 'HP' },
+    'intel '        => { brand => 'Intel' },
+    'kingston '     => { brand => 'Kingston' },
+    'micron '       => { brand => 'Micron' },
+    'qnap '         => { brand => 'Qnap' },
+    'samsung '      => { brand => 'Samsung' },
+    'sandisk '      => { brand => 'SanDisk' },
+    'seagate '      => { brand => 'Seagate' },
+    'team '         => { brand => 'Team' },
+    'toshiba '      => { brand => 'Toshiba' },
+    'transcend '    => { brand => 'Transcend' },
+    'wd '           => { brand => 'WD' },
+};
+
+sub normalise1product {
+    my $data = shift;
+
+    # Normalise the price field
+    $data->{price} =~ s/^\$//;
+    $data->{price} =~ s/,//;
+
+    # commas annoy my dodgy not-quite-csv
+    $data->{comment} =~ s/,/_/g;
+
+    my $t = $data->{comment};
+
+    my $errors = 0;
+
+    while (my ($re,$entry) = each(%{$matchtable})) {
+        if ($t =~ m/$re/i) {
+            # Set metadata
+            $entry->{_matches}++;
+
+            while (my ($k,$v) = each(%{$entry})) {
+                # Skip metadata
+                next if ($k =~ m/^_/);
+                if (defined($data->{$k})) {
+                    warn("WARN: Duplicate key match");
+                    print(" re: $re\n");
+                    print(" key: $k\n");
+                    print(" data: ",Dumper($data));
+                    $errors++;
+                } else {
+                    $data->{$k} = $v;
+                }
+            }
+        }
+    }
+
+    if ($t =~ m/ (\d+) ?rpm( |_|$)/i) {
+        $data->{speed} = sprintf("RPM: %5i",$1);
+    } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
+        $data->{speed} = sprintf("RPM: %5i",$1 * 1000);
+    }
+
+    if (!defined($data->{gig})) {
+             if ($t =~ m/ (\d+) ?gb( |_|$)/i) {
+            $data->{gig} = $1;
+        } elsif ($t =~ m/ ([0-9][0-9.]*) ?tb( |_|$)/i) {
+            $data->{gig} = $1 * 1000;
+        }
+    }
+
+    # If we are an old hard drive form factor, we are probably SATA
+    # TODO - what about IDE?
+    if (defined($data->{form}) && !defined($data->{interface})) {
+        if ($data->{form} eq '2.5"' || $data->{form} eq '3.5"') {
+            $data->{interface} = "SATA?";
+        }
+    }
+
+    # TODO - ensure price starts with a dollarsign
+    $data->{date} = strftime("%Y-%m-%d", gmtime($data->{timestamp}));
+    $data->{supplier} = 'CPL';
+
+    if ($data->{price} && $data->{gig}) {
+        $data->{sgig} = sprintf("%.3f",$data->{price} / $data->{gig});
+    }
+
+    # Set some default values
+    default($data,'brand','?');
+    default($data,'form','?');
+    default($data,'gig','?');
+    default($data,'interface','?');
+    default($data,'speed','?');
+    default($data,'sgig','?');
+
+    if ($errors) {
+        die("Errors during normalisation");
+    }
+    return $data;
+}
+
+sub normaliseproducts {
+    my @products;
+    while (my $prod = shift) {
+        push @products, normalise1product($prod);
+    }
+    return @products;
+}
+
+sub scrape1product {
+    my $node = shift;
+    my $data = {};
+
+    my $url = $node->look_down('_tag', 'a');
+    if (!$url) {
+        die("Could not find product image and url");
+        return undef;
+    }
+
+    $data->{comment} = $url->attr('title');
+    $data->{url} = $url->attr('href');
+    
+    my $price = $node->look_down('_tag', 'span', 'class', 'price');
+    if (!$price) {
+        die("Could not find price");
+        return undef;
+    }
+
+    $data->{price} = $price->as_trimmed_text();
+
+    return $data;
+}
+
+sub scrape2products {
+    my $tree = shift;
+    my $timestamp = shift;
+
+    my $products = $tree->look_down(
+        '_tag', 'div',
+        'class', 'category-products',
+    );
+    if (!$products) {
+        die("Could not find products");
+        return undef;
+    }
+
+    my @products;
+    for my $node ($products->look_down(
+            '_tag', 'li',
+            'class', qr/item/,
+        )) {
+        my $data = scrape1product($node);
+        $data->{timestamp} = $timestamp;
+        push @products, $data;
+    }
+
+    return @products;
+}
+
+sub main {
+    if (scalar(@ARGV) <2) {
+        print("Usage: $0 outfile infile...\n");
+        exit(1);
+    }
+    my $outfilename = shift @ARGV;
+
+    my @products;
+    for my $file (@ARGV) {
+        my $mtime = (stat($file))[9];
+        my $tree = file2tree($file);
+        push @products, scrape2products($tree, $mtime);
+    }
+
+    @products = normaliseproducts(@products);
+
+    my @fields = qw(date price form interface speed gig sgig brand supplier comment);
+
+    my $outfile;
+    if ($outfilename eq '-') {
+        $outfile = *STDOUT;
+    } else {
+        open($outfile, '>', $outfilename);
+    }
+
+    $outfile->print(join(',', @fields), "\n");
+
+    for my $prod (@products) {
+        $outfile->print(join(',', map({$prod->{$_}} @fields)), "\n");
+    }
+
+    print("Match counts:\n");
+    for my $re (sort(keys(%{$matchtable}))) {
+        print($matchtable->{$re}{_matches}||0,"\t'",$re,"'\n");
+    }
+    #print Dumper(@products);
+}
+
+main();

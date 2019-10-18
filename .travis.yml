@@ -1,0 +1,17 @@
+language: minimal
+
+install:
+  - sudo apt-get update
+  - make build-depends
+
+script:
+  - echo make test
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep_history: true
+    on:
+        branch: master
+        condition: $GITHUB_TOKEN
