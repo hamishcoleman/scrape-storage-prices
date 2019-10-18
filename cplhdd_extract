@@ -71,7 +71,8 @@ sub normalise1product {
 
         # interface
         ' nvme '        => { interface => 'NVME' },
-        ' pcie( |$)'    => { interface => 'NVME' },
+        ' pcie gen3x4'  => { interface => 'NVME' },
+        ' pcie 3.0'     => { interface => 'NVME' },
         ' SAS( |$)'     => { interface => 'SAS' },
         ' SATA( |,|$)'  => { interface => 'SATA' },
         ' SATA3( |$)'   => { interface => 'SATA' },
