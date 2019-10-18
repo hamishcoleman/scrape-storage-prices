@@ -195,8 +195,12 @@ sub normalise1product {
 }
 
 sub normaliseproducts {
+    my %seen;
     my @products;
     while (my $prod = shift) {
+        $seen{$prod->{comment}} ++;
+        next if ($seen{$prod->{comment}} > 1);
+
         push @products, normalise1product($prod);
     }
     return @products;
