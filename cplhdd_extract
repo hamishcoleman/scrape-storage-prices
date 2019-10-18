@@ -127,14 +127,14 @@ sub normalise1product {
         }
     }
 
-    if ($t =~ m/ (\d+) ?rpm( |_)/i) {
+    if ($t =~ m/ (\d+) ?rpm( |_|$)/i) {
         $data->{speed} = sprintf("RPM: %5i",$1);
     } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
         $data->{speed} = sprintf("RPM: %5i",$1 * 1000);
     }
 
     if (!defined($data->{gig})) {
-             if ($t =~ m/ (\d+) ?gb( |_|\/|$)/i) {
+             if ($t =~ m/ (\d+) ?gb( |_|$)/i) {
             $data->{gig} = $1;
         } elsif ($t =~ m/ ([0-9][0-9.]*) ?tb( |_|$)/i) {
             $data->{gig} = $1 * 1000;
