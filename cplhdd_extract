@@ -98,6 +98,9 @@ sub normalise1product {
     $data->{price} =~ s/^\$//;
     $data->{price} =~ s/,//;
 
+    # commas annoy my dodgy not-quite-csv
+    $data->{comment} =~ s/,/_/g;
+
     my $t = $data->{comment};
 
     my $errors = 0;
@@ -130,9 +133,9 @@ sub normalise1product {
     }
 
     if (!defined($data->{gig})) {
-        if ($t =~ m/ (\d+)tb( |,|$)/i) {
+        if ($t =~ m/ (\d+)tb ?( |_|$)/i) {
             $data->{gig} = $1 * 1000;
-        } elsif ($t =~ m/ (\d+)gb( |,|$)/i) {
+        } elsif ($t =~ m/ (\d+)gb( |_|$)/i) {
             $data->{gig} = $1;
         } elsif ($t =~ m/ (\d+) gb /i) {
             $data->{gig} = $1;
@@ -166,9 +169,6 @@ sub normalise1product {
     default($data,'interface','?');
     default($data,'speed','?');
     default($data,'sgig','?');
-
-    # commas annoy my dodgy not-quite-csv
-    $data->{comment} =~ s/,/_/g;
 
     if ($errors) {
         die("Errors during normalisation");
