@@ -161,7 +161,7 @@ sub scrape1product {
 
     my $url = $node->look_down('_tag', 'a');
     if (!$url) {
-        warn("Could not find product image and url");
+        die("Could not find product image and url");
         return undef;
     }
 
@@ -170,7 +170,7 @@ sub scrape1product {
     
     my $price = $node->look_down('_tag', 'span', 'class', 'price');
     if (!$price) {
-        warn("Could not find price");
+        die("Could not find price");
         return undef;
     }
 
@@ -187,7 +187,7 @@ sub scrape2products {
         'class', 'category-products',
     );
     if (!$products) {
-        warn("Could not find products");
+        die("Could not find products");
         return undef;
     }
 
