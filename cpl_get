@@ -13,10 +13,10 @@ fi
 set -e
 
 (cat <<EOF
-cplhdd-desktop.html     https://cplonline.com.au/hard-drives/desktop-hard-drives.html
-cplhdd-laptop.html      https://cplonline.com.au/hard-drives/laptop-hard-drives.html
-cplhdd-ssd.html         https://cplonline.com.au/hard-drives/ssd.html
-cplhdd-enterprise.html  https://cplonline.com.au/hard-drives/enterprise-hard-drives.html
+cplhdd-desktop.html     https://cplonline.com.au/hard-drives/desktop-hard-drives.html?dir=asc&limit=60&order=popularity
+cplhdd-laptop.html      https://cplonline.com.au/hard-drives/laptop-hard-drives.html?dir=asc&limit=60&order=popularity
+cplhdd-ssd.html         https://cplonline.com.au/hard-drives/ssd.html?dir=asc&limit=60&order=popularity
+cplhdd-enterprise.html  https://cplonline.com.au/hard-drives/enterprise-hard-drives.html?dir=asc&limit=60&order=popularity
 EOF
 ) | while read name url; do
     curl "$url" -o $PREFIX$name
