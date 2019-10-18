@@ -46,7 +46,6 @@ sub default {
 # Table of regular expressions that can extract data from the comment
 my $matchtable = {
     # speed
-    ' SSD( |,|$)'   => { speed => 'SSD' },
     ' gen3x4 '      => { speed => 'PCI3 x4'},
 
     # form factor
@@ -69,9 +68,9 @@ my $matchtable = {
     ' pcie 3.0'     => { interface => 'NVME' },
     ' pcie gen3x4'  => { interface => 'NVME' },
     ' sas( |$)'     => { interface => 'SAS' },
-    ' sata( |,|$)'  => { interface => 'SATA' },
-    ' sata3( |$)'   => { interface => 'SATA' },
-    ' sataiii '     => { interface => 'SATA' },
+    ' sata( |_|$)'  => { interface => 'SATA', speed => 'SATA' },
+    ' sata3( |$)'   => { interface => 'SATA', speed => 'SATA3' },
+    ' sataiii '     => { interface => 'SATA', speed => 'SATA3' },
 
     # brand
     'adata '        => { brand => 'Adata' },
@@ -126,7 +125,7 @@ sub normalise1product {
         }
     }
 
-    if ($t =~ m/ (\d+) ?rpm /i) {
+    if ($t =~ m/ (\d+) ?rpm( |_)/i) {
         $data->{speed} = sprintf("RPM: %5i",$1);
     } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
         $data->{speed} = sprintf("RPM: %5i",$1 * 1000);
@@ -135,12 +134,8 @@ sub normalise1product {
     if (!defined($data->{gig})) {
         if ($t =~ m/ (\d+)tb ?( |_|$)/i) {
             $data->{gig} = $1 * 1000;
-        } elsif ($t =~ m/ (\d+)gb( |_|$)/i) {
+        } elsif ($t =~ m/ (\d+) ?gb( |_|$)/i) {
             $data->{gig} = $1;
-        } elsif ($t =~ m/ (\d+) gb /i) {
-            $data->{gig} = $1;
-        } elsif ($t =~ m/ (\d+) tb /i) {
-            $data->{gig} = $1 * 1000;
         } elsif ($t =~ m/ ([0-9][0-9.]+)tb /i) {
             $data->{gig} = $1 * 1000;
         }
