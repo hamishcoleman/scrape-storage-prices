@@ -122,22 +122,26 @@ sub normalise1product {
         }
     }
 
-    if ($t =~ m/ (\d+)rpm/i) {
-        $data->{speed} = $1;
-    } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
-        $data->{speed} = $1 * 1000;
+    if (!defined($data->{speed})) {
+        if ($t =~ m/ (\d+)rpm/i) {
+            $data->{speed} = $1;
+        } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
+            $data->{speed} = $1 * 1000;
+        }
     }
 
-    if ($t =~ m/ (\d+)tb( |,|$)/i) {
-        $data->{gig} = $1 * 1000;
-    } elsif ($t =~ m/ (\d+)gb( |,|$)/i) {
-        $data->{gig} = $1;
-    } elsif ($t =~ m/ (\d+) gb /i) {
-        $data->{gig} = $1;
-    } elsif ($t =~ m/ (\d+) tb /i) {
-        $data->{gig} = $1 * 1000;
-    } elsif ($t =~ m/ ([0-9][0-9.]+)tb /i) {
-        $data->{gig} = $1 * 1000;
+    if (!defined($data->{gig})) {
+        if ($t =~ m/ (\d+)tb( |,|$)/i) {
+            $data->{gig} = $1 * 1000;
+        } elsif ($t =~ m/ (\d+)gb( |,|$)/i) {
+            $data->{gig} = $1;
+        } elsif ($t =~ m/ (\d+) gb /i) {
+            $data->{gig} = $1;
+        } elsif ($t =~ m/ (\d+) tb /i) {
+            $data->{gig} = $1 * 1000;
+        } elsif ($t =~ m/ ([0-9][0-9.]+)tb /i) {
+            $data->{gig} = $1 * 1000;
+        }
     }
 
     # If we are an old hard drive form factor, we are probably SATA
