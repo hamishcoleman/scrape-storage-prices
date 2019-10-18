@@ -26,6 +26,11 @@ get:
 extract-cplhdd.csv: cplhdd_extract $(wildcard tmp/cplhdd*.html)
 	./cplhdd_extract $@ tmp/cplhdd*.html
 
+.PHONY: extract.diff
+extract.diff: extract-cplhdd.csv
+	-[ -e $<.old ] && git diff --no-index $<.old $<
+	cp -p $< $<.old
+
 .PHONY: extract
 extract: extract-cplhdd.csv
 
