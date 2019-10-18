@@ -109,6 +109,8 @@ my $matchtable = {
 # A list of regular expresions to match problem entries
 my $table_skip = {
     'Bay Rafter 2.5 Inch to 3.5 Inch Convertor' => 'Not storage',
+    '2.5" PCIe 3.1 x4_ OPTANE_ W/ M.2' => 'Too many matching size buzzwords',
+    # TODO - find a way to allow this HDD without making all the regex horrid
 };
 
 sub normalise1product {
