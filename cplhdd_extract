@@ -43,16 +43,8 @@ sub default {
     }
 }
 
-sub normalise1product {
-    my $data = shift;
-
-    # Normalise the price field
-    $data->{price} =~ s/^\$//;
-    $data->{price} =~ s/,//;
-
-    my $t = $data->{comment};
-
-    my $table = {
+# Table of regular expressions that can extract data from the comment
+    my $matchtable = {
         # rpm
         ' SSD( |,|$)'   => { rpm => 'SSD' },
 
@@ -98,9 +90,18 @@ sub normalise1product {
         'wd '           => { brand => 'WD' },
     };
 
+sub normalise1product {
+    my $data = shift;
+
+    # Normalise the price field
+    $data->{price} =~ s/^\$//;
+    $data->{price} =~ s/,//;
+
+    my $t = $data->{comment};
+
     my $errors = 0;
 
-    while (my ($re,$entry) = each(%{$table})) {
+    while (my ($re,$entry) = each(%{$matchtable})) {
         if ($t =~ m/$re/i) {
             while (my ($k,$v) = each(%{$entry})) {
                 if (defined($data->{$k})) {
