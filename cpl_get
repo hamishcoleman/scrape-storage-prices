@@ -24,8 +24,8 @@ curl_h() {
         -H 'Referer: https://cplonline.com.au/hard-drives/enterprise-hard-drives.html?limit=60' \
         -H 'Connection: keep-alive' \
         -H 'Cookie: frontend=a7d78ba0d87b8e06af91154683c1c077; frontend_cid=Ruatt0e3lN0l1SUG; __zlcmid=upicUqBWg7APsR' \
-        -H 'Upgrade-Insecure-Requests: 1'
-        -o "$FILE"
+        -H 'Upgrade-Insecure-Requests: 1' \
+        -o "$FILE" \
         "$URL"
 }
 
