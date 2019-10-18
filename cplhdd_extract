@@ -202,21 +202,24 @@ sub scrape2products {
     return @products;
 }
 
-my @products;
-for my $file (@ARGV) {
-    my $tree = file2tree($file);
-    push @products, scrape2products($tree);
+sub main {
+    my @products;
+    for my $file (@ARGV) {
+        my $tree = file2tree($file);
+        push @products, scrape2products($tree);
+    }
+
+    @products = normaliseproducts(@products);
+
+    my @fields = qw(date price form interface rpm gig sgig brand supplier comment);
+
+    print(join(',', @fields), "\n");
+
+    for my $prod (@products) {
+        print(join(',', map({$prod->{$_}} @fields)), "\n");
+    }
+
+    #print Dumper(@products);
 }
 
-@products = normaliseproducts(@products);
-
-my @fields = qw(date price form interface rpm gig sgig brand supplier comment);
-
-print(join(',', @fields), "\n");
-
-for my $prod (@products) {
-    print(join(',', map({$prod->{$_}} @fields)), "\n");
-}
-
-#print Dumper(@products);
-
+main();
