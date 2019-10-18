@@ -47,6 +47,7 @@ sub default {
 my $matchtable = {
     # speed
     ' SSD( |,|$)'   => { speed => 'SSD' },
+    ' gen3x4 '      => { speed => 'PCI3 x4'},
 
     # form factor
     ' 2.5 Inch '    => { form => '2.5"' },
@@ -122,7 +123,7 @@ sub normalise1product {
         }
     }
 
-    if ($t =~ m/ (\d+)rpm/i) {
+    if ($t =~ m/ (\d+) ?rpm /i) {
         $data->{speed} = sprintf("RPM: %5i",$1);
     } elsif ($t =~ m/ ([0-9][0-9.]+)k/i) {
         $data->{speed} = sprintf("RPM: %5i",$1 * 1000);
