@@ -67,6 +67,7 @@ sub normalise1product {
         ' 3.5\' '       => { form => '3.5"' },
         ' 3.5in '       => { form => '3.5"' },
         ' M.2 '         => { form => 'M.2' },
+        ' M.2\(2280\)'  => { form => 'M.2' },
         ' M2( |$)'      => { form => 'M.2' },
         ' mSATA'        => { form => 'mSATA', interface => 'SATA' },
 
