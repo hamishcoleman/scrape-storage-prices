@@ -132,7 +132,7 @@ sub normalise1product {
     }
 
     if (!defined($data->{gig})) {
-        if ($t =~ m/ (\d+)tb ?( |_|$)/i) {
+             if ($t =~ m/ (\d+) ?tb( |_|$)/i) {
             $data->{gig} = $1 * 1000;
         } elsif ($t =~ m/ (\d+) ?gb( |_|$)/i) {
             $data->{gig} = $1;
