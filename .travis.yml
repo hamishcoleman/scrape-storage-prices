@@ -5,7 +5,7 @@ install:
   - make build-depends
 
 script:
-  - echo make test
+  - make test
 
 deploy:
     provider: pages
