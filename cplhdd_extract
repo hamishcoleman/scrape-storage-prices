@@ -46,7 +46,9 @@ sub default {
 # Table of regular expressions that can extract data from the comment
 my $matchtable = {
     # speed
-    ' gen3x4 '      => { speed => 'PCI3 x4'},
+    ' gen3x4 '      => { speed => 'PCIe3 x4'},
+    ' pcie 3\.0 '   => { speed => 'PCIe3'},
+    ' pcie 3x4 '    => { speed => 'PCIe3 x4'},
 
     # form factor
     ' 2.5 Inch '    => { form => '2.5"' },
