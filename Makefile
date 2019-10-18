@@ -14,9 +14,20 @@ build-depends:
 
 .PHONY: clean
 clean:
-	rm tmp/*
+	rm \
+	    tmp/* \
+	    extract-cplhdd.csv
 
 .PHONY: get
 get:
 	mkdir -p tmp
 	./cpl_get tmp
+
+extract-cplhdd.csv: cplhdd_extract $(wildcard tmp/cplhdd*.html)
+	./cplhdd_extract $@ tmp/cplhdd*.html
+
+.PHONY: extract
+extract: extract-cplhdd.csv
+
+.PHONY: test
+test: get extract
