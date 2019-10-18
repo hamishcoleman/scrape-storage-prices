@@ -3,6 +3,11 @@
 # Get the CPL raw html files, ready for processing with the extractor
 #
 
+PREFIX="$1"
+if [ -n "$PREFIX" ]; then
+    PREFIX="$PREFIX/"
+fi
+
 set -e
 
 (cat <<EOF
@@ -12,6 +17,6 @@ cplhdd-ssd.html        https://cplonline.com.au/hard-drives/ssd.html
 cplhdd-enterprise.html https://cplonline.com.au/hard-drives/enterprise-hard-drives.html
 EOF
 ) | while read name url; do
-    curl $url >$name
+    curl $url -o $PREFIX$name
 done
 
