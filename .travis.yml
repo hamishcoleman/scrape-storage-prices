@@ -7,11 +7,17 @@ install:
 script:
   - make test
 
+before_deploy:
+    - mkdir deploy
+    - mv *.csv deploy
+    - mv tmp deploy
+
 deploy:
     provider: pages
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
     keep_history: true
+    local_dir: deploy
     on:
         branch: master
         condition: $GITHUB_TOKEN
