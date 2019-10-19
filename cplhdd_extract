@@ -161,7 +161,7 @@ sub normalise1product {
             while (my ($k,$v) = each(%{$entry})) {
                 # Skip metadata
                 next if ($k =~ m/^_/);
-                if (defined($data->{$k})) {
+                if (defined($data->{$k}) && ($data->{$k} ne $v)) {
                     warn("WARN: Duplicate key match");
                     print(" re: $re\n");
                     print(" key: $k\n");
