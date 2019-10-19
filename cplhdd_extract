@@ -286,7 +286,7 @@ sub main {
 
     @products = normaliseproducts(@products);
 
-    my @fields = qw(date price form interface speed gig sgig brand supplier comment);
+    my @fields = qw(price form interface speed gig sgig brand supplier comment);
 
     my $outfile;
     if ($outfilename eq '-') {
