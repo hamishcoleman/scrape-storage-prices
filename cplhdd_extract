@@ -57,11 +57,6 @@ sub normalise_blank_fields {
 
 # Table of regular expressions that can extract data from the comment
 my $matchtable = {
-    # speed
-    ' gen3x4 '      => { speed => 'PCIe3 x4', interface => 'NVME' },
-    ' pcie 3\.0 '   => { speed => 'PCIe3', interface => 'NVME' },
-    ' pcie 3x4 '    => { speed => 'PCIe3 x4', interface => 'NVME' },
-    ' pcie g3 x4( |$)'  => { speed => 'PCIe3 x4', interface => 'NVME' },
 
     # size
     ' 120G '        => { gig => '120' },
@@ -86,8 +81,10 @@ my $matchtable = {
 
     # interface
     ' nvme '        => { interface => 'NVME' },
-    ' pcie 3.0'     => { interface => 'NVME' },
-    ' pcie gen3x4'  => { interface => 'NVME' },
+    ' pcie 3\.0 '   => { interface => 'NVME', speed => 'PCIe3' },
+    ' pcie 3x4 '    => { interface => 'NVME', speed => 'PCIe3 x4' },
+    ' pcie g3 x4( |$)' => { interface => 'NVME', speed => 'PCIe3 x4' },
+    ' pcie gen3x4'  => { interface => 'NVME', speed => 'PCIe3 x4' },
     ' sas( |$)'     => { interface => 'SAS' },
     ' sata( |_|$)'  => { interface => 'SATA', speed => 'SATA' },
     ' sata3( |$)'   => { interface => 'SATA', speed => 'SATA3' },
