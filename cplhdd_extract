@@ -292,7 +292,7 @@ sub main {
 
     $outfile->print(join(',', @fields), "\n");
 
-    for my $prod (@products) {
+    for my $prod (sort {$a->{comment} cmp $b->{comment}} @products) {
         $outfile->print(join(',', map({$prod->{$_}} @fields)), "\n");
     }
 
