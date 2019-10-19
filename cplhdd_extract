@@ -58,9 +58,9 @@ sub normalise_blank_fields {
 # Table of regular expressions that can extract data from the comment
 my $matchtable = {
     # speed
-    ' gen3x4 '      => { speed => 'PCIe3 x4'},
-    ' pcie 3\.0 '   => { speed => 'PCIe3'},
-    ' pcie 3x4 '    => { speed => 'PCIe3 x4'},
+    ' gen3x4 '      => { speed => 'PCIe3 x4', interface => 'NVME' },
+    ' pcie 3\.0 '   => { speed => 'PCIe3', interface => 'NVME' },
+    ' pcie 3x4 '    => { speed => 'PCIe3 x4', interface => 'NVME' },
     ' pcie g3 x4( |$)'  => { speed => 'PCIe3 x4', interface => 'NVME' },
 
     # size
@@ -71,28 +71,18 @@ my $matchtable = {
     ' 500G '        => { gig => '500' },
     ' 512G '        => { gig => '512' },
     ' 960G '        => { gig => '960' },
-    '1000G '        => { gig => '1000' },
+    ' 1000G '       => { gig => '1000' },
 
     # form factor
-    ' 2.5inch '     => { form => '2.5"' },
-    ' 2.5 Inch '    => { form => '2.5"' },
-    ' 2.5" '        => { form => '2.5"' },
-    ' 2.5-Inch '    => { form => '2.5"' },
-    ' 2.5\' '       => { form => '2.5"' },
-    ' 2.5\'\' '     => { form => '2.5"' },
-    ' 2.5in( |$)'   => { form => '2.5"' },
-    ' 3.5 '         => { form => '3.5"' },
-    ' 3.5"( |$)'    => { form => '3.5"' },
-    ' 3.5\' '       => { form => '3.5"' },
-    ' 3.5in '       => { form => '3.5"' },
-    ' 3.5-inch '    => { form => '3.5"' },
-    ' M.2( |$)'     => { form => 'M.2' },
-    ' M.2\(2280\)'  => { form => 'M.2' },
+    ' 2\.5([^0-9]|$)' => { form => '2.5"' },
+    ' 2_5" '          => { form => '2.5"' },
+    ' 3\.5([^0-9]|$)' => { form => '3.5"' },
+    ' M\.2([^0-9]|$)' => { form => 'M.2' },
     ' M2( |$)'      => { form => 'M.2' },
     ' M\.2280 '     => { form => 'M.2' },
     ' SFF '         => { form => '2.5"' },
     ' mSATA'        => { form => 'mSATA', interface => 'SATA' },
-    ' u\.2 '        => { form => 'U.2' },
+    ' u\.2 '        => { form => 'U.2' }, # Not really a form-factor
 
     # interface
     ' nvme '        => { interface => 'NVME' },
