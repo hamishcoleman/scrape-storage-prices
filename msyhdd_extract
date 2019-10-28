@@ -10,9 +10,7 @@ use FindBin;
 use lib "$FindBin::RealBin/lib";
 use lib "/home/hamish/s/bin/lib";
 
-use HTML::TreeBuilder;
-use IO::HTML;
-
+use ScrapeHelper;
 use ScrapeExtractStorage;
 
 use Data::Dumper;
@@ -20,43 +18,26 @@ $Data::Dumper::Indent = 1;
 $Data::Dumper::Sortkeys = 1;
 $Data::Dumper::Quotekeys = 0;
 
-sub file2tree {
-    my $file = shift;
-
-    my $fh = html_file($file);
-    return undef if (!$fh);
-
-    my $tree = HTML::TreeBuilder->new;
-    $tree->parse_file($fh);
-    $tree->eof;
-    $tree->elementify;
-
-    return $tree;
-}
-
 sub scrape1product {
     my $node = shift;
     my $data = {};
 
-    my $description = $node->look_down('_tag', 'div', 'class', 'description');
-    if (!$description) {
-        die("Could not find product description");
-        return undef;
-    }
-
-    $data->{comment} = $description->as_trimmed_text();
     $data->{supplier} = 'MSY';
+
+    $data->{comment} = ScrapeHelper::look_down2text(
+        $node,
+        '_tag', 'div',
+        'class', 'description'
+    );
 
     # TODO - url
     #$data->{url} =
     
-    my $price = $node->look_down('_tag', 'span', 'class', 'price actual-price');
-    if (!$price) {
-        die("Could not find price");
-        return undef;
-    }
-
-    $data->{price} = $price->as_trimmed_text();
+    $data->{price} = ScrapeHelper::look_down2text(
+        $node,
+        '_tag', 'span',
+        'class', 'price actual-price'
+    );
 
     return $data;
 }
@@ -90,7 +71,7 @@ sub main {
     my @products;
     for my $file (@ARGV) {
         my $mtime = (stat($file))[9];
-        my $tree = file2tree($file);
+        my $tree = ScrapeHelper::file2tree($file);
         push @products, scrape2products($tree, $mtime);
     }
 
