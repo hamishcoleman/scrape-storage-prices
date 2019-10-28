@@ -65,7 +65,7 @@ my $matchtable = {
     ' sata( |_|$)'  => { interface => 'SATA', speed => 'SATA' },
     ' sata3( |$)'   => { interface => 'SATA', speed => 'SATA3' },
     ' sataiii '     => { interface => 'SATA', speed => 'SATA3' },
-    ' usb 3\.0 '    => { interface => 'USB', speed => 'USB 3.0' },
+    ' usb ?3\.0 '   => { interface => 'USB', speed => 'USB 3.0' },
     ' usb3\.1 '     => { interface => 'USB', speed => 'USB 3.1' },
 
     # brand
