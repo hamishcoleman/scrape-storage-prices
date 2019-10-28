@@ -24,8 +24,16 @@ get:
 	./cpl_get tmp
 	./msy_get tmp
 
-extract-cplhdd.csv: cplhdd_extract $(wildcard tmp/cplhdd*.html)
-	./cplhdd_extract $@ tmp/cplhdd*.html
+%_extract: $(wildcard lib/*.pm)
+	touch $@
+
+extract-%.csv: %_extract $(wildcard tmp/*.html)
+	./$*_extract $@ tmp/$**.html
+
+# FIXME
+# - the extract rule should depend on only the matching html files,
+#   but the $* variable is not set until after the pre-requisites have been
+#   evaluated
 
 .PHONY: extract.diff
 extract.diff: extract-cplhdd.csv
@@ -33,7 +41,10 @@ extract.diff: extract-cplhdd.csv
 	cp -p $< $<.old
 
 .PHONY: extract
-extract: extract-cplhdd.csv
+extract: extract.csv
+
+extract.csv: extract-cplhdd.csv extract-msyhdd.csv
+	cat $^ >$@
 
 .PHONY: test
 test: get extract
