@@ -1,0 +1,122 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+#
+# Grab the hard drives data from MSY
+#
+
+# allow the libs to be in the bin dir
+use FindBin;
+use lib "$FindBin::RealBin/lib";
+use lib "/home/hamish/s/bin/lib";
+
+use HTML::TreeBuilder;
+use IO::HTML;
+
+use ScrapeExtractStorage;
+
+use Data::Dumper;
+$Data::Dumper::Indent = 1;
+$Data::Dumper::Sortkeys = 1;
+$Data::Dumper::Quotekeys = 0;
+
+sub file2tree {
+    my $file = shift;
+
+    my $fh = html_file($file);
+    return undef if (!$fh);
+
+    my $tree = HTML::TreeBuilder->new;
+    $tree->parse_file($fh);
+    $tree->eof;
+    $tree->elementify;
+
+    return $tree;
+}
+
+sub scrape1product {
+    my $node = shift;
+    my $data = {};
+
+    my $description = $node->look_down('_tag', 'div', 'class', 'description');
+    if (!$description) {
+        die("Could not find product description");
+        return undef;
+    }
+
+    $data->{comment} = $description->as_trimmed_text();
+    $data->{supplier} = 'MSY';
+
+    # TODO - url
+    #$data->{url} =
+    
+    my $price = $node->look_down('_tag', 'span', 'class', 'price actual-price');
+    if (!$price) {
+        die("Could not find price");
+        return undef;
+    }
+
+    $data->{price} = $price->as_trimmed_text();
+
+    return $data;
+}
+
+sub scrape2products {
+    my $tree = shift;
+    my $timestamp = shift;
+
+    my @products;
+    for my $node ($tree->look_down(
+            '_tag', 'div',
+            'class', 'product-item',
+        )) {
+        my $data = scrape1product($node);
+        $data->{timestamp} = $timestamp;
+        push @products, $data;
+    }
+
+    # if no products, raise error?
+
+    return @products;
+}
+
+sub main {
+    if (scalar(@ARGV) <2) {
+        print("Usage: $0 outfile infile...\n");
+        exit(1);
+    }
+    my $outfilename = shift @ARGV;
+
+    my @products;
+    for my $file (@ARGV) {
+        my $mtime = (stat($file))[9];
+        my $tree = file2tree($file);
+        push @products, scrape2products($tree, $mtime);
+    }
+
+    @products = ScrapeExtractStorage::extractproducts(@products);
+
+    my @fields = qw(price form interface speed gig sgig brand supplier comment);
+
+    my $outfile;
+    if ($outfilename eq '-') {
+        $outfile = *STDOUT;
+    } else {
+        open($outfile, '>', $outfilename);
+    }
+
+    $outfile->print(join(',', @fields), "\n");
+
+    for my $prod (sort {$a->{comment} cmp $b->{comment}} @products) {
+        $outfile->print(join(',', map({$prod->{$_}} @fields)), "\n");
+    }
+
+    print("Match counts:\n");
+    my $matchtable = ScrapeExtractStorage::matchtable();
+    for my $re (sort(keys(%{$matchtable}))) {
+        print($matchtable->{$re}{_matches}||0,"\t'",$re,"'\n");
+    }
+    #print Dumper(@products);
+}
+
+main();

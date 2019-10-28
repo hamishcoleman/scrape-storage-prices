@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# Get the MSY raw html files, ready for processing with the extractor
+#
+# TODO
+# - be smarter about the pagination - dont just hardcode it
+
+PREFIX="$1"
+if [ -n "$PREFIX" ]; then
+    PREFIX="$PREFIX/"
+fi
+
+set -e
+
+curl_h() {
+    local FILE="$1"
+    local URL="$2"
+    echo "TRY $URL"
+    curl \
+        -H 'accept-encoding: gzip, deflate, br' \
+        -H 'content-type: application/json; charset=UTF-8' \
+        -H 'referer: https://www.msy.com.au/hard-drive' \
+        --data-binary '{"categoryId":"33","manufacturerId":"0","vendorId":"0","pageNumber":null,"orderby":"Position","viewmode":"grid","pagesize":"48","queryString":"","shouldNotStartFromFirstPage":false,"keyword":"","searchCategoryId":"0","searchManufacturerId":"0","searchVendorId":"0","priceFrom":"0","priceTo":"0","includeSubcategories":"False","searchInProductDescriptions":"False","advancedSearch":"False","isOnSearchPage":"False"}' \
+        --compressed \
+        -o "$FILE" \
+        "$URL"
+}
+
+(cat <<EOF
+msyhdd-1.html           https://www.msy.com.au/GetFilteredProduct
+EOF
+) | while read name url; do
+    curl_h "$PREFIX$name" "$url"
+    sleep 10s
+done

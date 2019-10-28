@@ -22,6 +22,7 @@ clean:
 get:
 	mkdir -p tmp
 	./cpl_get tmp
+	./msy_get tmp
 
 extract-cplhdd.csv: cplhdd_extract $(wildcard tmp/cplhdd*.html)
 	./cplhdd_extract $@ tmp/cplhdd*.html
