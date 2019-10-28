@@ -48,12 +48,12 @@ my $matchtable = {
     ' 2\.5([^0-9]|$)' => { form => '2.5"' },
     ' 2_5" '          => { form => '2.5"' },
     ' 3\.5([^0-9]|$)' => { form => '3.5"' },
-    ' M2( |$)'      => { form => 'M.2' },
+    ' M2( |$)'        => { form => 'M.2' },
     ' M\.2([^0-9]|$)' => { form => 'M.2' },
-    ' M\.2280 '     => { form => 'M.2' },
-    ' SFF '         => { form => '2.5"' },
-    ' mSATA'        => { form => 'mSATA', interface => 'SATA' },
-    ' u\.2 '        => { form => 'U.2' }, # Not really a form-factor
+    ' M\.2280 '       => { form => 'M.2' },
+    ' SFF '           => { form => '2.5"' },
+    ' mSATA'          => { form => 'mSATA', interface => 'SATA' },
+    ' u\.2 '          => { form => 'U.2' }, # Not really a form-factor
 
     # interface
     ' nvme '        => { interface => 'NVME' },
