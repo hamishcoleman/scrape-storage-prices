@@ -36,7 +36,7 @@ extract-%.csv: %_extract $(wildcard tmp/*.html)
 #   evaluated
 
 .PHONY: extract.diff
-extract.diff: extract-cplhdd.csv
+extract.diff: extract.csv
 	-[ -e $<.old ] && git diff --no-index $<.old $<
 	cp -p $< $<.old
 
