@@ -35,14 +35,23 @@ sub set_blank_fields_to_default {
 my $matchtable = {
 
     # size
+    # (most sizes are have a general regex, below. these are the exceptions)
     ' 120G '        => { gig => '120' },
+    ' 1920GB/1.92TB ' => { gig => '1920' },
+    ' 200G$'          => { gig => '200' },
     ' 240G '        => { gig => '240' },
+    ' 250G '          => { gig => '250' },
     ' 256G '        => { gig => '256' },
+    ' 375G$'          => { gig => '375' },
     ' 480G '        => { gig => '480' },
+    ' 480GB_ '        => { gig => '480' },
     ' 500G '        => { gig => '500' },
     ' 512G '        => { gig => '512' },
     ' 960G '        => { gig => '960' },
     ' 1000G '       => { gig => '1000' },
+    '/120G '          => { gig => '120' },
+    '/240G '          => { gig => '240' },
+    '/480G '          => { gig => '480' },
 
     # form factor
     ' 2\.5([^0-9]|$)' => { form => '2.5"' },
@@ -57,14 +66,22 @@ my $matchtable = {
 
     # interface
     ' nvme '        => { interface => 'NVME' },
+    ' nvme gen 3x2 '      => { interface => 'NVME', speed => 'PCIe3 x2' },
+    ' nvme gen 3x4 '      => { interface => 'NVME', speed => 'PCIe3 x4' },
+    ' nvme gen 3.0 x 4$'  => { interface => 'NVME', speed => 'PCIe3 x4' },
     ' pcie 3\.0 '   => { interface => 'NVME', speed => 'PCIe3' },
+    ' pcie 3\.1 x4'       => { interface => 'NVME', speed => 'PCIe3.1 x4' },
     ' pcie 3x4 '    => { interface => 'NVME', speed => 'PCIe3 x4' },
     ' pcie g3 x4( |$)' => { interface => 'NVME', speed => 'PCIe3 x4' },
     ' pcie gen3x4'  => { interface => 'NVME', speed => 'PCIe3 x4' },
+    ' pcie nvme gen4'     => { interface => 'NVME', speed => 'PCIe4' },
+    ' pcie x4 gen4'       => { interface => 'NVME', speed => 'PCIe4 x4' },
+    ' pcie ?$'            => { interface => 'NVME' },
+    ' pcie m2( |$)'       => { interface => 'NVME', form => 'M.2' },
     ' sas( |$)'     => { interface => 'SAS' },
     ' sata( |_|$)'  => { interface => 'SATA', speed => 'SATA' },
     ' sata3( |$)'   => { interface => 'SATA', speed => 'SATA3' },
-    ' sataiii '     => { interface => 'SATA', speed => 'SATA3' },
+    ' sataiii( |$)'       => { interface => 'SATA', speed => 'SATA3' },
     ' usb ?3\.0 '   => { interface => 'USB', speed => 'USB 3.0' },
     ' usb3\.1 '     => { interface => 'USB', speed => 'USB 3.1' },
 
