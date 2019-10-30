@@ -18,15 +18,17 @@ curl_h() {
     local PAGE="$3"
     echo "TRY $URL"
 
-    JSON='{"pageNumber":"'
-    JSON+=$PAGE
-    JSON+='","categoryId":"33","manufacturerId":"0","vendorId":"0","pageNumber":null,"orderby":"Position","viewmode":"grid","pagesize":"48","queryString":"","shouldNotStartFromFirstPage":false,"keyword":"","searchCategoryId":"0","searchManufacturerId":"0","searchVendorId":"0","priceFrom":"0","priceTo":"0","includeSubcategories":"False","searchInProductDescriptions":"False","advancedSearch":"False","isOnSearchPage":"False"}'
-
     curl \
+        -H 'origin: https://www.msy.com.au' \
         -H 'accept-encoding: gzip, deflate, br' \
+        -H 'accept-language: en-US,en;q=0.9' \
+        -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36' \
         -H 'content-type: application/json; charset=UTF-8' \
+        -H 'accept: */*' \
         -H 'referer: https://www.msy.com.au/hard-drive' \
-        --data-binary "$JSON" \
+        -H 'authority: www.msy.com.au' \
+        -H 'x-requested-with: XMLHttpRequest' \
+        --data-binary '{"categoryId":"33","manufacturerId":"0","vendorId":"0","priceRangeFilterModel7Spikes":{"CategoryId":"33","ManufacturerId":"0","VendorId":"0","SelectedPriceRange":{},"MinPrice":"25","MaxPrice":"9999"},"specificationFiltersModel7Spikes":{"CategoryId":"33","ManufacturerId":"0","VendorId":"0","SpecificationFilterGroups":[{"Id":45,"FilterItems":[{"Id":"248","FilterItemState":"Unchecked"},{"Id":"449","FilterItemState":"Unchecked"},{"Id":"626","FilterItemState":"Unchecked"},{"Id":"483","FilterItemState":"Unchecked"},{"Id":"453","FilterItemState":"Unchecked"},{"Id":"477","FilterItemState":"Unchecked"},{"Id":"478","FilterItemState":"Unchecked"},{"Id":"479","FilterItemState":"Unchecked"},{"Id":"627","FilterItemState":"Unchecked"},{"Id":"629","FilterItemState":"Unchecked"},{"Id":"628","FilterItemState":"Unchecked"},{"Id":"547","FilterItemState":"Unchecked"},{"Id":"482","FilterItemState":"Unchecked"},{"Id":"456","FilterItemState":"Unchecked"},{"Id":"455","FilterItemState":"Unchecked"},{"Id":"606","FilterItemState":"Unchecked"},{"Id":"810","FilterItemState":"Unchecked"}]},{"Id":18,"FilterItems":[{"Id":"512","FilterItemState":"Unchecked"},{"Id":"457","FilterItemState":"Unchecked"},{"Id":"834","FilterItemState":"Unchecked"},{"Id":"231","FilterItemState":"Unchecked"}]},{"Id":330,"FilterItems":[{"Id":"1913","FilterItemState":"Unchecked"},{"Id":"1896","FilterItemState":"Unchecked"},{"Id":"1899","FilterItemState":"Unchecked"},{"Id":"1881","FilterItemState":"Unchecked"},{"Id":"1846","FilterItemState":"Unchecked"},{"Id":"2015","FilterItemState":"Unchecked"},{"Id":"1864","FilterItemState":"Unchecked"},{"Id":"1897","FilterItemState":"Unchecked"},{"Id":"2019","FilterItemState":"Unchecked"}]},{"Id":72,"FilterItems":[{"Id":"473","FilterItemState":"Unchecked"},{"Id":"463","FilterItemState":"Unchecked"}]},{"Id":101,"FilterItems":[{"Id":"514","FilterItemState":"Unchecked"}]},{"Id":108,"FilterItems":[{"Id":"634","FilterItemState":"Unchecked"}]}]},"pageNumber":'$PAGE',"orderby":"Position","viewmode":"grid","pagesize":"48","queryString":"","shouldNotStartFromFirstPage":false,"keyword":"","searchCategoryId":"0","searchManufacturerId":"0","searchVendorId":"0","priceFrom":"0","priceTo":"0","includeSubcategories":"False","searchInProductDescriptions":"False","advancedSearch":"False","isOnSearchPage":"False"}' \
         --compressed \
         -o "$FILE" \
         "$URL"
