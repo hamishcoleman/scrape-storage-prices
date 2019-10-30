@@ -6,6 +6,11 @@ use strict;
 # Attempt to extract details in a normalised way
 #
 
+use Data::Dumper;
+$Data::Dumper::Indent = 1;
+$Data::Dumper::Sortkeys = 1;
+$Data::Dumper::Quotekeys = 0;
+
 use POSIX qw(strftime);
 
 # Set the default value for undefined items

@@ -13,11 +13,6 @@ use lib "/home/hamish/s/bin/lib";
 use ScrapeHelper;
 use ScrapeExtractStorage;
 
-use Data::Dumper;
-$Data::Dumper::Indent = 1;
-$Data::Dumper::Sortkeys = 1;
-$Data::Dumper::Quotekeys = 0;
-
 sub scrape1product {
     my $node = shift;
     my $data = {};
@@ -97,7 +92,6 @@ sub main {
     for my $re (sort(keys(%{$matchtable}))) {
         print($matchtable->{$re}{_matches}||0,"\t'",$re,"'\n");
     }
-    #print Dumper(@products);
 }
 
 main();
