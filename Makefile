@@ -40,11 +40,14 @@ extract.diff: extract.csv
 	-[ -e $<.old ] && git diff --no-index $<.old $<
 	cp -p $< $<.old
 
-.PHONY: extract
-extract: extract.csv
-
 extract.csv: extract-cplhdd.csv extract-msyhdd.csv
 	cat $^ >$@
 
+merged-old.csv:
+	./merged-old_get
+
+merged.csv: merged-old.csv extract-cplhdd.csv extract-msyhdd.csv
+	./merge $@ $^
+
 .PHONY: test
-test: get extract
+test: get merged.csv

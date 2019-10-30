@@ -1,0 +1,108 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+#
+# Given an old database (with dates) and one or more new databases, merge them
+#
+# If the price,supplier,comment is unique, then we just store it
+# If it is not unique then we keep the newest extracted fields and the oldest date
+#
+# This should give a database that shows the hdd price over time
+
+# allow the libs to be in the bin dir
+use FindBin;
+use lib "$FindBin::RealBin/lib";
+use lib "/home/hamish/s/bin/lib";
+
+use POSIX qw(strftime);
+
+use Data::Dumper;
+$Data::Dumper::Indent = 1;
+$Data::Dumper::Sortkeys = 1;
+$Data::Dumper::Quotekeys = 0;
+
+sub read_merged {
+    my $fd = shift;
+
+    # read the header
+    <$fd>;
+
+    my $db = {};
+    while(<$fd>) {
+        chomp;
+        my @f = split(/,/);
+        # Key is comment,supplier,price
+        my $key = join(',', $f[9], $f[8], $f[1]);
+        @{$db->{$key}} = @f;
+    }
+    return $db;
+}
+
+sub write_merged {
+    my $db = shift;
+    my $fd = shift;
+
+    my @fields = qw(date price form interface speed gig sgig brand supplier comment);
+    $fd->print(join(',', @fields), "\n");
+    for my $row (sort(keys(%{$db}))) {
+        $fd->print(join(',', @{$db->{$row}}), "\n");
+    }
+}
+
+sub read_export_and_merge {
+    my $db = shift;
+    my $timestamp = shift;
+    my $fd = shift;
+
+    my $date = strftime("%Y-%m-%d", gmtime($timestamp));
+
+    # read the header
+    <$fd>;
+
+    while(<$fd>) {
+        chomp;
+        my @f = split(/,/);
+        unshift @f, $date;
+        # Key is comment,supplier,price
+        my $key = join(',', $f[9], $f[8], $f[1]);
+
+        if (defined($db->{$key})) {
+            # Keep the old date, but update any other changes
+            $f[0] = $db->{$key}[0];
+        }
+
+        @{$db->{$key}} = @f;
+    }
+}
+
+sub main {
+    if (scalar(@ARGV) <3) {
+        print("Usage: $0 outputdb inputdb infile...\n");
+        exit(1);
+    }
+    my $merged_new = shift @ARGV;
+    my $merged_old = shift @ARGV;
+
+    my $db;
+    my $infile;
+    if (open($infile, "<", $merged_old)) {
+        $db = read_merged($infile);
+        close($infile);
+    } else {
+        # file doesnt exist yet
+        $db = {};
+    }
+
+    for my $file (@ARGV) {
+        my $mtime = (stat($file))[9];
+        open($infile, "<", $file);
+        read_export_and_merge($db, $mtime, $infile);
+    }
+
+    my $outfile;
+    open($outfile, '>', $merged_new);
+
+    write_merged($db, $outfile);
+}
+
+main();
