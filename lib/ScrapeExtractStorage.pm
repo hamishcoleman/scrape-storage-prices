@@ -89,6 +89,7 @@ my $matchtable = {
     ' sataiii( |$)'       => { interface => 'SATA', speed => 'SATA3' },
     ' usb ?3\.0 '         => { interface => 'USB', speed => 'USB 3.0' },
     ' usb3\.1 '           => { interface => 'USB', speed => 'USB 3.1' },
+    ' type-c drive( |$)'  => { interface => 'USB' },
 
     # brand
     'adata '        => { brand => 'Adata' },
@@ -119,6 +120,8 @@ my $matchtable = {
 my $table_skip = {
     'Bay Rafter 2.5 Inch to 3.5 Inch Convertor' => 'Not storage',
     'Type-C Black External HDD Enclosure' => 'Not storage',
+    'One-Touch NFC for easy connection' => 'Not storage',
+
     '2.5" PCIe 3.1 x4_ OPTANE_ W/ M.2' => 'Too many matching size buzzwords',
     # TODO - find a way to allow this HDD without making all the regex horrid
 };
