@@ -49,5 +49,12 @@ merged.csv.old:
 merged.csv: merged.csv.old extract-cplhdd.csv extract-msyhdd.csv
 	./merge $@ $^
 
+.PHONY: check
+check: check.shell
+
+.PHONY: check.shell
+check.shell:
+	shellcheck cpl_get msy_get merged-old_get
+
 .PHONY: test
-test: get merged.csv
+test: check get merged.csv

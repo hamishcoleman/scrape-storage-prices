@@ -38,7 +38,7 @@ msyhdd-2.html           https://www.msy.com.au/GetFilteredProduct 2
 msyhdd-3.html           https://www.msy.com.au/GetFilteredProduct 3
 msyhdd-4.html           https://www.msy.com.au/GetFilteredProduct 4
 EOF
-) | while read name url page; do
+) | while read -r name url page; do
     curl_h "$PREFIX$name" "$url" "$page"
     sleep 10s
 done

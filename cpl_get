@@ -40,7 +40,7 @@ cplhdd-7.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&ord
 cplhdd-8.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=8
 cplhdd-9.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=9
 EOF
-) | while read name url; do
+) | while read -r name url; do
     curl_h "$PREFIX$name" "$url"
     sleep 10s
 done
