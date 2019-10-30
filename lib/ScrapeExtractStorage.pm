@@ -126,6 +126,30 @@ my $table_skip = {
     # TODO - find a way to allow this HDD without making all the regex horrid
 };
 
+# once a regex match is found, set the data fields
+sub set_from_match {
+    my $data = shift;
+    my $re = shift; # for error messages
+    my $match = shift;
+
+    my $errors = 0;
+    while (my ($k,$v) = each(%{$match})) {
+        # Skip metadata
+        next if ($k =~ m/^_/);
+
+        if (defined($data->{$k}) && ($data->{$k} ne $v)) {
+            warn("WARN: Duplicate key match");
+            print(" re: $re\n");
+            print(" key: $k\n");
+            print(" data: ",Dumper($data));
+            $errors++;
+        } else {
+            $data->{$k} = $v;
+        }
+    }
+    return $errors;
+}
+
 sub extract1product {
     my $data = shift;
 
@@ -156,19 +180,7 @@ sub extract1product {
             # Set metadata
             $entry->{_matches}++;
 
-            while (my ($k,$v) = each(%{$entry})) {
-                # Skip metadata
-                next if ($k =~ m/^_/);
-                if (defined($data->{$k}) && ($data->{$k} ne $v)) {
-                    warn("WARN: Duplicate key match");
-                    print(" re: $re\n");
-                    print(" key: $k\n");
-                    print(" data: ",Dumper($data));
-                    $errors++;
-                } else {
-                    $data->{$k} = $v;
-                }
-            }
+            set_from_match($data, $re, $entry);
         }
     }
 
