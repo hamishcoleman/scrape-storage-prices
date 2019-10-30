@@ -11,6 +11,7 @@ build-depends:
 	sudo apt-get -y install \
 	    libio-html-perl \
 	    libhtml-tree-perl \
+	    shellcheck \
 
 .PHONY: clean
 clean:
