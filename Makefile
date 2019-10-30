@@ -43,10 +43,10 @@ extract.diff: extract.csv
 extract.csv: extract-cplhdd.csv extract-msyhdd.csv
 	cat $^ >$@
 
-merged-old.csv:
+merged.csv.old:
 	./merged-old_get
 
-merged.csv: merged-old.csv extract-cplhdd.csv extract-msyhdd.csv
+merged.csv: merged.csv.old extract-cplhdd.csv extract-msyhdd.csv
 	./merge $@ $^
 
 .PHONY: test
