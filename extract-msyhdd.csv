@@ -20,8 +20,8 @@ price,form,interface,speed,gig,sgig,brand,supplier,comment
 49.00,M.2,?,?,256,0.191,Intel,MSY,Intel 545s Series (SSDSCKKW256G8X1) 256GB M.2. SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 165.00,M.2,NVME,?,1000,0.165,Intel,MSY,Intel 660P series (SSDPEKNW010T8X1) 1TB M.2 PCIe NVMe SSD Solid State Drive
 95.00,M.2,NVME,?,512,0.186,Intel,MSY,Intel 660P series (SSDPEKNW512G8X1) 512GB M.2 PCIe NVMe SSD Solid State Drive
-55.00,M.2,NVME,?,128,0.430,Intel,MSY,Intel 760p Series (SSDPEKKW128G8XT) 128GB M.2 PCIe NVMe SSD (Solid State Drive)
-83.00,M.2,NVME,?,256,0.324,Intel,MSY,Intel 760p Series (SSDPEKKW256G8XT) 256GB M.2 PCIe NVMe SSD (Solid State Drive)
+62.00,M.2,NVME,?,128,0.484,Intel,MSY,Intel 760p Series (SSDPEKKW128G8XT) 128GB M.2 PCIe NVMe SSD (Solid State Drive)
+85.00,M.2,NVME,?,256,0.332,Intel,MSY,Intel 760p Series (SSDPEKKW256G8XT) 256GB M.2 PCIe NVMe SSD (Solid State Drive)
 37.00,M.2,?,?,?,?,Intel,MSY,Intel Optane Memory (MEMPEK1W016GAXT) 16G M.2 Cache MemoryCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 43.00,2.5",SATA,SATA3,120,0.358,Kingston,MSY,Kingston (SUV500/120G) 120GB SSDNOW UV500 SATA3 2.5" Solid State Drive
 62.00,2.5",SATA,SATA3,240,0.258,Kingston,MSY,Kingston (SUV500/240G) 240GB SSDNOW UV500 SATA3 2.5" Solid State Drive
@@ -35,19 +35,19 @@ price,form,interface,speed,gig,sgig,brand,supplier,comment
 169.00,2.5",SATA,SATA3,960,0.176,Kingston,MSY,Kingston A400 (SA400S37/960G) 960GB SATA3 2.5" SSD Solid State Drive
 99.00,?,?,Not storage,?,?,?,MSY,One-Touch NFC for easy connection Integrated SD Card reader expands storage capacity Connect up to five devices simultaneously Splash-proof design with IP43 water resistance Intuitive_ easy-to-use companion app
 199.00,?,SATA,SATA,1000,0.199,Samsung,MSY,Samsung 860 EVO (MZ-76E1T0BW) 1TB SATA III SSD Solid State Drive
-93.00,?,SATA,SATA,250,0.372,Samsung,MSY,Samsung 860 EVO (MZ-76E250BW) 250GB SATA III SSD Solid State Drive
+89.00,?,SATA,SATA,250,0.356,Samsung,MSY,Samsung 860 EVO (MZ-76E250BW) 250GB SATA III SSD Solid State Drive
 459.00,?,SATA,SATA,2000,0.230,Samsung,MSY,Samsung 860 EVO (MZ-76E2T0BW) 2TB SATA III SSD Solid State Drive
 9999.00,?,SATA,SATA,4000,2.500,Samsung,MSY,Samsung 860 EVO (MZ-76E4T0BW) 4TB SATA III SSD Solid State Drive
-109.00,?,SATA,SATA,500,0.218,Samsung,MSY,Samsung 860 EVO (MZ-76E500BW) 500GB SATA III SSD Solid State Drive
+108.00,?,SATA,SATA,500,0.216,Samsung,MSY,Samsung 860 EVO (MZ-76E500BW) 500GB SATA III SSD Solid State Drive
 188.00,mSATA,SATA,?,1000,0.188,Samsung,MSY,Samsung 860 EVO (MZ-M6E1T0BW) 1TB mSATA SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 96.00,mSATA,SATA,?,500,0.192,Samsung,MSY,Samsung 860 EVO (MZ-M6E500BW) 500GB mSATA SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 67.00,M.2,?,?,250,0.268,Samsung,MSY,Samsung 860 EVO (MZ-N6E250BW) 250GB M.2. SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 382.00,?,SATA,SATA,1000,0.382,Samsung,MSY,Samsung 860 PRO (MZ-76P1T0BW) 1TB SATA III SSD Solid State Drive
-119.00,?,SATA,SATA,256,0.465,Samsung,MSY,Samsung 860 PRO (MZ-76P256BW) 256GB SATA III SSD Solid State Drive
+116.00,?,SATA,SATA,256,0.453,Samsung,MSY,Samsung 860 PRO (MZ-76P256BW) 256GB SATA III SSD Solid State Drive
 649.00,?,SATA,SATA,2000,0.325,Samsung,MSY,Samsung 860 PRO (MZ-76P2T0BW) 2TB SATA III SSD Solid State Drive
 195.00,?,SATA,SATA,512,0.381,Samsung,MSY,Samsung 860 PRO (MZ-76P512BW) 512GB SATA III SSD Solid State Drive
 319.00,2.5",SATA,SATA3,2000,0.160,Samsung,MSY,Samsung 860 QVO (MZ-76Q2T0BW) 2TB SATAIII 2.5" 7mm V-Nand 4bit MLC SSD Solid State Drive
-719.00,2.5",SATA,SATA3,4000,0.180,Samsung,MSY,Samsung 860 QVO (MZ-76Q4T0BW) 4TB SATAIII 2.5" 7mm V-Nand 4bit MLC SSD Solid State Drive
+669.00,2.5",SATA,SATA3,4000,0.167,Samsung,MSY,Samsung 860 QVO (MZ-76Q4T0BW) 4TB SATAIII 2.5" 7mm V-Nand 4bit MLC SSD Solid State Drive
 505.00,M.2,?,?,2000,0.253,Samsung,MSY,Samsung 970 EVO (MZ-V7E2T0BW) 2TB M.2 SSD Solid State Drive
 459.00,M.2,?,?,1000,0.459,Samsung,MSY,Samsung 970 PRO (MZ-V7P1T0BW) 1TB M.2 SSD Solid State Drive
 219.00,M.2,?,?,512,0.428,Samsung,MSY,Samsung 970 PRO (MZ-V7P512BW) 512GB M.2 SSD Solid State Drive
@@ -59,7 +59,7 @@ price,form,interface,speed,gig,sgig,brand,supplier,comment
 289.00,?,USB,?,1000,0.289,SanDisk,MSY,Sandisk Extreme (SDSSDE60-1T00-G25) 1TB Portable SSD Black USB Type-A and Type-C Drive
 119.00,?,?,?,250,0.476,SanDisk,MSY,Sandisk Extreme (SDSSDE60-250G-G25) 250GB Portable SSD Black USB Type-A and Type-C Drive.
 149.00,?,USB,?,500,0.298,SanDisk,MSY,Sandisk Extreme (SDSSDE60-500G-G25) 500GB Portable SSD Black USB Type-A and Type-C Drive
-89.00,?,SATA,SATA3,480,0.185,SanDisk,MSY,Sandisk SSD PLUS SDSSDA-480G  480GB SATA3 SSD Solid State Drive
+85.00,?,SATA,SATA3,480,0.177,SanDisk,MSY,Sandisk SSD PLUS SDSSDA-480G  480GB SATA3 SSD Solid State Drive
 199.00,?,SATA,SATA3,1000,0.199,SanDisk,MSY,Sandisk Ultra 3D SSD (SDSSDH3-1T00) 1TB SATA3 SSD Solid State Drive
 114.00,3.5",SATA,RPM:  5400,3000,0.038,?,MSY,Seagata 3.5" BarraCuda 3TB ST3000DM007 SATA 6Gb/s 5400RPM 256MB Cache Hard Disk Drive
 169.00,?,USB,USB 3.0,4000,0.042,Seagate,MSY,Seagate (STEA4000400) 4TB USB 3.0 Expansion Portable Hard Drive
@@ -77,6 +77,7 @@ price,form,interface,speed,gig,sgig,brand,supplier,comment
 109.00,3.5",SATA,RPM:  7200,1000,0.109,Seagate,MSY,Seagate 3.5" FireCuda SSHD 1TB ST1000DX002 NAND 8GB SATA3 7200rpm HDD
 145.00,3.5",SATA,RPM:  7200,2000,0.072,Seagate,MSY,Seagate 3.5" FireCuda SSHD 2TB ST2000DX002 NAND 8GB SATA3 7200rpm HDD
 459.00,3.5",SATA,RPM:  7200,10000,0.046,Seagate,MSY,Seagate IronWolf NAS 3.5" 10TB ST10000VN0004/ ST10000VN0008 SATA3 7200rpm 256MB cache Hard Disk Drive
+569.00,3.5",SATA,RPM:  7200,12000,0.047,Seagate,MSY,Seagate IronWolf NAS 3.5" 12TB (ST12000VN0008) SATA3 7200rpm 256MB cache Hard Disk Drive
 139.00,3.5",SATA,RPM:  5900,3000,0.046,Seagate,MSY,Seagate IronWolf NAS 3.5" 3TB ST3000VN007 SATA3 5900rpm 64MB cache Hard Disk Drive
 249.00,3.5",SATA,RPM:  7200,6000,0.042,Seagate,MSY,Seagate IronWolf NAS 3.5" 6TB ST6000VN0041 SATA3 7200rpm 128MB cache Hard Disk Drive
 339.00,3.5",SATA,RPM:  7200,8000,0.042,Seagate,MSY,Seagate IronWolf NAS 3.5" 8TB ST8000VN0022 SATA3 7200rpm 256MB cache Hard Disk Drive
@@ -123,7 +124,7 @@ price,form,interface,speed,gig,sgig,brand,supplier,comment
 199.00,?,SATA,SATA3,1000,0.199,WD,MSY,WD Blue 3D NAND WDS100T2B0A 1TB SATAIII SSD Solid State Drive
 189.00,M.2,?,?,1000,0.189,WD,MSY,WD Blue 3D NAND WDS100T2B0B 1TB M.2 SSD Solid State Drive
 65.00,?,SATA,SATA3,250,0.260,WD,MSY,WD Blue 3D NAND WDS250G2B0A 250GB SATAIII SSD Solid State Drive
-65.00,M.2,?,?,250,0.260,WD,MSY,WD Blue 3D NAND WDS250G2B0B 250GB M.2 SSD Solid State Drive
+45.00,M.2,?,?,250,0.180,WD,MSY,WD Blue 3D NAND WDS250G2B0B 250GB M.2 SSD Solid State Drive
 99.00,?,SATA,SATA3,500,0.198,WD,MSY,WD Blue 3D NAND WDS500G2B0A 500GB SATAIII SSD Solid State Drive
 99.00,M.2,?,?,500,0.198,WD,MSY,WD Blue 3D NAND WDS500G2B0B 500GB M.2 SSD Solid State Drive
 70.00,M.2,NVME,?,250,0.280,WD,MSY,WD Blue SN500 (WDS250G1B0C) 250GB M.2 NVMe SSD Solid State Drive
