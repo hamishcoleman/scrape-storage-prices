@@ -67,6 +67,7 @@ sub main {
     for my $file (@ARGV) {
         my $mtime = (stat($file))[9];
         my $tree = ScrapeHelper::file2tree($file);
+        print("Processing ",$file,"\n");
         push @products, scrape2products($tree, $mtime);
     }
 
