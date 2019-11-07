@@ -17,7 +17,7 @@ build-depends:
 clean:
 	rm \
 	    tmp/* \
-	    extract-cplhdd.csv
+	    extract-cplstorage.csv
 
 .PHONY: get
 get:
@@ -41,13 +41,13 @@ extract.diff: extract.csv
 	-[ -e $<.old ] && git diff --no-index $<.old $<
 	cp -p $< $<.old
 
-extract.csv: extract-cplhdd.csv extract-msyhdd.csv
+extract.csv: extract-cplstorage.csv extract-msyhdd.csv
 	cat $^ >$@
 
 merged.csv.old:
 	./merged-old_get
 
-merged.csv: merged.csv.old extract-cplhdd.csv extract-msyhdd.csv
+merged.csv: merged.csv.old extract-cplstorage.csv extract-msyhdd.csv
 	./merge $@ $^
 
 .PHONY: check

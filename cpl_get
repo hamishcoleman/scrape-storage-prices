@@ -21,7 +21,7 @@ curl_h() {
         -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' \
         -H 'Accept-Language: en-US,en;q=0.5' \
         --compressed \
-        -H 'Referer: https://cplonline.com.au/hard-drives/enterprise-hard-drives.html?limit=60' \
+        -H 'Referer: https://cplonline.com.au/storage.html?limit=60' \
         -H 'Connection: keep-alive' \
         -H 'Cookie: frontend=a7d78ba0d87b8e06af91154683c1c077; frontend_cid=Ruatt0e3lN0l1SUG; __zlcmid=upicUqBWg7APsR' \
         -H 'Upgrade-Insecure-Requests: 1' \
@@ -30,15 +30,22 @@ curl_h() {
 }
 
 (cat <<EOF
-cplhdd-1.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity
-cplhdd-2.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=2
-cplhdd-3.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=3
-cplhdd-4.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=4
-cplhdd-5.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=5
-cplhdd-6.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=6
-cplhdd-7.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=7
-cplhdd-8.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=8
-cplhdd-9.html     https://cplonline.com.au/hard-drives.html?dir=asc&limit=60&order=popularity&p=9
+cplstorage-01.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity
+cplstorage-02.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=2
+cplstorage-03.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=3
+cplstorage-04.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=4
+cplstorage-05.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=5
+cplstorage-06.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=6
+cplstorage-07.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=7
+cplstorage-08.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=8
+cplstorage-09.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=9
+cplstorage-10.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=10
+cplstorage-11.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=11
+cplstorage-12.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=12
+cplstorage-13.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=13
+cplstorage-14.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=14
+cplstorage-15.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=15
+cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=16
 EOF
 ) | while read -r name url; do
     curl_h "$PREFIX$name" "$url"
