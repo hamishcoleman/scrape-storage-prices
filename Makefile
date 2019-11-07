@@ -17,7 +17,8 @@ build-depends:
 clean:
 	rm \
 	    tmp/* \
-	    extract-cplstorage.csv
+	    extract-cplstorage.csv \
+	    extract-msyhdd.csv \
 
 .PHONY: get
 get:
