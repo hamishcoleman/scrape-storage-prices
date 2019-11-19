@@ -93,6 +93,7 @@ my $matchtable = {
 
     # brand
     'adata '        => { brand => 'Adata' },
+    'asus '         => { brand => 'ASUS' },
     'corsair '      => { brand => 'Corsair' },
     'crucial '      => { brand => 'Crucial' },
     'galax '        => { brand => 'Galax' },
@@ -101,10 +102,12 @@ my $matchtable = {
     'hp '           => { brand => 'HP' },
     'hpe '          => { brand => 'HP' },
     'intel '        => { brand => 'Intel' },
+    'lacie '        => { brand => 'LaCie' },
     'lexar '        => { brand => 'Lexar' },
     'kingston '     => { brand => 'Kingston' },
     'micron '       => { brand => 'Micron' },
     'ocz '          => { brand => 'OCZ' },
+    'orico '        => { brand => 'Orico' },
     'patriot '      => { brand => 'Patriot' },
     'qnap '         => { brand => 'Qnap' },
     'samsung '      => { brand => 'Samsung' },
@@ -113,6 +116,7 @@ my $matchtable = {
     'team '         => { brand => 'Team' },
     'toshiba '      => { brand => 'Toshiba' },
     'transcend '    => { brand => 'Transcend' },
+    'verbatim '     => { brand => 'Verbatim' },
     'wd '           => { brand => 'WD' },
 };
 
