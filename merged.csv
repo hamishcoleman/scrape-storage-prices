@@ -1,5 +1,6 @@
 date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-10,95.00,?,?,?,?,?,?,MSY
+2019-11-24,73.00,2.5",SATA,SATA,1000,0.073,Seagate,MSY,> Seagate 2.5" FireCuda SSHD 1TB ST1000LX015 SATA 6Gb/s 7mm Hybrid (8GB SSD+HDD) Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,75.00,2.5",SATA,SATA,1000,0.075,Seagate,MSY,> Seagate 2.5" FireCuda SSHD 1TB ST1000LX015 SATA 6Gb/s 7mm Hybrid (8GB SSD+HDD) Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,77.00,2.5",SATA,SATA,1000,0.077,Seagate,MSY,> Seagate 2.5" FireCuda SSHD 1TB ST1000LX015 SATA 6Gb/s 7mm Hybrid (8GB SSD+HDD) Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,79.00,2.5",SATA,SATA,1000,0.079,Seagate,MSY,> Seagate 2.5" FireCuda SSHD 1TB ST1000LX015 SATA 6Gb/s 7mm Hybrid (8GB SSD+HDD) Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -10,9 +11,20 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,35.00,?,USB,USB 3.1,128,0.273,Adata,CPL,ADATA 128GB UV128 USB3.1 Flash Drive AUV128-128G-RBE
 2019-11-07,8.00,?,USB,USB 3.1,16,0.500,Adata,CPL,ADATA 16GB UV128 USB3.1 Flash Drive AUV128-16G-RBE
 2019-11-07,11.00,?,USB,USB 3.1,16,0.688,Adata,CPL,ADATA 16GB UV310 USB3.1 Flash Drive AUV310-16G-RGD
+2019-11-24,73.00,?,USB,USB 3.0,1000,0.073,Adata,CPL,ADATA 1TB HV20S USB3.0 Portable External Hard Drive Black AHV620S-1TU3-CBK
+2019-11-24,269.00,?,USB,USB 3.1,1000,0.269,Adata,CPL,ADATA 1TB SD700 ASD700-1TU3-CBK Rugged External SSD USB3.1 IP68 Black 
+2019-11-24,99.00,?,USB,USB 3.1,256,0.387,Adata,CPL,ADATA 256GB SD700 ASD700-256GU3-CBK Rugged External SSD USB3.1 IP68 Black
+2019-11-24,85.00,?,USB,USB 3.1,256,0.332,Adata,CPL,ADATA 256GB SD700 ASD700-256GU3-CYL Rugged External SSD USB3.1 IP68 Black&Yellow
+2019-11-24,99.00,?,USB,USB 3.0,2000,0.050,Adata,CPL,ADATA 2TB HV20S USB3.0 Portable External Hard Drive Black AHV620S-2TU3-CBK
+2019-11-24,11.00,?,USB,USB 3.1,32,0.344,Adata,CPL,ADATA 32GB UV128 USB3.1 Flash Drive AUV128-32G-RBE
+2019-11-24,17.00,?,USB,USB 3.1,32,0.531,Adata,CPL,ADATA 32GB UV310 USB3.1 Flash Drive AUV310-32G-RGD
+2019-11-24,159.00,?,USB,USB 3.1,512,0.311,Adata,CPL,ADATA 512GB SD700 ASD700-512GU3-CBK Rugged External SSD USB3.1 IP68 Black
+2019-11-24,175.00,?,USB,USB 3.1,512,0.342,Adata,CPL,ADATA 512GB SD700 ASD700-512GU3-CYL Rugged External SSD USB3.1 IP68 Black&Yellow
 2019-11-07,239.00,?,USB,USB 3.0,5000,0.048,Adata,CPL,ADATA 5TB HD710 PRO USB3.0 Portable External Hard Drive AHD710P-5TU31-CBK
+2019-11-24,25.00,?,USB,USB 3.1,64,0.391,Adata,CPL,ADATA 64GB UV310 USB3.1 Flash Drive AUV310-64G-RGD
 2019-10-30,299.00,M.2,NVME,?,960,0.311,Adata,CPL,ADATA 960GB SSD XPG SX8200 M.2 NVMe ASX8200NP-960GT-C
 2019-11-07,125.00,?,?,?,2000,0.062,Adata,CPL,ADATA AHD710P-2TU3-CBK 2TB Durable HD710 External Hard Drive
+2019-11-24,85.00,?,?,?,1000,0.085,Adata,CPL,ADATA AHV620S-1TU31-CWH HV620S Ultra Slim 1TB External Hard Drive USB 3.1 White
 2019-11-17,27.50,2.5",USB,USB 3.1,?,?,Adata,CPL,ADATA ED600 Rugged 2.5" USB3.1 External Enclosure 
 2019-11-17,65.00,?,?,?,?,?,Adata,CPL,ADATA I910-CWH MFi-Certified Lightning Card Reader
 2019-11-07,12.00,?,?,?,32,0.375,Adata,CPL,ADATA Premier 32GB MicroSDHC Card AUSDH32GUICL10-R
@@ -22,13 +34,16 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,30.00,?,SATA,SATA3,128,0.234,Adata,MSY,ADATA Ultimate SU800 (ASU800SS-128GT-C) 128GB SATA3 3D NAND SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,129.00,2.5",SATA?,?,1000,0.129,?,CPL,ASUS EHD-A1T/1TB/BLK 1TB FX 2.5In External Hard Drive
 2019-11-07,169.00,2.5",SATA?,?,2000,0.085,?,CPL,ASUS EHD-A2T/2TB/BLK 2TB FX 2.5In External Hard Drive
+2019-11-24,89.00,?,?,?,?,?,?,CPL,ASUS WHD-A2-1TB TRAVELAIR N WHD-A2 WIRELESS HD-1TB
 2019-11-07,99.00,?,?,?,?,?,?,CPL,ASUS WHD-A2-1TB TRAVELAIR N WHD-A2 WIRELESS HD-1TB
 2019-10-30,59.00,M.2,NVME,?,128,0.461,Adata,CPL,Adata 128GB SSD XPG SX6000 M.2 NVMe ASX6000NP-128GT
+2019-11-24,279.00,?,USB,USB 3.1,1000,0.279,Adata,CPL,Adata 1TB SD700 ASD700-1TU3-CYL Rugged External SSD USB3.1 IP68 Black&Yellow
 2019-10-30,299.00,M.2,NVME,?,1000,0.299,Adata,CPL,Adata 1TB SSD XPG SX6000 M.2 NVMe ASX6000NP-1TT
 2019-10-30,99.00,M.2,NVME,?,240,0.412,Adata,CPL,Adata 240G M.2 NVME PCIe SSD ASX8200NP-240GT-C (3200/1700)
 2019-10-30,89.00,M.2,NVME,?,256,0.348,Adata,CPL,Adata 256GB SSD XPG SX6000 M.2 NVMe ASX6000NP-256GT
 2019-10-30,169.00,M.2,NVME,?,480,0.352,Adata,CPL,Adata 480G M.2 NVME PCIe SSD ASX8200NP-480GT-C (3200/1700)
 2019-10-30,149.00,M.2,NVME,?,512,0.291,Adata,CPL,Adata 512GB SSD XPG SX6000 M.2 NVMe ASX6000NP-512GT
+2019-11-24,129.00,2.5",SATA?,?,2000,0.065,Adata,CPL,Adata AHV620S-2TU31-CBK HV620S SLIM 2TB 2.5In USB 3.1
 2019-10-30,65.00,2.5",SATA?,?,240,0.271,Adata,CPL,Adata ASU650SS-240GT-C SU650 240G 2.5" SSD
 2019-10-30,89.00,2.5",SATA?,?,480,0.185,Adata,CPL,Adata ASU650SS-480GT-C 480G SU650 2.5" SSD
 2019-10-30,99.00,2.5",SATA,SATA,512,0.193,Adata,CPL,Adata ASU800SS-512GT-C Premier SU800 512G 2.5'' SATA III SSD
@@ -40,10 +55,12 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,109.00,M.2,NVME,?,?,?,?,CPL,Asus ESD-S1C ROG Strix Arion M.2 NVMe SSD Enclosure USB 3.2 GEN2 Type-C (10Gbps)
 2019-11-17,29.00,3.5",SATA?,?,?,?,?,CPL,Aywun IB-866 IB-866 for 3.5" Front Adapter with 4 x USB 3.0
 2019-10-30,9.00,?,?,Not storage,?,?,?,CPL,Bay Rafter 2.5 Inch to 3.5 Inch Convertor - BAY RAFTER 2.5 to 3.5
+2019-11-24,19.00,2.5",SATA?,?,?,?,?,CPL,Cooler Master MCA-C700R-KOCC00 Single Bay 2.5""/3.5"" HDD Cage for COSMOS C700 Series
 2019-11-17,25.00,?,?,?,?,?,Corsair,CPL,Corsair CC-8930032 HDD upgrade kit
 2019-11-07,69.00,?,USB,USB 3.0,128,0.539,Corsair,CPL,Corsair CMFMINI3-128GB Flash Voyager Mini 128GB USB 3.0 Flash Drive
 2019-11-07,25.00,?,USB,USB 3.0,32,0.781,Corsair,CPL,Corsair CMFMINI3-32GB Flash Voyager Mini 32GB USB 3.0 Flash Drive
 2019-11-07,69.00,?,USB,USB 3.0,16,4.312,Corsair,CPL,Corsair CMFPLA3B-16GB Corsair Padlock 3 16GB Secure USB 3.0 Flash Drive with Keypad
+2019-11-24,89.95,?,USB,USB 3.0,32,2.811,Corsair,CPL,Corsair CMFPLA3B-32GB Padlock 3 32GB Secure USB 3.0 Flash Drive with Keypad
 2019-11-07,65.00,?,?,?,128,0.508,Corsair,CPL,Corsair CMFSS3B-128GB 128GB Survivor Stealth USB30 Flash Drive
 2019-11-07,22.00,?,USB,USB 3.0,16,1.375,Corsair,CPL,Corsair CMFVY3A-16GB Flash Voyager 16GB USB 3.0 Flash Drive
 2019-11-07,89.00,?,?,?,128,0.695,Corsair,CPL,Corsair CMFVYGTX3C-128GB 128GB Flash Voyager GTX USB 3.1 Premium Flash Drive - 430MB/s 390MB/s
@@ -63,6 +80,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,77.00,M.2,?,?,240,0.321,Corsair,CPL,Corsair Force MP510 240GB SSD M.2 SSD CSSD-F240GBMP510
 2019-11-10,79.00,M.2,?,?,240,0.329,Corsair,CPL,Corsair Force MP510 240GB SSD M.2 SSD CSSD-F240GBMP510
 2019-10-30,82.00,M.2,?,?,240,0.342,Corsair,CPL,Corsair Force MP510 240GB SSD M.2 SSD CSSD-F240GBMP510
+2019-11-24,119.00,M.2,?,?,480,0.248,Corsair,CPL,Corsair Force MP510 480GB SSD M.2 SSD CSSD-F480GBMP510
 2019-10-30,126.00,M.2,?,?,480,0.263,Corsair,CPL,Corsair Force MP510 480GB SSD M.2 SSD CSSD-F480GBMP510
 2019-10-30,259.00,M.2,?,?,960,0.270,Corsair,CPL,Corsair Force MP510 960GB SSD M.2 SSD CSSD-F960GBMP510
 2019-10-30,30.00,2.5",SATA,SATA,120,0.250,Crucial,MSY,Crucial BX500 (CT120BX500SSD1) 120GB 3D NAND SATA 2.5-inch SSD
@@ -70,7 +88,9 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-10,75.00,2.5",SATA,SATA,480,0.156,Crucial,MSY,Crucial BX500 (CT480BX500SSD1) 480GB 3D NAND SATA 2.5-inch SSD
 2019-10-30,78.00,2.5",SATA,SATA,480,0.163,Crucial,MSY,Crucial BX500 (CT480BX500SSD1) 480GB 3D NAND SATA 2.5-inch SSD
 2019-10-30,125.00,2.5",SATA,SATA,960,0.130,Crucial,MSY,Crucial BX500 (CT960BX500SSD1) 960GB 3D NAND SATA 2.5-inch SSD
+2019-11-24,170.00,2.5",SATA,SATA,1000,0.170,Crucial,CPL,Crucial CT1000MX500SSD1 MX500 1TB 2.5" SATA SSD
 2019-11-01,179.00,2.5",SATA,SATA,1000,0.179,Crucial,CPL,Crucial CT1000MX500SSD1 MX500 1TB 2.5" SATA SSD
+2019-11-24,172.00,M.2,?,?,1000,0.172,Crucial,CPL,Crucial CT1000MX500SSD4 MX500 1TB M.2 (2280) SSD
 2019-10-30,185.00,M.2,?,?,1000,0.185,Crucial,CPL,Crucial CT1000MX500SSD4 MX500 1TB M.2 (2280) SSD
 2019-11-17,168.00,M.2,NVME,?,1000,0.168,Crucial,CPL,Crucial CT1000P1SSD8 P1 1TB 3D NAND NVMe PCIe M.2 SSD
 2019-11-01,169.00,M.2,NVME,?,1000,0.169,Crucial,CPL,Crucial CT1000P1SSD8 P1 1TB 3D NAND NVMe PCIe M.2 SSD
@@ -94,8 +114,10 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,95.00,M.2,?,?,500,0.190,Crucial,CPL,Crucial CT500MX500SSD4 MX500 500GB M.2 (2280) SSD
 2019-10-30,94.00,M.2,NVME,?,500,0.188,Crucial,CPL,Crucial CT500P1SSD8 P1 500GB 3D NAND NVMe PCIe M.2 SSD
 2019-10-30,135.00,2.5",SATA,SATA,960,0.141,Crucial,CPL,Crucial CT960BX500SSD1 BX500 960GB 2.5' SATA SSD - 3D NAND 540/500MB/s 7mm
-2019-11-17,12.00,2.5",SATA?,?,?,?,Crucial,CPL,Crucial CTSSDBRKT35 2.5" TO 3.5" SSD CONVERTOR BRACKET 
+2019-11-17,12.00,3.5",SATA?,?,?,?,Crucial,CPL,Crucial CTSSDBRKT35 2.5" TO 3.5" SSD CONVERTOR BRACKET 
+2019-11-24,170.00,?,SATA,SATA3,1000,0.170,Crucial,MSY,Crucial MX500 (CT1000MX500SSD1) 1TB SATA3 SSD Solid State Drive
 2019-10-30,179.00,?,SATA,SATA3,1000,0.179,Crucial,MSY,Crucial MX500 (CT1000MX500SSD1) 1TB SATA3 SSD Solid State Drive
+2019-11-24,328.00,?,SATA,SATA3,2000,0.164,Crucial,MSY,Crucial MX500 (CT2000MX500SSD1) 2TB SATA3 SSD Solid State Drive
 2019-10-30,329.00,?,SATA,SATA3,2000,0.165,Crucial,MSY,Crucial MX500 (CT2000MX500SSD1) 2TB SATA3 SSD Solid State Drive
 2019-10-30,59.00,?,SATA,SATA3,250,0.236,Crucial,MSY,Crucial MX500 (CT250MX500SSD1) 250GB SATA3 SSD Solid State Drive
 2019-11-10,59.00,M.2,?,?,250,0.236,Crucial,MSY,Crucial MX500 (CT250MX500SSD4) 250GB M.2 SSD Solid State Drive
@@ -104,11 +126,16 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,95.00,?,SATA,SATA3,500,0.190,Crucial,MSY,Crucial MX500 (CT500MX500SSD1) 500GB SATA3 SSD Solid State Drive
 2019-10-30,87.00,?,USB,USB 3.0,2000,0.043,?,MSY,Drag and drop file saving_ right out of the box USB powered Fast data transfer with USB 3.0 connectivity capacity: 2TB
 2019-11-17,29.00,3.5",SATA?,?,?,?,?,CPL,External 3.5 Inch 1.44mb USB Floppy Drive Silver/Black
+2019-11-24,13.00,2.5",USB,USB 3.0,?,?,?,CPL,Flujo HD25BK 2.5" USB3.0 Black External Hard Drive Enclosure
 2019-11-17,19.00,?,?,?,?,?,?,CPL,Fractal Design FD-ACC-HDD-A-BK-2P Define R6 HDD Drive Tray Kit - Type A Black
+2019-11-24,12.00,?,?,?,?,?,?,CPL,Fractal Design FD-ACC-HDD-A-WT-2P Define R6 HDD Drive Tray Kit - Type A White
+2019-11-24,9.00,?,?,?,?,?,?,CPL,Fractal Design FD-ACC-SSD-A-BK-2P Define R6 SSD Bracket Kit - Type A Black
+2019-11-24,9.00,?,?,?,?,?,?,CPL,Fractal Design FD-ACC-SSD-A-WT-2P Define R6 SSD Bracket Kit - Type A White
 2019-10-30,699.00,?,?,?,?,?,?,MSY,Free Shipping
 2019-10-30,449.00,?,?,?,?,?,?,MSY,Free ShippingCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-10,349.00,?,SATA,SATA3,2000,0.174,SanDisk,MSY,Free ShippingSandisk Ultra 3D SSD (SDSSDH3-2T00-G25) 2TB SATA3 SSD Solid State Drive
 2019-10-30,439.00,?,SATA,SATA3,2000,0.220,SanDisk,MSY,Free ShippingSandisk Ultra 3D SSD (SDSSDH3-2T00-G25) 2TB SATA3 SSD Solid State Drive
+2019-11-24,85.00,?,?,?,32,2.656,Galax,CPL,GALAX GALAX-IDUO-COBRA 32GB iDUO COBRA Bright white
 2019-10-30,39.00,2.5",SATA?,?,120,0.325,Galax,CPL,Galax TGAA1D4T6TG32CNSBXKDXN 120GB Gamer V Series 2.5" SSD
 2019-11-17,95.00,M.2,NVME,?,256,0.371,Gigabyte,CPL,Gigabyte AORUS RGB 256GB M.2 NVMe SSD GP-ASM2NE2256GTTDR
 2019-10-30,98.00,M.2,NVME,?,256,0.383,Gigabyte,CPL,Gigabyte AORUS RGB 256GB M.2 NVMe SSD GP-ASM2NE2256GTTDR
@@ -134,6 +161,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,799.00,3.5",SATA,RPM:  7200,12000,0.067,?,CPL,HGST 0F30146 3.5' 12TB 256MB 7200RPM HE12_ SATA ULTRA 512E SE_ HUH721212ALE604
 2019-11-07,119.00,2.5",SATA?,?,1000,0.119,?,CPL,HGST 0G04844 G-DRIVE 1TB USB-C 2.5' Portable External HDD_ Space Gray_ GDMUC10001BHB
 2019-11-17,4.00,2.5",SATA?,?,?,?,?,CPL,HGST A118SL 2.5 to 3.5 inch Aluminium Hard Drive Mount Silver - HDDMT
+2019-11-24,5.00,3.5",SATA?,?,?,?,?,CPL,HGST A118SL 2.5 to 3.5 inch Aluminium Hard Drive Mount Silver - HDDMT
 2019-10-30,479.00,3.5",SATA,RPM:  7200,8000,0.060,?,CPL,HGST H3IKNAS800012872SWW 0S04012 NAS 8TB 3.5" SATA 7200RPM 128MB HDD
 2019-10-30,399.00,2.5",SAS,RPM: 10000,900,0.443,?,CPL,HGST HUC101890CS4200 0B27975 C10K1800 2.5" 900GB SAS 12Gb/s 10K RPM 128M 512e ISE HDD
 2019-10-30,559.00,3.5",SATA,RPM:  7200,8000,0.070,?,CPL,HGST HUH721008ALE600 0F27610 3.5" 8TB 256MB 7200RPM SATA 12GBs 512E ISE HE10
@@ -149,8 +177,11 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,165.00,3.5",SATA?,?,?,?,?,CPL,Hotway HF2-SU3S2 ProBox 3.5 Inch 4 Bay Enclosure
 2019-11-17,35.00,?,?,?,?,?,?,CPL,Hotway HND1-SU3 Single Bay Docking Station
 2019-11-17,89.00,3.5",SATA?,?,?,?,?,CPL,Hotway HUR5-SU3 2 Bay 3.5in RAID Enclosure
+2019-11-24,99.00,2.5",SATA?,?,?,?,?,CPL,Hotway HUR6-SU31 2.5in Portable Raid Enclosure
 2019-11-17,109.00,?,?,?,?,?,?,CPL,Hotway ProBox 4 Bay Docking Station - HFD1-SU3S2
+2019-11-24,159.00,3.5",SATA,SATA,?,?,?,CPL,ICY BOX IB-3640SU3 External 4-bay JBOD system for 3.5" SATA HDDs
 2019-11-17,189.00,?,?,?,?,?,?,CPL,ICY Box IB-141CL-U3 4 Bay Docking Station
+2019-11-24,115.00,?,SATA,SATA,?,?,?,CPL,ICYBOX IB-RD3620SU3 Raid for 2x3.5" SATA HDD to USB3.0 + eSATA Host
 2019-10-30,25.00,M.2,NVME,PCIe3,16,1.562,Intel,CPL,INTEL MEMPEK1W016GAXT OPTANE MEMORY_ 16GB_ M.2 2280 PCIe 3.0 NVMe_ 3D XPOINT_ 5YR WTY
 2019-10-30,59.00,M.2,NVME,PCIe3,32,1.844,Intel,CPL,INTEL MEMPEK1W032GAXT OPTANE MEMORY_ 32GB_ M.2 2280 PCIe 3.0 NVMe_ 3D XPOINT_ 5YR WTY
 2019-10-30,939.00,?,?,Too many matching size buzzwords,?,?,?,CPL,INTEL SSDPE21D480GAM3 905P SERIES SSD 480GB_ 2.5" PCIe 3.1 x4_ OPTANE_ W/ M.2 KIT_ 5YR WTY
@@ -166,6 +197,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,219.00,M.2,?,?,480,0.456,Intel,CPL,INTEL SSDSCKKB480G801 SSD D3-S4510 Series 480GB M.2
 2019-10-30,379.00,M.2,?,?,960,0.395,Intel,CPL,INTEL SSDSCKKB960G801 SSD D3-S4510 Series 960GB M.2
 2019-11-17,109.00,2.5",SATA?,?,?,?,?,CPL,Icy Box HDDICY2240SSK IB-2240 Back Plane for 4x 2.5 Inch SATA/SAS HDD/SSD
+2019-11-24,80.00,?,?,?,?,?,?,CPL,Icy Box IB-3620U3 2 Bay Hard Drive Enclosure
 2019-11-17,47.00,?,USB,USB 3.0,?,?,?,CPL,Icy Box IB-867-B 5.25in USB3.0 and Multi card reader Internal
 2019-11-17,44.00,3.5",USB,USB 3.0,?,?,?,CPL,Icy Box IB-868-B 3.5in USB3.0 and Multi card reader Internal
 2019-10-30,1329.00,2.5",SATA,SATA3,3840,0.346,Intel,CPL,Intel 3.84TB SSD D3-S4510 Series SSDSC2KB038T801 2.5" SATA3
@@ -188,6 +220,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,139.00,M.2,?,?,32,4.344,Intel,CPL,Intel MEMPEK1J032GA01 OptaneMemorySeries 32GB M2 80mm
 2019-10-30,249.00,?,?,?,64,3.891,Intel,CPL,Intel MEMPEK1J064GA01 Optane M10 Series 64GB
 2019-10-30,99.00,?,?,?,32,3.094,Intel,CPL,Intel MEMPEK1W032GA01 32GB OPTANE CACHE MEMORY
+2019-11-24,34.00,M.2,?,?,?,?,Intel,MSY,Intel Optane Memory (MEMPEK1W016GAXT) 16G M.2 Cache MemoryCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,35.00,M.2,?,?,?,?,Intel,MSY,Intel Optane Memory (MEMPEK1W016GAXT) 16G M.2 Cache MemoryCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,36.00,M.2,?,?,?,?,Intel,MSY,Intel Optane Memory (MEMPEK1W016GAXT) 16G M.2 Cache MemoryCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,37.00,M.2,?,?,?,?,Intel,MSY,Intel Optane Memory (MEMPEK1W016GAXT) 16G M.2 Cache MemoryCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -237,6 +270,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,9.00,?,USB,USB 3.0,32,0.281,Kingston,CPL,KINGSTON DT100G3/32GB 32GB USB 3.0 DATATRAVELER 100 G3 
 2019-11-07,479.00,?,USB,USB 3.0,64,7.484,Kingston,CPL,KINGSTON DT4000G2DM/64GB 64GB USB 3.0 DT4000G2 Encrypted USB 3.0 Flash drive
 2019-11-07,179.00,?,?,?,256,0.699,Kingston,CPL,KINGSTON HXS3/256GB 256GB HX Savage USB 3.1/3.0 Flash Drive
+2019-11-24,189.00,?,?,?,256,0.738,Kingston,CPL,KINGSTON HXS3/256GB 256GB HX Savage USB 3.1/3.0 Flash Drive
 2019-11-07,799.00,?,USB,USB 3.0,128,6.242,Kingston,CPL,KINGSTON IKD300SM/128GB 128GB IronKey D300 Secure USB 3.0 Drive
 2019-11-07,189.00,?,USB,USB 3.0,16,11.812,Kingston,CPL,KINGSTON IKD300SM/16GB 16GB IronKey D300 Secure USB 3.0 Drive
 2019-11-07,349.00,?,USB,USB 3.0,32,10.906,Kingston,CPL,KINGSTON IKD300SM/32GB 32GB IronKey D300 Secure USB 3.0 Drive
@@ -268,6 +302,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,549.00,M.2,NVME,PCIe3 x4,2000,0.275,Kingston,CPL,KINGSTON SKC2000M8/2000G 2000GB SSD M.2 2280 NVME GEN 3.0 X 4
 2019-10-30,82.00,M.2,NVME,PCIe3 x4,250,0.328,Kingston,CPL,KINGSTON SKC2000M8/250G 250GB SSD M.2 2280 NVME GEN 3.0 X 4
 2019-11-01,149.00,M.2,NVME,PCIe3 x4,500,0.298,Kingston,CPL,KINGSTON SKC2000M8/500G 500GB SSD M.2 2280 NVME GEN 3.0 X 4
+2019-11-24,40.00,2.5",SATA,SATA3,120,0.333,Kingston,MSY,Kingston (SUV500/120G) 120GB SSDNOW UV500 SATA3 2.5" Solid State Drive
 2019-11-17,41.00,2.5",SATA,SATA3,120,0.342,Kingston,MSY,Kingston (SUV500/120G) 120GB SSDNOW UV500 SATA3 2.5" Solid State Drive
 2019-11-10,42.00,2.5",SATA,SATA3,120,0.350,Kingston,MSY,Kingston (SUV500/120G) 120GB SSDNOW UV500 SATA3 2.5" Solid State Drive
 2019-10-30,43.00,2.5",SATA,SATA3,120,0.358,Kingston,MSY,Kingston (SUV500/120G) 120GB SSDNOW UV500 SATA3 2.5" Solid State Drive
@@ -278,6 +313,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,14.00,?,?,?,16,0.875,Kingston,CPL,Kingston 16GB SDC10G2/16GBFR MICROSDHC CLASS10 UHS-I 45R Flash Card
 2019-11-07,12.50,?,USB,USB 3.0,16,0.781,Kingston,CPL,Kingston 16Gb Usb 3.0 Hyperx Fury HXF30/16GB
 2019-10-30,79.00,?,SATA,SATA,240,0.329,Kingston,CPL,Kingston 240G SSDNow UV400 SATA 3 SSD SUV400S37/240G
+2019-11-24,16.00,?,USB,USB 3.0,32,0.500,Kingston,CPL,Kingston 32GB DTSE9G2/32GBFR DataTraveler G4 USB3.0 USB Flash Drive
 2019-10-30,139.00,?,SATA,SATA,480,0.290,Kingston,CPL,Kingston 480G SSDNow UV400 SATA 3 SSD SUV400S37/480G
 2019-10-30,239.00,M.2,?,?,480,0.498,Kingston,CPL,Kingston 480Gb M.2 SSD SM2280S3G2/480G
 2019-11-07,17.00,?,?,?,?,?,Kingston,CPL,Kingston 64G Data Traveller USB3.1/usb3.0 DT100G3/64GB
@@ -350,7 +386,8 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,119.00,2.5",SATA?,?,240,0.496,Kingston,CPL,Kingston SHFR200/240G HyperX Fury RGB 240GB 2.5" SSD
 2019-10-30,159.00,2.5",SATA?,?,480,0.331,Kingston,CPL,Kingston SHFR200/480G HyperX Fury RGB 480GB 2.5" SSD
 2019-10-30,330.00,2.5",SATA?,?,960,0.344,Kingston,CPL,Kingston SHFR200/960G HyperX Fury RGB 960GB 2.5" SSD
-2019-11-17,4.90,2.5",SATA?,?,?,?,Kingston,CPL,Kingston SNA-BR2/35 2.5 TO 3.5IN Brackets AND SCREWS
+2019-11-17,4.90,3.5",SATA?,?,?,?,Kingston,CPL,Kingston SNA-BR2/35 2.5 TO 3.5IN Brackets AND SCREWS
+2019-11-24,40.00,2.5",SATA,SATA3,120,0.333,Kingston,CPL,Kingston SUV500/120G 120GB SSDNOW UV500 SATA3 2.5" SSD
 2019-11-17,41.00,2.5",SATA,SATA3,120,0.342,Kingston,CPL,Kingston SUV500/120G 120GB SSDNOW UV500 SATA3 2.5" SSD
 2019-10-30,42.00,2.5",SATA,SATA3,120,0.350,Kingston,CPL,Kingston SUV500/120G 120GB SSDNOW UV500 SATA3 2.5" SSD
 2019-10-30,62.00,2.5",SATA,SATA3,240,0.258,Kingston,CPL,Kingston SUV500/240G 240GB SSDNOW UV500 SATA3 2.5" SSD
@@ -362,9 +399,12 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,89.00,mSATA,SATA,?,240,0.371,Kingston,CPL,Kingston SUV500MS/240G 240G SSDNOW UV500 mSATA
 2019-10-30,155.00,mSATA,SATA,?,480,0.323,Kingston,CPL,Kingston SUV500MS/480G 480G SSDNOW UV500 mSATA
 2019-11-07,95.00,2.5",SATA?,?,1000,0.095,?,CPL,LACIE STET1000403 Porsche Design Portable 2.5" 1TB SLIM USB-C 2YR 
+2019-11-24,155.00,3.5",SATA?,?,4000,0.039,?,CPL,LACIE STEW4000400 4TB 3.5" Porsche Design Desktop Drive 
 2019-11-07,219.00,2.5",SATA?,?,4000,0.055,?,CPL,LACIE STFD4000400 Porsche Design Portable 2.5" 4TB USB-C
 2019-11-07,12299.00,?,?,?,120000,0.102,?,CPL,LACIE STFJ120000400 120TB 12big Thunderbolt 3 Desktop RAID Storage
+2019-11-24,219.00,?,?,?,2000,0.110,?,CPL,LACIE STFR2000403 2TB USB 3.1 Gen 1 Type-C Rugged Secure Portable Hard Drive 
 2019-11-07,169.00,2.5",SATA?,?,2000,0.085,?,CPL,LACIE STFR2000800 RUGGED Portable 2.5" 2TB USB-C_ 2YR 
+2019-11-24,269.00,2.5",USB,USB 3.0,4000,0.067,?,CPL,LACIE STFR4000800 Rugged USB-C Portable Drive 2.5" 4TB / USB3.0 Type-C / 2Yr Warranty
 2019-11-07,268.00,2.5",SATA?,?,2000,0.134,?,CPL,LACIE STFS2000800 2TB Rugged 2.5 IN THB+USB C 3.1
 2019-11-07,359.00,2.5",SATA?,?,4000,0.090,?,CPL,LACIE STFS4000800 4TB Rugged 2.5 IN THB+USB-C 3.1
 2019-11-07,2199.00,?,?,RPM:  7200,28000,0.079,?,CPL,LACIE STGB28000400 2BIG DOCK 28TB (2X14TB 7200RPM ENTERPRISE) USB-C THUNDERBOLT3
@@ -374,13 +414,22 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,165.00,?,USB,USB 3.0,4000,0.041,?,CPL,LACIE STHY4000800 4TB USB 3.0 External Portable HDD
 2019-11-07,299.00,?,?,?,1000,0.299,?,CPL,LaCie 1TB Portable USB 3.1 Gen 2 Type-C External SSD STHK1000800
 2019-11-07,599.00,?,?,?,2000,0.299,?,CPL,LaCie 2TB Portable USB 3.1 Gen 2 Type-C External SSD STHK2000800
+2019-11-24,139.00,2.5",USB,USB 3.0,2000,0.070,?,CPL,LaCie 2TB Rugged Mini 2.5" USB3.0 LAC9000298
+2019-11-24,349.00,?,?,?,3000,0.116,?,CPL,LaCie 3TB d2 Thunderbolt 2 9000492AS
+2019-11-24,129.00,?,?,?,500,0.258,?,CPL,LaCie 500GB Portable USB 3.1 Gen 2 Type-C External SSD STHK500800
 2019-11-07,135.00,?,?,?,500,0.270,?,CPL,LaCie 500GB Portable USB 3.1 Gen 2 Type-C External SSD STHK500800
+2019-11-24,199.00,?,?,?,2000,0.100,?,CPL,LaCie LAC9000448 2TB RUGGED TRIPLE FW800 & USB3
+2019-11-24,2043.00,?,?,?,12000,0.170,?,CPL,LaCie LAC9000511AS 12TB 8big Rack Thunderbolt
 2019-11-07,215.00,?,USB,USB 3.0,4000,0.054,?,CPL,LaCie LAC9000633 4TB RUGGED Mini USB 3.0 
+2019-11-24,79.00,2.5",SATA?,?,1000,0.079,?,CPL,LaCie STET1000400 1TB Porsche Design 2.5 9223 USB
+2019-11-24,389.00,?,?,?,4000,0.097,?,CPL,LaCie STEX4000400  4TB d2 Thunderbolt2 & USB3.0
 2019-11-07,1759.00,3.5",SATA?,?,10000,0.176,?,CPL,LaCie STFC10000400 5big Thunderbolt 2 3.5E 10TB 3YRS
 2019-11-07,2705.00,?,?,?,20000,0.135,?,CPL,LaCie STFC20000400 20TB 5big Thunderbolt 2 RAID Drive
 2019-11-07,3499.00,?,?,?,30000,0.117,?,CPL,LaCie STFC30000400 30TB 5BIG Thunderbolt 2 External Hard Drive
 2019-11-07,4459.00,?,?,?,40000,0.111,?,CPL,LaCie STFC40000400 40TB 5BIG Thunderbolt 2 External Hard Drive
 2019-11-07,99.00,2.5",SATA?,?,1000,0.099,?,CPL,LaCie STFD1000400 Porsche Design Mobile Drive 2.5" 1TB USB 3.1 TYPE C
+2019-11-24,155.00,?,?,?,2000,0.077,?,CPL,LaCie STFD2000400 Porsche Design Mobile Drive 9227 2TB
+2019-11-24,265.00,3.5",SATA?,?,6000,0.044,?,CPL,LaCie STFE6000401 Porsche Design Desktop Drive USB-C 3.5E 6TB 2YRS
 2019-11-07,4899.00,?,?,?,36000,0.136,?,CPL,LaCie STFK36000400 6big 36TB 6-Bay Thunderbolt 3 RAID Array
 2019-11-07,5687.00,?,?,?,48000,0.118,?,CPL,LaCie STFK48000400 48TB 6Big Thunderbolt3 & USB-C RAID Array 
 2019-11-07,439.00,2.5",SATA?,RPM:  3600,512,0.857,?,CPL,LaCie STFS500400 Rugged Thunderbolt USB-C SSD 2.5" 512GB 3600RPM
@@ -388,9 +437,11 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,559.00,?,?,?,6000,0.093,?,CPL,LaCie STFY6000400 6TB d2 Thunderbolt 3 Desktop Drive
 2019-11-07,699.00,?,?,?,8000,0.087,?,CPL,LaCie STFY8000400 8TB d2 Thunderbolt 3 Desktop Drive
 2019-11-07,1379.00,?,?,?,16000,0.086,?,CPL,LaCie STGB16000400 16TB 2big Thunderbolt 3 Dock
+2019-11-24,1559.00,?,USB,USB 3.0,20000,0.078,?,CPL,LaCie STGB20000400 20TB 2big Dock Thunderbolt3 & USB 3.0 External Desktop Hard Drive
 2019-11-07,1699.00,?,USB,USB 3.0,20000,0.085,?,CPL,LaCie STGB20000400 20TB 2big Dock Thunderbolt3 & USB 3.0 External Desktop Hard Drive
 2019-11-07,999.00,?,?,?,8000,0.125,?,CPL,LaCie STGB8000400 8TB 2big Dock 2-Bay RAID Array Thunderbolt 3 
 2019-11-07,489.00,?,?,?,2000,0.244,?,CPL,LaCie STGU2000400 DJI COPILOT 2TB
+2019-11-24,479.00,2.5",SATA?,?,4000,0.120,?,CPL,LaCie STGW4000800 Rugged RAID Pro 2.5E 4TB USB 3.1 TYPE C 3YRS
 2019-11-07,519.00,3.5",SATA?,RPM:  7200,10000,0.052,?,CPL,LaCie STHA10000800 d2 Professional 3.5E 10TB 7200RPM USB 3.1 TYPE C 5YRS
 2019-11-17,559.00,3.5",SATA?,RPM:  7200,10000,0.056,?,CPL,LaCie STHA10000800 d2 Professional 3.5E 10TB 7200RPM USB 3.1 TYPE C 5YRS
 2019-11-07,319.00,3.5",SATA?,RPM:  7200,4000,0.080,?,CPL,LaCie STHA4000800 d2 Professional 3.5E 4TB 7200RPM USB 3.1 TYPE C 5YRS
@@ -400,8 +451,10 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,129.00,2.5",SATA?,?,2000,0.065,?,CPL,LaCie STHG2000400 Mobile Drive 2.5" 2TB_ USB-C_ 2YR 
 2019-11-07,219.00,2.5",SATA?,?,4000,0.055,?,CPL,LaCie STHG4000400 Mobile Drive 2.5" 4TB_ USB-C_ 2YR 
 2019-11-07,249.00,2.5",SATA?,?,5000,0.050,?,CPL,LaCie STHG5000400 Mobile Drive 2.5" 5TB_ USB-C_ 2YR 
+2019-11-24,198.99,2.5",SATA?,?,1000,0.199,?,CPL,Lacie 1TB 2.5" Rugged Thhunderbolt STEV1000400 
 2019-11-07,109.00,2.5",USB,USB 3.0,1000,0.109,?,CPL,Lacie 1TB Rugged Mini USB3.0 2.5 Inch External Hard Drive LAC301558
 2019-11-07,240.00,2.5",USB,USB 3.0,2000,0.120,?,CPL,Lacie 2TB 2.5" Rugged Thunderbolt USB3.0 HDD STEV2000400
+2019-11-24,239.00,3.5",SATA?,RPM:  7200,4000,0.060,?,CPL,Lacie LAC9000443 D2 Desktop 3.5" 4TB 7200RPM_ USB3.0
 2019-11-07,449.00,?,?,?,4000,0.112,?,CPL,Lacie STFA4000400 4TB Rugged Raid Thunderbolt & USB
 2019-11-07,2789.00,?,?,?,12000,0.232,?,CPL,Lacie STFK12000400 6big Thunderbolt 3 Hard drive array 12 TB 6 bays (SATA)
 2019-11-07,679.00,?,?,?,1000,0.679,?,CPL,Lacie STFS1000401 1TB Rugged Thunderbolt USB-C SSD
@@ -412,6 +465,8 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-10,639.00,?,?,RPM:  7200,4000,0.160,?,CPL,Lacie STHJ4000800 2BIG RAID 4TB USB 3.1-C 7200RPM WITH 5YR RESCUE DATA RECOVERY SERVICE
 2019-11-07,775.00,?,?,RPM:  7200,8000,0.097,?,CPL,Lacie STHJ8000800 2BIG RAID 8TB USB 3.1-C 7200RPM WITH 5YR RESCUE DATA RECOVERY SERVICE
 2019-11-10,789.00,?,?,RPM:  7200,8000,0.099,?,CPL,Lacie STHJ8000800 2BIG RAID 8TB USB 3.1-C 7200RPM WITH 5YR RESCUE DATA RECOVERY SERVICE
+2019-11-24,85.00,?,?,?,32,2.656,Lexar,CPL,Lexar JumpDrive C25i 32GB USB3 Lightning Flash Drive LJDC25i-32GBBAP
+2019-11-24,120.00,?,?,?,64,1.875,Lexar,CPL,Lexar JumpDrive C25i 64GB USB3 Lightning Flash Drive LJDC25i-64GBBAP
 2019-11-07,65.00,?,?,?,32,2.031,Lexar,CPL,Lexar JumpDrive F35 32GB Finger Print USB Flash Drive LJDF35-32GBAP
 2019-11-07,102.00,?,?,?,64,1.594,Lexar,CPL,Lexar JumpDrive F35 64GB Finger Print USB Flash Drive LJDF35-64GBAP
 2019-11-07,115.00,?,?,?,32,3.594,Lexar,CPL,Lexar LCF32GCRBANZ1066 1066x 32GB Compact Flash CF Card Upto 160MB/s VPG-65 Standard
@@ -471,7 +526,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,349.00,2.5",SATA,SATA,960,0.364,OCZ,CPL,OCZ 960GB TRN150-25SAT3-960G Trion 150 Series SATA III 2.5" SSD
 2019-10-30,99.00,?,?,Not storage,?,?,?,MSY,One-Touch NFC for easy connection Integrated SD Card reader expands storage capacity Connect up to five devices simultaneously Splash-proof design with IP43 water resistance Intuitive_ easy-to-use companion app
 2019-11-17,19.00,3.5",SATA,SATA,?,?,?,CPL,Orico 1106SS CD-ROM Space 3.5" SATA HDD Mobile Rack
-2019-11-17,18.00,2.5",SATA,SATA,?,?,?,CPL,Orico 1125SS-BK Black 3.5 Bay Drive Caddy For 2.5 SATA Drives
+2019-11-17,18.00,3.5",SATA,SATA,?,?,?,CPL,Orico 1125SS-BK Black 3.5 Bay Drive Caddy For 2.5 SATA Drives
 2019-11-17,14.00,2.5",SATA?,?,?,?,?,CPL,Orico 2139U3 Transparent 2139U3 2.5" USB3 External Hard Drive Enclosure
 2019-11-17,25.00,2.5",SATA?,?,?,?,?,CPL,Orico 2189C3-BK 2.5 inch Type-C Hard Drive Enclosure-Black
 2019-11-17,18.00,2.5",USB,USB 3.0,?,?,?,CPL,Orico 2189U3-BK 2.5 inch USB3.0 Hard Drive Enclosure-Black
@@ -480,7 +535,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,39.00,2.5",USB,USB 3.0,?,?,?,CPL,Orico 2539U3 2.5 inch USB3.0 Three-proofing Hard Drive Enclosure
 2019-11-17,15.00,2.5",SATA,SATA,?,?,?,CPL,Orico 2588US3-BK Tool Free USB3.0 2.5" SATA Hard Drive Enclosure
 2019-11-17,32.00,3.5",SATA?,?,?,?,?,CPL,Orico 3139U3-CR 3.5 inch External Hard Drive Enclosure-Clear
-2019-11-17,34.00,2.5",SATA?,?,?,?,?,CPL,Orico 3588C3-BK Black 3588C3 2.5" & 3.5" USB3 Type-C External Hard Drive Enclosure
+2019-11-17,34.00,3.5",SATA?,?,?,?,?,CPL,Orico 3588C3-BK Black 3588C3 2.5" & 3.5" USB3 Type-C External Hard Drive Enclosure
 2019-11-17,29.00,3.5",USB,USB 3.0,?,?,?,CPL,Orico 3588US3-BK USB3.0 Tool Free 3.5" Black HDD Enclosure
 2019-11-17,36.00,2.5",USB,USB 3.0,?,?,?,CPL,Orico 6139U3-CR 2.5/3.5 inch USB3.0 Hard Drive Dock-Clear
 2019-11-17,54.00,2.5",USB,USB 3.0,?,?,?,CPL,Orico 6228US3-C-BK 2.5/3.5 inch USB3.0 1 to 1 Clone Dual-bay HDD and SSD Hard Drive Dock
@@ -490,11 +545,11 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,32.00,3.5",USB,USB 3.0,?,?,?,CPL,Orico 7688U3-BK 3.5 inch USB3.0 External Hard Drive Enclosure-Black
 2019-11-17,15.00,3.5",SATA?,?,?,?,?,CPL,Orico AC52535-1S-BK Aluminium 5.25in to 3.5in/2.5in Hard Drive Caddy
 2019-11-17,12.00,3.5",SATA?,?,?,?,?,CPL,Orico AC52535-1S-SV Aluminium 5.25in to 3.5in/2.5in Hard Drive Caddy Silver
-2019-11-17,47.00,2.5",SATA?,?,?,?,?,CPL,Orico BSC35-10-SV Silver Aluminium BSC35-10 2.5 & 3.5" Hard Drive Protection Box
+2019-11-17,47.00,3.5",SATA?,?,?,?,?,CPL,Orico BSC35-10-SV Silver Aluminium BSC35-10 2.5 & 3.5" Hard Drive Protection Box
 2019-11-17,9.00,?,USB,USB 3.0,?,?,?,CPL,Orico CRS21-BK USB3.0 TF/SD Card Reader-Black
 2019-11-17,7.00,?,USB,USB 3.0,?,?,?,CPL,Orico CRS21-WH USB3.0 TF/SD Card Reader-White
 2019-11-17,18.50,?,?,?,?,?,?,CPL,Orico CRS31A-03-BK Multifunction Card Reader-Black
-2019-11-17,9.00,2.5",SATA?,?,?,?,?,CPL,Orico HB-325 Black 3.5 Bay Drive Bracket For 2.5 Drives
+2019-11-17,9.00,3.5",SATA?,?,?,?,?,CPL,Orico HB-325 Black 3.5 Bay Drive Bracket For 2.5 Drives
 2019-11-17,24.00,2.5",SATA,SATA,?,?,?,CPL,Orico L95SS-V1 Aluminium Laptop CD-ROM Bay Drive Bracket For 2.5 SATA Drives
 2019-11-17,147.00,?,USB,USB 3.0,?,?,?,CPL,Orico NS200RU3-BK 2 Bay USB3.0 Hard Drive Dock with Raid-Black
 2019-11-17,119.00,?,USB,USB 3.0,?,?,?,CPL,Orico NS200U3-BK 2 Bay USB3.0 Hard Drive Dock-Black
@@ -507,7 +562,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,348.00,?,USB,USB 3.0,?,?,?,CPL,Orico NS500RU3 5 Bay USB3.0 Hard Drive Dock with Raid
 2019-11-17,299.00,?,USB,USB 3.0,?,?,?,CPL,Orico NS500U3 5 Bay USB3.0 Hard Drive Dock-Black
 2019-11-17,346.00,?,USB,USB 3.0,?,?,?,CPL,Orico NS800U3-BK 8 Bay USB 3.0 Hard Drive Enclosure
-2019-11-17,69.00,M.2,USB,USB 3.1,?,?,?,CPL,Orico PCM2-C3-SV M.2 NVMe to USB3.1 Type-C External Enclosure
+2019-11-17,69.00,M.2,NVME,USB 3.1,?,?,?,CPL,Orico PCM2-C3-SV M.2 NVMe to USB3.1 Type-C External Enclosure
 2019-11-17,5.00,2.5",SATA?,?,?,?,?,CPL,Orico PHC-25-BL 2.5 inch Hard Drive Protection Bag Blue
 2019-11-17,12.00,3.5",SATA?,?,?,?,?,CPL,Orico PHP35-BL Blue Stackable 3.5" HDD Protection Box With Anti Static
 2019-11-17,5.00,3.5",SATA?,?,?,?,?,CPL,Orico PHX35-GY 3.5" Protective Box/Storage Case for Hard Hard or SSD - Grey
@@ -549,6 +604,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,18.00,?,?,?,64,0.281,Patriot,CPL,Patriot PSF64GMCSDXC10 64GB LX Series Class 10 Micro SD Card
 2019-11-07,24.00,?,?,?,64,0.375,Patriot,CPL,Patriot PSF64GTAB3USB 64GB TAB USB 3.1 GEN.1 Flash Drive
 2019-10-30,549.00,mSATA,SATA,?,128,4.289,Qnap,CPL,Qnap SSD-MSATA-256GB-A01 2 X 128 GB MSATA SSD_ 6GB/S_ INTERNAL SSD MODULE 
+2019-11-24,75.00,?,?,?,256,0.293,Samsung,CPL,SAMSUNG MB-MC256GA/APC 256GB EVO Plus microSD Card 100 MB/s (SD Adapter)
 2019-11-07,79.00,?,?,?,256,0.309,Samsung,CPL,SAMSUNG MB-MC256GA/APC 256GB EVO Plus microSD Card 100 MB/s (SD Adapter)
 2019-11-07,125.00,?,?,?,128,0.977,Samsung,CPL,SAMSUNG MB-MJ128GA/APC 128GB PRO Endurance micro SDCard (SD Adapter) 
 2019-11-07,23.00,?,?,?,32,0.719,Samsung,CPL,SAMSUNG MB-MJ32GA/APC 32GB PRO Endurance microSD Card (SD Adapter) 
@@ -575,6 +631,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-10,325.00,2.5",SATA,SATA,2000,0.163,Samsung,CPL,SAMSUNG MZ-76Q2T0BW 2TB 860 QVO 2.5 SATA SSD 
 2019-10-30,329.00,2.5",SATA,SATA,2000,0.165,Samsung,CPL,SAMSUNG MZ-76Q2T0BW 2TB 860 QVO 2.5 SATA SSD 
 2019-10-30,679.00,2.5",SATA,SATA,4000,0.170,Samsung,CPL,SAMSUNG MZ-76Q4T0BW 860 QVO 2.5 SATA III 4TB
+2019-11-24,709.00,2.5",SATA,SATA,4000,0.177,Samsung,CPL,SAMSUNG MZ-76Q4T0BW 860 QVO 2.5 SATA III 4TB
 2019-10-30,239.00,mSATA,SATA,?,500,0.478,Samsung,CPL,SAMSUNG MZ-M5E500BW 500GB 850 EVO mSATA SSD (540MB/s Read_ 520MB/s Write)
 2019-11-07,35.00,?,?,?,16,2.188,SanDisk,CPL,SANDISK SDCFHS-016G-G46 Ultra CF 16GB 50MB/s Card
 2019-11-07,68.00,?,?,?,32,2.125,SanDisk,CPL,SANDISK SDCFXPS-032G-X46 ExtremePro CF 32GB 160MB/150MB/s UDM
@@ -583,6 +640,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,75.00,?,?,?,64,1.172,SanDisk,CPL,SANDISK SDCFXSB-064G-G46 Extreme CF 64GB 120MB/s read 85MB/s write
 2019-11-07,8.00,?,?,?,16,0.500,SanDisk,CPL,SANDISK SDCZ450-016G-G46 16Gb Ultra Type-C USB Drive
 2019-11-07,14.00,?,?,?,32,0.438,SanDisk,CPL,SANDISK SDCZ450-032G-G46 32Gb Ultra Type-C USB Drive
+2019-11-24,27.00,?,?,?,64,0.422,SanDisk,CPL,SANDISK SDCZ450-064G-G46 64Gb Ultra Type-C USB Drive
 2019-11-07,59.00,?,?,?,256,0.230,SanDisk,CPL,SANDISK SDCZ48-256G-U46 256Gb Ultra 3.0 USB Drive
 2019-11-07,9.00,?,?,?,32,0.281,SanDisk,CPL,SANDISK SDCZ50-032G-B35 32GB Cruzer Blade USB Drive
 2019-11-07,19.00,?,?,?,64,0.297,SanDisk,CPL,SANDISK SDCZ50-064G-B35 64GB Cruzer Blade USB Drive
@@ -616,9 +674,11 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,8.00,3.5",SATA?,?,?,?,?,CPL,SATA 5.25' to 3.5' HDD Convertor - 5.2/3.5
 2019-11-07,99.00,2.5",SATA?,?,2000,0.050,Seagate,CPL,SEAGATE 2TB STEA2000400 Expansion Drive - 2.5"USB3
 2019-11-07,139.00,?,?,?,2000,0.070,Seagate,CPL,SEAGATE 2TB STEA2000403 Game Drive For Xbox Portable HDD Green USB 3.0
+2019-11-24,209.00,?,?,?,4000,0.052,Seagate,CPL,SEAGATE 4TB STEA4000402 Game Drive For Xbox Portable HDD Green USB 3.0
 2019-10-30,149.00,3.5",SATA?,?,1000,0.149,Seagate,CPL,SEAGATE ST1000NM0008 1TB Enterprise Capacity 3.5 HDD 
 2019-10-30,189.00,?,SAS,?,1000,0.189,Seagate,CPL,SEAGATE ST1000NM001A EXOS 7E8 HDD 512N 1TB SAS
 2019-10-30,749.00,3.5",SATA?,?,12000,0.062,Seagate,CPL,SEAGATE ST12000DM001 BarraCuda Pro 12TB 3.5in HDD
+2019-11-24,765.00,3.5",SATA?,?,14000,0.055,Seagate,CPL,SEAGATE ST14000NE0008 IronWolf Pro 14TB 3.5" NAS HDD
 2019-10-30,789.00,3.5",SATA?,?,14000,0.056,Seagate,CPL,SEAGATE ST14000NE0008 IronWolf Pro 14TB 3.5" NAS HDD
 2019-11-10,699.00,3.5",SATA?,?,14000,0.050,Seagate,CPL,SEAGATE ST14000VN0008 IronWolf 14TB 3.5" NAS HDD 
 2019-10-30,729.00,3.5",SATA?,?,14000,0.052,Seagate,CPL,SEAGATE ST14000VN0008 IronWolf 14TB 3.5" NAS HDD 
@@ -627,6 +687,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,949.00,3.5",SATA,SATA,16000,0.059,Seagate,CPL,SEAGATE ST16000VE000 16TB Seagate SkyHawk AI SURVEILLANCE 3.5" SATA DRIVE
 2019-10-30,229.00,?,SATA,SATA,2000,0.115,Seagate,CPL,SEAGATE ST2000NM001A EXOS 7E8 HDD 512E/4KN 2TB SATA
 2019-10-30,249.00,?,SAS,?,2000,0.124,Seagate,CPL,SEAGATE ST2000NM004A EXOS 7E8 HDD 512E/4KN 2TB SAS
+2019-11-24,118.00,3.5",SATA,SATA,3000,0.039,Seagate,CPL,SEAGATE ST3000DM007 Barracuda 3TB 3.5" SATA HDD
 2019-10-30,119.00,3.5",SATA,SATA,3000,0.040,Seagate,CPL,SEAGATE ST3000DM007 Barracuda 3TB 3.5" SATA HDD
 2019-10-30,329.00,?,SATA,SATA,3000,0.110,Seagate,CPL,SEAGATE ST3000NM000A EXOS 7E8 HDD 512N 3TB SATA
 2019-10-30,339.00,?,SAS,?,3000,0.113,Seagate,CPL,SEAGATE ST3000NM001A EXOS 7E8 HDD 512N 3TB SAS
@@ -643,6 +704,8 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,539.00,?,SAS,?,8000,0.067,Seagate,CPL,SEAGATE ST8000NM001A EXOS 7E8 HDD 512E/4KN 8TB SAS
 2019-10-30,539.00,3.5",SAS,?,8000,0.067,Seagate,CPL,SEAGATE ST8000NM0156 EXOS X10 8TB HELIUM ENT CAP 3.5IN SAS
 2019-10-30,499.00,3.5",SATA,SATA,8000,0.062,Seagate,CPL,SEAGATE ST8000NM0206 HELIUM ENT CAP 8TB 3.5IN SATA 6GB/S 7200
+2019-11-24,139.00,2.5",SATA?,?,250,0.556,Seagate,CPL,SEAGATE STCM250400 Fast SSD PORTABLE 2.5" 250GB External USB-C Drive (Silver)_ 3YR
+2019-11-24,179.00,2.5",SATA?,?,500,0.358,Seagate,CPL,SEAGATE STCM500401 Fast SSD PORTABLE 2.5" 500GB External USB-C Drive (Silver)_ 3YR
 2019-11-07,219.00,?,?,?,5000,0.044,Seagate,CPL,SEAGATE STDR5000301 5TB Backup Plus Portable Drive - Silver
 2019-11-07,229.00,?,?,?,5000,0.046,Seagate,CPL,SEAGATE STDR5000302 5TB Backup Plus Portable Drive - Blue
 2019-11-07,397.00,?,?,?,10000,0.040,Seagate,CPL,SEAGATE STEL10000400 10TB Backup Plus Hub Drive
@@ -678,6 +741,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,188.00,mSATA,SATA,?,1000,0.188,Samsung,MSY,Samsung 860 EVO (MZ-M6E1T0BW) 1TB mSATA SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,96.00,mSATA,SATA,?,500,0.192,Samsung,MSY,Samsung 860 EVO (MZ-M6E500BW) 500GB mSATA SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,67.00,M.2,?,?,250,0.268,Samsung,MSY,Samsung 860 EVO (MZ-N6E250BW) 250GB M.2. SSD Solid State DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
+2019-11-24,209.00,M.2,?,?,1000,0.209,Samsung,CPL,Samsung 860 EVO Series 1TB M.2 SSD MZ-N6E1T0BW
 2019-10-30,215.00,M.2,?,?,1000,0.215,Samsung,CPL,Samsung 860 EVO Series 1TB M.2 SSD MZ-N6E1T0BW
 2019-10-30,92.00,M.2,?,?,250,0.368,Samsung,CPL,Samsung 860 EVO Series 250GB M.2 SSD MZ-N6E250BW
 2019-10-30,128.00,M.2,?,?,500,0.256,Samsung,CPL,Samsung 860 EVO Series 500GB M.2  2280 SSD MZ-N6E500BW
@@ -703,6 +767,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,219.00,M.2,?,?,512,0.428,Samsung,MSY,Samsung 970 PRO (MZ-V7P512BW) 512GB M.2 SSD Solid State Drive
 2019-11-07,39.00,?,?,?,128,0.305,Samsung,CPL,Samsung MB-MC128GA/APC Micro SD EVO+ 128GB Mermory Card w/Adapter 
 2019-11-07,12.00,?,?,?,32,0.375,Samsung,CPL,Samsung MB-MC32GA/APC 32GB MicroSDHC EVO Plus Memory Card w/ Adapter
+2019-11-24,19.00,?,?,?,64,0.297,Samsung,CPL,Samsung MB-MC64GA/APC Micro SD EVO+ 64GB Mermory Card w/Adapter 
 2019-11-07,22.00,?,?,?,64,0.344,Samsung,CPL,Samsung MB-MC64GA/APC Micro SD EVO+ 64GB Mermory Card w/Adapter 
 2019-11-07,35.00,?,?,?,64,0.547,Samsung,CPL,Samsung MB-MC64GA/APC-CH Micro SDXC 64GB EVO Plus /w Adapter
 2019-11-07,65.00,?,?,?,64,1.016,Samsung,CPL,Samsung MB-MD64GA/APC Micro SDXC Pro Plus 64GB Mermory Card w/Adapter 
@@ -721,6 +786,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,26.00,?,?,?,32,0.812,Samsung,CPL,Samsung MUF-32AB/APC 32GB FIT Plus USB Drive - Gunmetal Grey
 2019-11-07,25.00,?,?,?,32,0.781,Samsung,CPL,Samsung MUF-32BE3/APC 32GB BAR Plus USB - Champaign Silver
 2019-11-07,21.00,?,?,?,32,0.656,Samsung,CPL,Samsung MUF-32BE4/APC 32GB BAR Plus USB Drive - TITAN GRAY
+2019-11-24,48.00,?,?,?,64,0.750,Samsung,CPL,Samsung MUF-64AB/APC 64GB FIT Plus USB Drive - GUNMETAL GRAY
 2019-11-07,35.00,?,?,?,64,0.547,Samsung,CPL,Samsung MUF-64BE4/APC 64GB BAR Plus USB Drive - TITAN GRAY
 2019-10-30,799.00,M.2,NVME,?,1920,0.416,Samsung,CPL,Samsung MZ-1LB1T9NE 1.92TB 983 DCT NVMe M.2 Enterprise SSD
 2019-10-30,459.00,M.2,NVME,?,960,0.478,Samsung,CPL,Samsung MZ-1LB960NE 960GB  983 DCT NVMe M.2 Enterprise SSD
@@ -767,20 +833,25 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,9.00,?,USB,USB 3.0,16,0.562,SanDisk,CPL,SanDisk SDCZ48-016G-U46 CZ48 16GB Ultra USB 3.0 Flash Drive
 2019-11-07,21.00,?,USB,USB 3.0,32,0.656,SanDisk,CPL,SanDisk SDCZ48-032G-G462 32GB Ultra USB 3.0 Flash Drive_ CZ48
 2019-11-07,12.00,?,USB,USB 3.0,?,?,SanDisk,CPL,SanDisk SDCZ48-032G-U46 CZ48 32G Ultra USB 3.0 Flash Drive
+2019-11-24,15.00,?,USB,USB 3.0,32,0.469,SanDisk,CPL,SanDisk SDCZ48-032G-U46R 32GB Ultra USB 3.0 Flash Drive
 2019-11-07,23.00,?,USB,USB 3.0,64,0.359,SanDisk,CPL,SanDisk SDCZ48-064G-U46 64GB Ultra USB 3.0 Flash Drive
+2019-11-24,29.00,?,USB,USB 3.0,64,0.453,SanDisk,CPL,SanDisk SDCZ48-064G-U46R 64GB Ultra USB 3.0 Flash Drive
 2019-11-07,32.00,?,USB,USB 3.0,128,0.250,SanDisk,CPL,SanDisk SDCZ48-128G-U46 128GB Ultra USB 3.0 Flash Drive
 2019-11-07,18.00,?,?,?,16,1.125,SanDisk,CPL,SanDisk SDCZ50C-016G-Q46T  16GB Cruzer Blade USB Flash Drive Triple Pack
 2019-11-07,27.00,?,?,?,32,0.844,SanDisk,CPL,SanDisk SDCZ50C-032G-B46T 32GB Cruzer Blade USB Flash Drive USB2.0 3 Pack_ Blue_ Pink_ Green
 2019-11-07,9.00,?,?,?,?,?,SanDisk,CPL,SanDisk SDCZ57-016G-B35 Cruzer Dial USB Flash Drive_16GB_ USB 2.0_ Black
+2019-11-24,29.00,?,?,?,64,0.453,SanDisk,CPL,SanDisk SDCZ57-064G-B35 64GB Cruzer Dial USB Flash Drive
 2019-11-07,8.00,?,USB,USB 3.0,16,0.500,SanDisk,CPL,SanDisk SDCZ73-016G-G46 16GB Ultra Flair USB 3.0 Flash Drive
 2019-11-07,12.00,?,USB,USB 3.0,32,0.375,SanDisk,CPL,SanDisk SDCZ73-032G-G46 32GB Ultra Flair USB 3.0 Flash Drive
 2019-11-07,17.50,?,USB,USB 3.0,64,0.273,SanDisk,CPL,SanDisk SDCZ73-064G-G46 64GB Ultra Flair USB 3.0 Flash Drive
 2019-11-07,62.00,?,USB,USB 3.0,256,0.242,SanDisk,CPL,SanDisk SDCZ73-256G-G46 Ultra Flair USB 3.0 Flash Drive_ CZ73 256GB_ USB3.0
 2019-11-07,35.00,?,?,?,64,0.547,SanDisk,CPL,SanDisk SDCZ800-064G-G46 CZ800 64GB Extreme GO USB 3.1 Flash Drive
+2019-11-24,69.00,?,?,?,128,0.539,SanDisk,CPL,SanDisk SDCZ880-128G-G46 CZ880 128GB Extreme Pro USB 3.1 Solid State Flash Drive
 2019-11-07,75.00,?,?,?,128,0.586,SanDisk,CPL,SanDisk SDCZ880-128G-G46 CZ880 128GB Extreme Pro USB 3.1 Solid State Flash Drive
 2019-11-07,129.00,?,?,?,256,0.504,SanDisk,CPL,SanDisk SDCZ880-256G-G46 CZ880 256GB Extreme Pro USB 3.1 Solid State Flash Drive
 2019-11-07,25.00,?,?,?,64,0.391,SanDisk,CPL,SanDisk SDDD1-064G-G35 Dual USB Drive 64GB USB2.0 Black
 2019-11-07,10.00,?,?,?,32,0.312,SanDisk,CPL,SanDisk SDDD2-032G-GAM46 SDDD2 32GB Ultra Dual USB Drive 3.0
+2019-11-24,21.00,?,?,?,32,0.656,SanDisk,CPL,SanDisk SDDD2-032G-GAM46W 32GB UltraDual USB Drive3.0 White
 2019-11-07,20.00,?,?,?,64,0.312,SanDisk,CPL,SanDisk SDDD2-064G-GAM46 64GB Ultra Dual USB Drive
 2019-11-07,119.00,?,?,?,256,0.465,SanDisk,CPL,SanDisk SDDD2-256G-GAM46 256GB UltraDual USB Drive3.0 Black
 2019-11-07,19.00,?,?,?,32,0.594,SanDisk,CPL,SanDisk SDDD3-032G-G46GW 32GB UltraDual Drive m3.0 Gold Edition
@@ -807,6 +878,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,21.00,?,?,?,32,0.656,SanDisk,CPL,SanDisk SDSDXXG-032G-GN4IN SDXXG 32GB Extreme Pro SDHC
 2019-11-07,59.00,?,?,?,200,0.295,SanDisk,CPL,SanDisk SDSQUAR-200G-GN6MA 200GB microSDXC A1 UHS-I Memory Card with adapter
 2019-11-07,129.00,?,?,?,400,0.323,SanDisk,CPL,SanDisk SDSQUAR-400G-GN6MA 400GB Ultra UHS-I microSDXC Memory with Adaptor
+2019-11-24,38.00,?,?,?,128,0.297,SanDisk,CPL,SanDisk SDSQXA1-128G-GN6MA 128GB Extreme microSDXC
 2019-11-10,39.00,?,?,?,128,0.305,SanDisk,CPL,SanDisk SDSQXA1-128G-GN6MA 128GB Extreme microSDXC
 2019-11-07,43.00,?,?,?,128,0.336,SanDisk,CPL,SanDisk SDSQXA1-128G-GN6MA 128GB Extreme microSDXC
 2019-11-07,85.00,?,?,?,256,0.332,SanDisk,CPL,SanDisk SDSQXA1-256G-GN6MA 256GB Extreme microSDXC
@@ -830,9 +902,12 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,379.00,?,?,?,2000,0.190,SanDisk,CPL,SanDisk SDSSDH3-2T00-G25 2TB Ultra 3D SSD
 2019-10-30,115.00,?,?,?,500,0.230,SanDisk,CPL,SanDisk SDSSDH3-500G-G25 500GB Ultra 3D SSD
 2019-11-07,45.00,?,?,?,32,1.406,SanDisk,CPL,SanDisk SDWS4-032G-G46 SDWS4 32GB Connect Wireless Stick Black
+2019-11-24,129.00,?,?,?,200,0.645,SanDisk,CPL,SanDisk SDWS4-200G-Q46 Connect Wireless Stick SDWS4 200GB White_ iOS /Android USB 2.0
 2019-11-07,14.00,?,?,?,32,0.438,SanDisk,CPL,SanDisk Ultra Dual Drive 2 USB/Micro USB for Android 32GB - SDDD2-032G-Q46
+2019-11-24,24.00,?,?,?,64,0.375,SanDisk,CPL,SanDisk Ultra Dual Drive 2 USB/Micro USB for Android 64GB - SDDD2-064G-Q46
 2019-11-07,115.00,?,?,?,200,0.575,SanDisk,CPL,Sandisk 200GB MicroSDXC Ultra Class 10 MicroSD Card SDSDQUAN-200G-Q4A
 2019-10-30,49.00,?,?,?,240,0.204,SanDisk,CPL,Sandisk 240GB Plus SSD SDSSDA-240G-Q25
+2019-11-24,125.00,?,?,?,240,0.521,SanDisk,CPL,Sandisk 240GB SDSSDEXT-240G-G25 SSD Extreme 500 Portable
 2019-11-07,19.00,?,?,?,16,1.188,SanDisk,CPL,Sandisk Connect Wireless STICK 16GB SDWS4-016G-Q46
 2019-10-30,289.00,?,USB,?,1000,0.289,SanDisk,MSY,Sandisk Extreme (SDSSDE60-1T00-G25) 1TB Portable SSD Black USB Type-A and Type-C Drive
 2019-10-30,119.00,?,?,?,250,0.476,SanDisk,MSY,Sandisk Extreme (SDSSDE60-250G-G25) 250GB Portable SSD Black USB Type-A and Type-C Drive.
@@ -842,6 +917,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,27.00,?,?,?,64,0.422,SanDisk,CPL,Sandisk Extreme 64GB SDXC U1 150/60MB/S SDSDXV6-064G-GNCIN
 2019-11-07,69.00,?,?,?,128,0.539,SanDisk,CPL,Sandisk Extreme Pro SDXC 128GB U3 170/90MB/S SDSDXXY-128G-GN4IN
 2019-11-07,135.00,?,?,?,256,0.527,SanDisk,CPL,Sandisk Extreme Pro SDXC 256GB U3 170/90MB/S SDSDXXY-256G-GN4IN
+2019-11-24,339.00,?,?,?,512,0.662,SanDisk,CPL,Sandisk Extreme Pro SDXC 512GB U3 170/90MB/S SDSDXXY-512G-GN4IN
 2019-11-07,349.00,?,?,?,512,0.682,SanDisk,CPL,Sandisk Extreme Pro SDXC 512GB U3 170/90MB/S SDSDXXY-512G-GN4IN
 2019-11-07,39.00,?,?,?,64,0.609,SanDisk,CPL,Sandisk Extreme Pro SDXC 64GB U3 170/90MB/S SDSDXXY-064G-GN4IN
 2019-11-07,108.00,?,?,?,256,0.422,SanDisk,CPL,Sandisk ExtremePro Micro SDXC 256GB 170/90 SDSQXCZ-256G-GN6MA
@@ -854,6 +930,8 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,15.00,?,USB,USB 3.0,32,0.469,SanDisk,CPL,Sandisk SDCZ93-032G-G46 32GB Ultra Loop USB 3.0 CZ93
 2019-11-07,25.00,?,USB,USB 3.0,64,0.391,SanDisk,CPL,Sandisk SDCZ93-064G-G46 64GB Ultra Loop USB 3.0 CZ93
 2019-11-07,46.00,?,USB,USB 3.0,128,0.359,SanDisk,CPL,Sandisk SDCZ93-128G-G46 128GB Ultra Loop USB 3.0 CZ93
+2019-11-24,14.00,?,?,?,32,0.438,SanDisk,CPL,Sandisk SDDDC2-032G-Q46 ULT Dual DRV USB 3.1 TYPE C 32GB
+2019-11-24,19.00,?,?,?,64,0.297,SanDisk,CPL,Sandisk SDDDC2-064G-Q46 ULT Dual DRV USB 3.1 TYPE C 64GB
 2019-11-07,19.00,?,?,?,32,0.594,SanDisk,CPL,Sandisk SDSDQQ-032G-G46A 32GB High ENDURANCE Micro SD Card
 2019-11-07,29.00,?,?,?,64,0.453,SanDisk,CPL,Sandisk SDSDQQ-064G-G46A SD Micro 64GB High ENDURANCE
 2019-11-07,10.00,?,?,?,16,0.625,SanDisk,CPL,Sandisk SDSDUNC-016G-GN6IN SD ULTRA 16GB CLASS 10
@@ -882,6 +960,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,199.00,?,SATA,SATA3,1000,0.199,SanDisk,MSY,Sandisk Ultra 3D SSD (SDSSDH3-1T00) 1TB SATA3 SSD Solid State Drive
 2019-11-07,19.00,?,?,?,64,0.297,SanDisk,CPL,Sandisk Ultra SDSQUAR-064G-GN6MA 64GB microSDXC A1 UHS-I Memory Card with adapter
 2019-10-30,114.00,3.5",SATA,RPM:  5400,3000,0.038,?,MSY,Seagata 3.5" BarraCuda 3TB ST3000DM007 SATA 6Gb/s 5400RPM 256MB Cache Hard Disk Drive
+2019-11-24,108.00,3.5",SATA,RPM:  5400,3000,0.036,?,MSY,Seagata 3.5" BarraCuda 3TB ST3000DM007 SATA 6Gb/s 5400RPM 256MB Cache Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,111.00,3.5",SATA,RPM:  5400,3000,0.037,?,MSY,Seagata 3.5" BarraCuda 3TB ST3000DM007 SATA 6Gb/s 5400RPM 256MB Cache Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,114.00,3.5",SATA,RPM:  5400,3000,0.038,?,MSY,Seagata 3.5" BarraCuda 3TB ST3000DM007 SATA 6Gb/s 5400RPM 256MB Cache Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,169.00,?,USB,USB 3.0,4000,0.042,Seagate,MSY,Seagate (STEA4000400) 4TB USB 3.0 Expansion Portable Hard Drive
@@ -889,6 +968,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,69.00,2.5",SATA,RPM:  5400,1000,0.069,Seagate,MSY,Seagate 2.5" Barracuda 1TB ST1000LM048 SATA 6Gb/s 5400rpm 7mm Notebook Hard Disk
 2019-10-30,125.00,2.5",SATA,RPM:  5400,2000,0.062,Seagate,MSY,Seagate 2.5" Barracuda 2TB ST2000LM015 SATA 6Gb/s 5400rpm 7mm Notebook Hard Disk
 2019-10-30,239.00,2.5",SATA,RPM:  5400,4000,0.060,Seagate,MSY,Seagate 2.5" Barracuda 4TB ST4000LM024 SATA 6Gb/s 5400rpm 15mm Notebook Hard Disk
+2019-11-24,45.00,2.5",SATA,RPM:  5400,500,0.090,Seagate,MSY,Seagate 2.5" Barracuda 500GB ST500LM030 SATA 6Gb/s 5400rpm 7mm Notebook Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,46.00,2.5",SATA,RPM:  5400,500,0.092,Seagate,MSY,Seagate 2.5" Barracuda 500GB ST500LM030 SATA 6Gb/s 5400rpm 7mm Notebook Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,47.00,2.5",SATA,RPM:  5400,500,0.094,Seagate,MSY,Seagate 2.5" Barracuda 500GB ST500LM030 SATA 6Gb/s 5400rpm 7mm Notebook Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,48.00,2.5",SATA,RPM:  5400,500,0.096,Seagate,MSY,Seagate 2.5" Barracuda 500GB ST500LM030 SATA 6Gb/s 5400rpm 7mm Notebook Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -905,6 +985,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,312.00,3.5",SATA?,RPM:  5400,8000,0.039,Seagate,MSY,Seagate 3.5" BarraCuda 8TB (ST8000DM004)SATA 6Gb/s 5400RPM 64MB Cache Hard Disk Drive
 2019-10-30,525.00,3.5",SATA,RPM:  7200,10000,0.052,Seagate,MSY,Seagate 3.5" BarraCuda PRO 10TB ST10000DM0004 SATA3 7200rpm 256MB Cache Hard Disk Drive
 2019-10-30,389.00,3.5",SATA,RPM:  7200,8000,0.049,Seagate,MSY,Seagate 3.5" BarraCuda PRO 8TB ST8000DM005 SATA3 7200rpm 256MB Cache Hard Disk Drive
+2019-11-24,373.00,3.5",SATA,RPM:  7200,8000,0.047,Seagate,MSY,Seagate 3.5" BarraCuda PRO 8TB ST8000DM005 SATA3 7200rpm 256MB Cache Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,381.00,3.5",SATA,RPM:  7200,8000,0.048,Seagate,MSY,Seagate 3.5" BarraCuda PRO 8TB ST8000DM005 SATA3 7200rpm 256MB Cache Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,389.00,3.5",SATA,RPM:  7200,8000,0.049,Seagate,MSY,Seagate 3.5" BarraCuda PRO 8TB ST8000DM005 SATA3 7200rpm 256MB Cache Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,109.00,3.5",SATA,RPM:  7200,1000,0.109,Seagate,MSY,Seagate 3.5" FireCuda SSHD 1TB ST1000DX002 NAND 8GB SATA3 7200rpm HDD
@@ -917,6 +998,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,89.00,?,?,?,1000,0.089,Seagate,CPL,Seagate Backup Plus Ultra Slim 1TB STEH1000300 (Platinum)
 2019-11-17,438.00,?,SATA,SATA,8000,0.055,Seagate,CPL,Seagate Barracuda Pro 8TB ST8000DM0004 SATA HDD
 2019-10-30,439.00,?,SATA,SATA,8000,0.055,Seagate,CPL,Seagate Barracuda Pro 8TB ST8000DM0004 SATA HDD
+2019-11-24,149.00,3.5",SATA?,?,4000,0.037,Seagate,CPL,Seagate Barracuda ST4000DM004 3.5" 4TB HDD
 2019-10-30,158.00,3.5",SATA?,?,4000,0.040,Seagate,CPL,Seagate Barracuda ST4000DM004 3.5" 4TB HDD
 2019-10-30,399.00,3.5",SATA?,?,6000,0.067,Seagate,CPL,Seagate Exos 7E8 ST6000NM0115 Enterprise Capacity 3.5 HDD 6TB
 2019-10-30,459.00,3.5",SATA,RPM:  7200,10000,0.046,Seagate,MSY,Seagate IronWolf NAS 3.5" 10TB ST10000VN0004/ ST10000VN0008 SATA3 7200rpm 256MB cache Hard Disk Drive
@@ -936,9 +1018,11 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,475.00,?,SATA,RPM:  7200,10000,0.048,Seagate,CPL,Seagate ST10000VN0008 IRONWOLF 10TB SATA 7200RPM 256MB
 2019-10-30,459.00,?,?,?,10000,0.046,Seagate,CPL,Seagate ST10000VX0004 Skyhawk 10TB Surveillance
 2019-10-30,479.00,3.5",SATA,RPM:  7200,10000,0.048,Seagate,CPL,Seagate ST10000VX0008 10TB SkyHawk Surveillance HDD 3.5" SATA 7200RPM
+2019-11-24,57.00,?,?,?,1000,0.057,Seagate,CPL,Seagate ST1000DM010 Barracuda 1TB Desktop HDD
 2019-11-07,58.00,?,?,?,1000,0.058,Seagate,CPL,Seagate ST1000DM010 Barracuda 1TB Desktop HDD
 2019-10-30,59.00,?,?,?,1000,0.059,Seagate,CPL,Seagate ST1000DM010 Barracuda 1TB Desktop HDD
 2019-10-30,109.00,3.5",SATA?,?,1000,0.109,Seagate,CPL,Seagate ST1000DX002 FIRECUDA 1TB SSHD 3.5"
+2019-11-24,69.00,2.5",SATA,RPM:  5400,1000,0.069,Seagate,CPL,Seagate ST1000LM048 Barracuda 2.5In 1TB SATA HDD 5400RPM
 2019-10-30,73.00,2.5",SATA,RPM:  5400,1000,0.073,Seagate,CPL,Seagate ST1000LM048 Barracuda 2.5In 1TB SATA HDD 5400RPM
 2019-10-30,99.00,2.5",SATA?,?,1000,0.099,Seagate,CPL,Seagate ST1000LX015 1TB FireCuda 2.5In SSHD
 2019-11-17,72.00,?,?,?,1000,0.072,Seagate,CPL,Seagate ST1000VX005 Skyhawk 1TB Surveillance HDD
@@ -986,8 +1070,10 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,325.00,3.5",SAS,?,4000,0.081,Seagate,CPL,Seagate ST4000NM0025 Enterprise Capacity V5 4TB 3.5IN SAS 512N HDD
 2019-10-30,309.00,3.5",SATA,SATA,4000,0.077,Seagate,CPL,Seagate ST4000NM0045 4TB Enterprise Capacity 512E INTERNAL 3.5" SATA DRIVE
 2019-10-30,179.00,?,?,?,4000,0.045,Seagate,CPL,Seagate ST4000VN008 Ironwolf 4TB NAS HDD
+2019-11-24,169.00,?,?,?,4000,0.042,Seagate,CPL,Seagate ST4000VX007 Skyhawk 4TB Surveillance HDD
 2019-10-30,175.00,?,?,?,4000,0.044,Seagate,CPL,Seagate ST4000VX007 Skyhawk 4TB Surveillance HDD
 2019-10-30,62.00,2.5",SATA,SATA,500,0.124,Seagate,CPL,Seagate ST500LM030 2.5" 500GB_ Barracuda SATA HDD
+2019-11-24,239.00,?,SATA,SATA,6000,0.040,Seagate,CPL,Seagate ST6000DM003 Barracuda 6TB SATA HDD
 2019-11-07,245.00,?,SATA,SATA,6000,0.041,Seagate,CPL,Seagate ST6000DM003 Barracuda 6TB SATA HDD
 2019-11-01,248.00,?,SATA,SATA,6000,0.041,Seagate,CPL,Seagate ST6000DM003 Barracuda 6TB SATA HDD
 2019-10-30,249.00,?,SATA,SATA,6000,0.042,Seagate,CPL,Seagate ST6000DM003 Barracuda 6TB SATA HDD
@@ -1002,6 +1088,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,269.00,?,?,?,6000,0.045,Seagate,CPL,Seagate ST6000VX0023 6TB SkyHawk Surveillance HDD
 2019-10-30,263.00,?,?,RPM: 10000,600,0.438,Seagate,CPL,Seagate ST600MM0208 600GB Enterprise Performance 10K HDD
 2019-10-30,339.00,3.5",SATA,SATA,8000,0.042,Seagate,CPL,Seagate ST8000AS0003 Exos 5E8 8TB 3.5" SATA 6Gb/s Archive HDD
+2019-11-24,315.00,3.5",SATA?,?,8000,0.039,Seagate,CPL,Seagate ST8000DM004 8TB Barracuda 3.5" HDD
 2019-10-30,328.00,3.5",SATA?,?,8000,0.041,Seagate,CPL,Seagate ST8000DM004 8TB Barracuda 3.5" HDD
 2019-10-30,459.00,3.5",SATA,RPM:  7200,8000,0.057,Seagate,CPL,Seagate ST8000NE001 8TB IronWolf Pro NAS HDD 3.5" SATA 7200RPM 256MB
 2019-11-01,452.00,?,SAS,?,8000,0.057,Seagate,CPL,Seagate ST8000NM0075 8TB Enterprise SAS HDD
@@ -1021,6 +1108,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,68.00,?,USB,USB 3.0,1000,0.068,Seagate,CPL,Seagate STEA1000400 1TB USB 3.0 Expansion Portable Hard Drive  2886337
 2019-11-07,215.00,?,?,?,5000,0.043,Seagate,CPL,Seagate STEA5000402 5TB Expansion Portable Drive Usb 3.0
 2019-11-07,409.00,?,?,?,10000,0.041,Seagate,CPL,Seagate STEB10000400 Expansion Desktop 35E 10TB
+2019-11-24,161.00,3.5",SATA?,?,4000,0.040,Seagate,CPL,Seagate STEB4000300 4TB 3.5" G2 Expansion Desktop 
 2019-11-07,219.00,?,?,?,6000,0.036,Seagate,CPL,Seagate STEB6000403 6TB EXPANSION DESKTOP DRIVE USB 3.0
 2019-11-07,349.00,?,?,?,8000,0.044,Seagate,CPL,Seagate STEB8000402 8TB Expansion Desktop
 2019-11-07,219.00,?,?,?,4000,0.055,Seagate,CPL,Seagate STGD4000400 4TB GAME DRIVE For PS4 USB 3.0
@@ -1044,6 +1132,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,215.00,?,?,?,5000,0.043,Seagate,CPL,Seagate STHP5000401 5TB Backup Plus Portable External Hard Drive Silve
 2019-11-07,219.00,?,?,?,5000,0.044,Seagate,CPL,Seagate STHP5000402 5TB Backup Plus Portable External Hard Drive Blue
 2019-11-07,219.00,?,?,?,5000,0.044,Seagate,CPL,Seagate STHP5000403 5TB Backup Plus Portable External Hard Drive Red
+2019-11-24,353.00,3.5",SATA?,RPM:  7200,10000,0.035,Seagate,MSY,Seagate SkyHawk Surveillance 3.5" 10TB ST10000VX0004 7200rpm 256MB Cache RV Senso  Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,361.00,3.5",SATA?,RPM:  7200,10000,0.036,Seagate,MSY,Seagate SkyHawk Surveillance 3.5" 10TB ST10000VX0004 7200rpm 256MB Cache RV Senso  Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,369.00,3.5",SATA?,RPM:  7200,10000,0.037,Seagate,MSY,Seagate SkyHawk Surveillance 3.5" 10TB ST10000VX0004 7200rpm 256MB Cache RV Senso  Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,377.00,3.5",SATA?,RPM:  7200,10000,0.038,Seagate,MSY,Seagate SkyHawk Surveillance 3.5" 10TB ST10000VX0004 7200rpm 256MB Cache RV Senso  Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -1069,21 +1158,22 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,395.00,2.5",SATA,SATA,960,0.411,Seagate,CPL,Seagate ZA960NM10011 IRONWOLF 110 SSD_ 2.5" SATA 960GB_ 560R/345W-MB/S_ 5YR WTY
 2019-11-17,25.00,?,USB,USB 3.0,?,?,?,CPL,Shintaro Blazer USB 3.0 Ext Card Reader SH-XCRUSB4
 2019-11-17,32.00,?,USB,USB 3.0,?,?,?,CPL,Shintaro Blazer USB3.0 HDD Docking Station - Black SH23SDOCK3
+2019-11-24,8.00,?,?,?,4,2.000,?,CPL,Shintaro SH-R4GB 4GB Rotating Pocket Disk USB2.0
 2019-11-17,22.10,mSATA,SATA,SATA,?,?,?,CPL,Shintaro SHMSATASV2 mSATA SSD to 2.5'' SATA
 2019-11-17,39.00,?,USB,USB 3.0,?,?,?,CPL,SilverStone FP37 Black USB 3.0 Card Reader SST-FP37B
 2019-11-17,45.00,M.2,SATA,SATA,?,?,?,CPL,SilverStone MS09 M.2 SATA Portable USB 3.1 Portable Enclosure SST-MS09C
 2019-11-17,49.00,M.2,?,?,?,?,?,CPL,SilverStone MS09-MINI M.2 Portable USB 3.1 Portable Enclosure SST-MS09C-MINI
-2019-11-17,9.00,2.5",SATA?,?,?,?,?,CPL,SilverStone SDP08B-E Bay Converter 3.5in to 3 x 2.5in - Black SST-SDP08B-E
-2019-11-17,13.00,2.5",SATA?,?,?,?,?,CPL,SilverStone SST-SDP08 3.5 to 2 x 2.5 Drive Bay Converter
+2019-11-17,9.00,3.5",SATA?,?,?,?,?,CPL,SilverStone SDP08B-E Bay Converter 3.5in to 3 x 2.5in - Black SST-SDP08B-E
+2019-11-17,13.00,3.5",SATA?,?,?,?,?,CPL,SilverStone SST-SDP08 3.5 to 2 x 2.5 Drive Bay Converter
 2019-11-17,79.00,?,?,?,?,?,?,CPL,SilverStone TS11G USB 3.1 Type-C Hard Drive Dock Gold SST-TS11G-C
 2019-11-17,159.00,?,?,?,?,?,?,CPL,SilverStone TS231U-C External Hard Drive Enclosure SST-TS231U-C
 2019-11-17,35.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-EXB01 2.5in Internal Storage Bay
-2019-11-17,29.00,2.5",USB,USB 3.0,?,?,?,CPL,Silverstone SST-FP36B-E Black USB3.0 3.5" to 2 x 2.5" Drive Bay Converter
-2019-11-17,45.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-FP510 FP510 5.25" Device Bay to 2.5" and 3.5" Hot Swap Drive Bay Adapter
+2019-11-17,29.00,3.5",USB,USB 3.0,?,?,?,CPL,Silverstone SST-FP36B-E Black USB3.0 3.5" to 2 x 2.5" Drive Bay Converter
+2019-11-17,45.00,3.5",SATA?,?,?,?,?,CPL,Silverstone SST-FP510 FP510 5.25" Device Bay to 2.5" and 3.5" Hot Swap Drive Bay Adapter
 2019-11-17,15.00,?,?,?,?,?,?,CPL,Silverstone SST-FP55B 5.25' Black External Bay Bracket
 2019-11-17,65.00,?,?,?,?,?,?,CPL,Silverstone SST-FP56B Black 5.25" Multi-Card Reader
 2019-11-17,69.00,?,?,?,?,?,?,CPL,Silverstone SST-FP59B Multi-Functional 5.25inch Drive Bay
-2019-11-17,59.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-FS202B 3.5 To 2.5 Hot Swap Drive Bay
+2019-11-17,59.00,3.5",SATA?,?,?,?,?,CPL,Silverstone SST-FS202B 3.5 To 2.5 Hot Swap Drive Bay
 2019-11-17,99.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-FS204B FS202B 5.25 To 2.5 Hot Swap Drive Bay
 2019-11-17,149.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-FS208B Dual 5.25 To 2.5 Hot Swap Drive Bay
 2019-11-17,199.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-FS212B Triple 5.25 To 2.5 Hot Swap Drive Bay
@@ -1093,13 +1183,14 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,45.00,M.2,SATA,SATA,?,?,?,CPL,Silverstone SST-MS09B M.2 SATA Portable USB 3.1 Portable Enclosure_ Black
 2019-11-17,45.00,M.2,SATA,SATA,?,?,?,CPL,Silverstone SST-MS09S M.2 SATA Portable USB 3.1 Portable Enclosure_ Silver
 2019-11-17,49.00,M.2,SATA,SATA,?,?,?,CPL,Silverstone SST-MS10C M.2 SATA Portable USB 3.1 Portable Enclosure Charcoal
+2019-11-24,49.00,M.2,NVME,?,?,?,?,CPL,Silverstone SST-MS11C NVMe PCIe M Key M.2 SSD USB-C 10Gbps Enclosure
 2019-11-17,59.00,M.2,NVME,?,?,?,?,CPL,Silverstone SST-MS11C NVMe PCIe M Key M.2 SSD USB-C 10Gbps Enclosure
-2019-11-17,13.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-SDP08-LITE LITE_ 3.5 to 2 x 2.5 Drive Bay Converter_ Grey
-2019-11-17,15.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-SDP08B 3.5 to 2 x 2.5 Drive Bay Converter_ Black Nickel
-2019-11-17,27.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-SDP09 2.5" HDD/SSD to 3.5" Hot Swap Adapter
+2019-11-17,13.00,3.5",SATA?,?,?,?,?,CPL,Silverstone SST-SDP08-LITE LITE_ 3.5 to 2 x 2.5 Drive Bay Converter_ Grey
+2019-11-17,15.00,3.5",SATA?,?,?,?,?,CPL,Silverstone SST-SDP08B 3.5 to 2 x 2.5 Drive Bay Converter_ Black Nickel
+2019-11-17,27.00,3.5",SATA?,?,?,?,?,CPL,Silverstone SST-SDP09 2.5" HDD/SSD to 3.5" Hot Swap Adapter
 2019-11-17,12.00,3.5",SATA?,?,?,?,?,CPL,Silverstone SST-SDP10B 5.25" to 3.5" Drive Bay Bracket Black
-2019-11-17,55.00,M.2,SATA,SATA,?,?,?,CPL,Silverstone SST-SDP11 3.5in M.2 SATA Drive Mount
-2019-11-17,65.00,M.2,SATA,SATA,?,?,?,CPL,Silverstone SST-SDP12 3.5in M.2 SATA NVME Drive Mount
+2019-11-17,55.00,3.5",SATA,SATA,?,?,?,CPL,Silverstone SST-SDP11 3.5in M.2 SATA Drive Mount
+2019-11-17,65.00,3.5",SATA,SATA,?,?,?,CPL,Silverstone SST-SDP12 3.5in M.2 SATA NVME Drive Mount
 2019-11-17,15.00,M.2,?,?,?,?,?,CPL,Silverstone SST-TP01-M2 Thermal Pad for M.2 SSD
 2019-11-17,15.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-TS08 Convert Notebook Optical Drive (9.5mm) to 2.5 SSD or HDD Bay
 2019-11-17,19.00,2.5",SATA?,?,?,?,?,CPL,Silverstone SST-TS09 Convert Notebook Optical Drive (12.7mm) to 2.5 SSD or HDD Bay_ Black
@@ -1110,17 +1201,17 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,6.00,?,USB,USB 3.0,?,?,?,CPL,Simplecom CR303 SuperSpeed USB 3.0 Card Reader 2 Slot
 2019-11-17,10.00,?,USB,USB 3.0,?,?,?,CPL,Simplecom CR307 SuperSpeed USB 3.0 Card Reader 4 Slot with CF
 2019-11-17,10.00,mSATA,SATA,SATA,?,?,?,CPL,Simplecom SA101 mSATA to 7mm 2.5" SATA Converter Enclosure Aluminium
-2019-11-17,14.00,M.2,SATA,SATA,?,?,?,CPL,Simplecom SA102 M.2 (B Key) to 7mm 2.5" SATA Converter Enclosure Aluminium
+2019-11-17,14.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SA102 M.2 (B Key) to 7mm 2.5" SATA Converter Enclosure Aluminium
 2019-11-17,13.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SA128 USB3.0 to SATA Adapter Cable 50cm for 2.5" SSD/HDD
 2019-11-17,11.50,2.5",SATA,SATA,?,?,?,CPL,Simplecom SA201 USB 3.0 to SATA External Adatper Cable Converter for 2.5" SSD/HDD
 2019-11-17,13.00,mSATA,SATA,SATA,?,?,?,CPL,Simplecom SA207 mSATA+M.2 (NGFF) to SATA 2 IN 1 Combo Adapter
 2019-11-17,22.00,mSATA,SATA,USB 3.0,?,?,?,CPL,Simplecom SA225 USB3.0 to mSATA + M.2 (NGFF B Key) 2 In 1 Combo Adapter
 2019-11-17,16.00,3.5",SATA,SATA,?,?,?,CPL,Simplecom SC314 Internal 5.25" Bay Mobile Rack 3.5" SATA HDD Backplane Enclosure
 2019-11-17,28.00,?,USB,USB 3.0,?,?,?,CPL,Simplecom SD311 USB 3.0 Docking Station
-2019-11-17,30.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SD312 Dual Bay USB3.0 Docking Station for 2.5" and 3.5" SATA Drive
-2019-11-17,39.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SD322 Aluminium Dual Bay USB3.0 Dcoking Station for 2.5" and 3.5" SATA HDD
-2019-11-17,25.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SD323 USB 3.0 Horizontal SATA Hard Drive Docking Station for 2.5" 3.5
-2019-11-17,27.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SD326 USB3.0 to SATA Hard Drive Docking Staion for 2.5" 3.5
+2019-11-17,30.00,3.5",SATA,SATA,?,?,?,CPL,Simplecom SD312 Dual Bay USB3.0 Docking Station for 2.5" and 3.5" SATA Drive
+2019-11-17,39.00,3.5",SATA,SATA,?,?,?,CPL,Simplecom SD322 Aluminium Dual Bay USB3.0 Dcoking Station for 2.5" and 3.5" SATA HDD
+2019-11-17,25.00,3.5",SATA,SATA,?,?,?,CPL,Simplecom SD323 USB 3.0 Horizontal SATA Hard Drive Docking Station for 2.5" 3.5
+2019-11-17,27.00,3.5",SATA,SATA,?,?,?,CPL,Simplecom SD326 USB3.0 to SATA Hard Drive Docking Staion for 2.5" 3.5
 2019-11-17,11.00,?,USB,USB 3.0,?,?,?,CPL,Simplecom SE101 USB 3.0 HDD/SSD Enclosure Black SE101-BK
 2019-11-17,11.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SE101-CL Compact 2.5'' SATA to USB 3.0 HDD/SSD Enclosure Clear
 2019-11-17,13.00,2.5",SATA,SATA,?,?,?,CPL,Simplecom SE101-WH Compact Tool-Free 2.5'' SATA to USB 3.0 HDD/SSD Enclosure White
@@ -1138,20 +1229,20 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,4.00,?,?,?,?,?,?,CPL,Simplecom SIMCR201 CR201 High Speed USB 2.0 Card Reader with 2 Slot
 2019-11-17,69.00,M.2,SATA,SATA,?,?,?,CPL,StarTech 25S22M2NGFFR Dual M.2 NGFF SATA Adapter with RAID
 2019-11-17,78.00,mSATA,SATA,SATA,?,?,?,CPL,StarTech 25SAT22MSAT Dual mSATA SSD to 2.5 SATA RAID Adapter
-2019-11-17,39.00,2.5",SATA,SATA,?,?,?,CPL,StarTech 25SAT35HDD 2.5 to 3.5 SATA HDD Adapter Enclosure
-2019-11-17,52.00,2.5",SATA?,?,?,?,?,CPL,StarTech 25SATSAS35HD Hard Drive Adapter 2.5 SSD/HDD to 3.5
+2019-11-17,39.00,3.5",SATA,SATA,?,?,?,CPL,StarTech 25SAT35HDD 2.5 to 3.5 SATA HDD Adapter Enclosure
+2019-11-17,52.00,3.5",SATA?,?,?,?,?,CPL,StarTech 25SATSAS35HD Hard Drive Adapter 2.5 SSD/HDD to 3.5
 2019-11-17,66.00,?,USB,USB 3.0,?,?,?,CPL,StarTech 2SD4FCRU3 2-SLOT SD CARD READER - USB 3.0 - UHS-II
 2019-11-17,68.00,?,USB,USB 3.0,?,?,?,CPL,StarTech 2SD4FCRU3C 2-SLOT SD CARD READER - USB 3.0 W/ USB-C
 2019-11-17,41.00,3.5",SATA?,?,?,?,?,CPL,StarTech 35BAYCF2IDE 3.5in Drive Bay IDE to CF Adapter Card
 2019-11-17,31.00,3.5",SATA?,?,?,?,?,CPL,StarTech 35FCREADBK3 3.5in Front Bay USB Memory Card Reader
 2019-11-17,62.00,?,USB,USB 3.0,?,?,?,CPL,StarTech 35FCREADBU3 USB 3.0 Internal Multi-Card Reader
-2019-11-17,80.00,M.2,SATA,SATA,?,?,?,CPL,StarTech 35S24M2NGFF 4x M.2 to SATA 3.5in mounting adapter
-2019-11-17,99.00,2.5",SATA,SATA,?,?,?,CPL,StarTech 35SAT225S3R Dual 2.5 to 3.5 SATA Adapter Enclosure
+2019-11-17,80.00,3.5",SATA,SATA,?,?,?,CPL,StarTech 35S24M2NGFF 4x M.2 to SATA 3.5in mounting adapter
+2019-11-17,99.00,3.5",SATA,SATA,?,?,?,CPL,StarTech 35SAT225S3R Dual 2.5 to 3.5 SATA Adapter Enclosure
 2019-11-17,164.00,?,?,?,?,?,?,CPL,StarTech 4SD4FCRU31C Card Reader 4 Slot USB-C SD - USB 3.1
 2019-11-17,5.90,3.5",SATA?,?,?,?,?,CPL,StarTech BRACKET 3.5 Hard Drive Mounting Bracket Adapter
-2019-11-17,14.00,2.5",SATA?,?,?,?,?,CPL,StarTech BRACKET25 2.5 IDE to 3.5 Drive Bay Mounting Kit
-2019-11-17,14.00,2.5",SATA?,?,?,?,?,CPL,StarTech BRACKET25SAT 2.5 HD to 3.5 Drive Bay Mounting Kit
-2019-11-17,18.00,2.5",SATA,SATA,?,?,?,CPL,StarTech BRACKET25X2 Dual 2.5 SATA HDD to 3.5 Mount Bracket
+2019-11-17,14.00,3.5",SATA?,?,?,?,?,CPL,StarTech BRACKET25 2.5 IDE to 3.5 Drive Bay Mounting Kit
+2019-11-17,14.00,3.5",SATA?,?,?,?,?,CPL,StarTech BRACKET25SAT 2.5 HD to 3.5 Drive Bay Mounting Kit
+2019-11-17,18.00,3.5",SATA,SATA,?,?,?,CPL,StarTech BRACKET25X2 Dual 2.5 SATA HDD to 3.5 Mount Bracket
 2019-11-17,47.00,2.5",SATA?,?,?,?,?,CPL,StarTech BRACKET425F 4x 2.5in SSD/HDD Mounting Bracket w/ Fan
 2019-11-17,10.00,2.5",SATA?,?,?,?,?,CPL,StarTech Bracket125PT TOOL-LESS 2.5IN SSD HDD Mounting Bracket
 2019-11-17,44.00,?,SATA,SATA,?,?,?,CPL,StarTech CFAST2SAT25 CFast Card to SATA Converter
@@ -1175,7 +1266,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,148.00,?,?,?,?,?,?,CPL,StarTech HSB4SATSASBA 4 Bay Hot Swap Mobile Rack Backplane
 2019-11-17,29.00,?,SATA,SATA,?,?,?,CPL,StarTech IDE2SAT2 40-Pin IDE to SATA Adapter Converter
 2019-11-17,134.00,M.2,NVME,?,?,?,?,CPL,StarTech M2E1BMU31C Enclosure - M.2 NVMe SSD for PCIe SSDs
-2019-11-17,56.00,M.2,NVME,?,?,?,?,CPL,StarTech M2E4SFF8643 U.2 to M.2 Adapter for 2.5 U.2 NVMe SSD
+2019-11-17,56.00,2.5",NVME,?,?,?,?,CPL,StarTech M2E4SFF8643 U.2 to M.2 Adapter for 2.5 U.2 NVMe SSD
 2019-11-17,24.00,mSATA,SATA,SATA,?,?,?,CPL,StarTech MSAT2SAT3 mSATA to SATA HDD/SSD Adapter Converter
 2019-11-17,33.00,?,USB,USB 3.0,?,?,?,CPL,StarTech MSDREADU3CA microSD to USB 3.0 Card Reader Adapter -
 2019-11-17,27.00,?,SATA,SATA,?,?,?,CPL,StarTech PATA2SATA3 Bi-Directional SATA IDE Adapter
@@ -1205,21 +1296,21 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,178.00,?,SATA,SATA,?,?,?,CPL,StarTech S352BU33RER USB 3.0 / eSATA Dual SATA HDD Enclosure
 2019-11-17,45.00,2.5",SATA,SATA,?,?,?,CPL,StarTech SAT2510BU32 2.5in USB 3.0 SSD SATA HDD Enclosure
 2019-11-17,36.00,2.5",SATA,SATA,?,?,?,CPL,StarTech SAT2IDEADP SATA to 2.5/3.5 IDE Hard Drive Adapter
-2019-11-17,45.00,M.2,SATA,SATA,?,?,?,CPL,StarTech SAT2M2NGFF25 M.2 NGFF SSD to 2.5in SATA III Adapter
+2019-11-17,45.00,2.5",SATA,SATA,?,?,?,CPL,StarTech SAT2M2NGFF25 M.2 NGFF SSD to 2.5in SATA III Adapter
 2019-11-17,44.00,2.5",SATA,SATA,?,?,?,CPL,StarTech SAT2MSAT25 2.5 SATA to Mini SATA Adapter Enclosure
 2019-11-17,38.00,mSATA,SATA,SATA,?,?,?,CPL,StarTech SAT32MSAT257 mSATA SSD to 2.5IN SATA Adapter Converte
 2019-11-17,33.00,mSATA,SATA,SATA,?,?,?,CPL,StarTech SAT32MSATM SATA to mSATA Adapter Converter Card
 2019-11-17,46.00,mSATA,SATA,SATA,?,?,?,CPL,StarTech SAT32MSATPEX SATA to mSATA Adapter w/ Brackets
 2019-11-17,77.00,3.5",SATA,SATA,?,?,?,CPL,StarTech SAT3510BU3 3.5in USB 3.0 SATA HDD Enclosure w/ Fan
-2019-11-17,69.00,2.5",SATA,SATA,?,?,?,CPL,StarTech SATBP125VP 2.5 SATA Drive Hot Swap Bay for 3.5in Ba
+2019-11-17,69.00,3.5",SATA,SATA,?,?,?,CPL,StarTech SATBP125VP 2.5 SATA Drive Hot Swap Bay for 3.5in Ba
 2019-11-17,19.00,?,SATA,SATA,?,?,?,CPL,StarTech SATDOCK25U USB to SATA Hard Drive Docking Station
 2019-11-17,115.00,?,SATA,SATA,?,?,?,CPL,StarTech SATDOCK2REU3 USB 3.0 to SATA HDD Duplicator Dock
 2019-11-17,639.00,?,SATA,SATA,?,?,?,CPL,StarTech SATDOCK4U3RE USB 3 eSATA SATA 1:3 HDD Duplicator Dock
 2019-11-17,1245.00,?,USB,USB 3.0,?,?,?,CPL,StarTech SATDOCK5U3ER USB 3.0 / eSATA 1:5 HDD Duplicator Dock
 2019-11-17,75.00,?,SATA,SATA,?,?,?,CPL,StarTech SATDOCKU3S SuperSpeed USB 3.0 to SATA Hard Drive Docking Station
-2019-11-17,549.00,2.5",SATA,SATA,?,?,?,CPL,StarTech SATDUP11 2.5 / 3.5 SATA HDD Duplicator & Eraser
+2019-11-17,549.00,3.5",SATA,SATA,?,?,?,CPL,StarTech SATDUP11 2.5 / 3.5 SATA HDD Duplicator & Eraser
 2019-11-17,469.00,?,?,?,?,?,?,CPL,StarTech SATDUP11IMG HDD Duplicator w/ Image Backup Library
-2019-11-17,859.00,2.5",SATA,SATA,?,?,?,CPL,StarTech SATERASER4 HDD Eraser for 2.5 or 3.5in. SATA Drives
+2019-11-17,859.00,3.5",SATA,SATA,?,?,?,CPL,StarTech SATERASER4 HDD Eraser for 2.5 or 3.5in. SATA Drives
 2019-11-17,55.00,2.5",SATA?,?,?,?,?,CPL,StarTech SATSASBP125 Mobile Rack Backplane For 2.5IN SAS/SATA
 2019-11-17,135.00,2.5",SATA?,?,?,?,?,CPL,StarTech SATSASBP425 4-Bay Backplane for 2.5in SATA/SASDrives
 2019-11-17,1399.00,?,?,?,?,?,?,CPL,StarTech SATSASDUPE11 Standalone Duplicator/Eraser - SATA/SAS
@@ -1245,15 +1336,16 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,59.00,mSATA,SATA,?,?,?,?,CPL,StarTech SMS1BMU313 USB 3.1 (10Gbps) mSATA Drive Enclosure
 2019-11-17,65.00,mSATA,SATA,?,?,?,?,CPL,StarTech SMS2BU31C3R DUAL MSATA ENCLOSURE - RAID - USB 3.1
 2019-11-17,810.00,?,SATA,SATA,?,?,?,CPL,StarTech SU2DUPERA11 1:1 USB or SATA Duplicator and Eraser
-2019-11-17,49.00,M.2,?,?,?,?,?,CPL,StarTech U2M2E125 M.2 Drive to U.2 (SFF-8639) Host Adapter
+2019-11-17,49.00,U.2,?,?,?,?,?,CPL,StarTech U2M2E125 M.2 Drive to U.2 (SFF-8639) Host Adapter
 2019-11-17,49.00,2.5",USB,USB 3.0,?,?,?,CPL,StarTech UNI251BMU33 USB 3.0 SATAIDE 2.5IN HDDSSD Enclosure
 2019-11-17,124.00,?,?,?,?,?,?,CPL,StarTech UNIDOCKU33 Universal dock station for hard drives
 2019-11-17,39.00,?,SATA,SATA,?,?,?,CPL,StarTech USB31CSAT3CB USB 3.1 Adapter Cable -2.5in SATA - USB-
 2019-11-17,694.00,?,?,?,?,?,?,CPL,StarTech USBDUP15 USB Flash Drive 1:5 Duplicator / Eraser
-2019-11-17,26.00,2.5",SATA,SATA,?,?,?,CPL,Startech 25SATSAS35 2.5" SATA/SAS to 3.5" SATA Hard drive converter 
+2019-11-17,26.00,3.5",SATA,SATA,?,?,?,CPL,Startech 25SATSAS35 2.5" SATA/SAS to 3.5" SATA Hard drive converter 
 2019-11-17,9.80,3.5",SATA?,?,?,?,?,CPL,Startech BRACKETFDBK 3.5" Hard Drive to 5.25" Front Bay Bracket Adapter
-2019-11-17,9.00,2.5",SATA?,?,?,?,?,CPL,TGC 3.5" to 2.5" Tray Converter TGC-02
-2019-11-17,12.00,2.5",SATA?,?,?,?,?,CPL,TGC 3.5" to 2x 2.5" Tray converter TGC-02A
+2019-11-17,9.00,3.5",SATA?,?,?,?,?,CPL,TGC 3.5" to 2.5" Tray Converter TGC-02
+2019-11-17,12.00,3.5",SATA?,?,?,?,?,CPL,TGC 3.5" to 2x 2.5" Tray converter TGC-02A
+2019-11-24,55.00,?,USB,USB 3.0,1000,0.055,Toshiba,MSY,TOSHIBA (HDTB410AK3AA) 1TB Canvio Basic A3 USB3.0 Black Portable HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,57.00,?,USB,USB 3.0,1000,0.057,Toshiba,MSY,TOSHIBA (HDTB410AK3AA) 1TB Canvio Basic A3 USB3.0 Black Portable HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,59.00,?,USB,USB 3.0,1000,0.059,Toshiba,MSY,TOSHIBA (HDTB410AK3AA) 1TB Canvio Basic A3 USB3.0 Black Portable HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,61.00,?,USB,USB 3.0,1000,0.061,Toshiba,MSY,TOSHIBA (HDTB410AK3AA) 1TB Canvio Basic A3 USB3.0 Black Portable HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -1269,6 +1361,8 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,89.00,2.5",SATA,SATA,512,0.174,Team,CPL,Team T253X2512G0C101 512GB GX2 2.5'' SATA SSD
 2019-11-07,7.00,?,?,?,16,0.438,Team,CPL,Team TC14216GL01 16GB USB2 Key TC14216GL01 Blue/Silver
 2019-11-07,24.00,?,USB,USB 3.0,128,0.188,Team,CPL,Team TC1753128GB01 C175 Series USB 3.0 128GB Black
+2019-11-24,19.00,?,USB,USB 3.0,32,0.594,Team,CPL,Team TC175332GB01 C175 Series USB 3.0 32GB Black
+2019-11-24,29.00,?,USB,USB 3.0,64,0.453,Team,CPL,Team TC175364GB01 C175 Series USB 3.0 64GB Black
 2019-11-07,12.00,?,?,?,16,0.750,Team,CPL,Team TSDHC16GIV1001 Classic SD Memory Card 16 GB
 2019-11-07,16.00,?,?,?,32,0.500,Team,CPL,Team TSDHC32GIV1001 Classic SD Memory Card 32 GB
 2019-11-07,39.00,?,?,?,128,0.305,Team,CPL,Team TSDXC128GIV1001 Classic SD Memory Card 128 GB
@@ -1314,7 +1408,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,39.00,2.5",USB,USB 3.0,?,?,?,CPL,VANTEC NST-D328S3H-BK NexStar 2.5''/3.5'' HDD Single Bay Docking Station w/3 Port USB 3.0 Hub
 2019-11-17,19.00,2.5",SATA,SATA,?,?,?,CPL,Vantec CB-STC31-2PB USB-C 3.1 G2 2.5" SATA SSD/HDD Storage Adapter
 2019-11-17,42.00,2.5",SATA?,?,?,?,?,CPL,Vantec MRK-225S6-BK EZ Swap EVO Dual Bay 2.5'' Removable Rack
-2019-11-17,29.00,2.5",SATA,SATA,?,?,?,CPL,Vantec MRK-235ST-U3 2.5inch to 3.5inch SATA SSD/HDD Converter with USB3.0
+2019-11-17,29.00,3.5",SATA,SATA,?,?,?,CPL,Vantec MRK-235ST-U3 2.5inch to 3.5inch SATA SSD/HDD Converter with USB3.0
 2019-11-17,29.00,?,?,?,?,?,?,CPL,Vantec NST-250S3-BL NexStar RT Dustproof & Shock Resistant Enclosure - Blue/Black
 2019-11-17,32.00,2.5",SATA,SATA,?,?,?,CPL,Vantec NST-266S3-BK NexStar 6G 2.5" SATA Enclosure Aluminium
 2019-11-17,32.00,2.5",SATA,SATA,?,?,?,CPL,Vantec NST-266SU3-BK NexStar 6G 2.5" SATA III 6 Gbs to USB 3.0/eSATA SSD/HDD Enclosure
@@ -1322,9 +1416,10 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,39.00,3.5",SATA,SATA,?,?,?,CPL,Vantec NST-328S3-BK NexStar TX - 3.5''  Enclosure SATA 6 Gbps to USB 3.0  - Aluminium Black
 2019-11-17,46.00,?,?,?,?,?,?,CPL,Vantec NST-386S3-BK NexStar HX SuperSpeed HDD Enclosure
 2019-11-17,49.00,?,?,?,?,?,?,CPL,Vantec NST-D306S3-BK NexStar Hard Drive Dock - USB3.0_ Black
-2019-11-17,55.00,2.5",SATA,SATA,?,?,?,CPL,Vantec NST-D428S3-BK NexStar TX Dual 2.5" & 3.5" SATA 6Gbs To USB 3.0 SSD/HDD Dock
+2019-11-17,55.00,3.5",SATA,SATA,?,?,?,CPL,Vantec NST-D428S3-BK NexStar TX Dual 2.5" & 3.5" SATA 6Gbs To USB 3.0 SSD/HDD Dock
 2019-11-17,69.00,?,SATA,SATA,?,?,?,CPL,Vantec NST-DP100S3 Dual SATA Hard Drive Dock Duplicator
 2019-11-17,15.00,mSATA,SATA,SATA,?,?,?,CPL,Vantec UGT-MST110 Multi-size mSATA to SATA III Converter Kit
+2019-11-24,10.00,3.5",SATA?,?,?,?,?,CPL,Vantec VAN-HDA-250M 2.5" To 3.5" Mounting Kit
 2019-11-07,23.00,?,?,?,1,23.000,?,CPL,Verbatim 47010 1GB Compact Flash
 2019-11-07,9.00,?,?,?,16,0.562,?,CPL,Verbatim 49063 Store'n'Go Pinstripe USB Drive 16GB (Black)
 2019-11-07,99.00,2.5",USB,USB 3.0,1000,0.099,?,CPL,Verbatim 53194 2.5' USB 3.0 Store'n'Go HDD Grid Design 1TB - Black
@@ -1339,10 +1434,12 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,59.00,3.5",SATA,RPM:  7200,1000,0.059,WD,CPL,WD 1TB 3.5 Inch SATA3 7200rpm 64MB Caviar Blue Internal HDD WD10EZEX 
 2019-10-30,119.00,3.5",SATA?,RPM:  7200,1000,0.119,WD,CPL,WD 1TB Black 7200RPM 6Gb/s 3.5-Inch Internal Hard Drive WD1003FZEX
 2019-10-30,69.00,2.5",USB,USB 3.0,1000,0.069,WD,MSY,WD 2.5" 1TB Elements SE (WDBEPK0010BBK-WESN) USB3.0 Black Portable External Hard Disk
+2019-11-24,67.00,2.5",USB,USB 3.0,1000,0.067,WD,MSY,WD 2.5" 1TB My Passport WDBYNN0010BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,69.00,2.5",USB,USB 3.0,1000,0.069,WD,MSY,WD 2.5" 1TB My Passport WDBYNN0010BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,71.00,2.5",USB,USB 3.0,1000,0.071,WD,MSY,WD 2.5" 1TB My Passport WDBYNN0010BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,73.00,2.5",USB,USB 3.0,1000,0.073,WD,MSY,WD 2.5" 1TB My Passport WDBYNN0010BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,119.00,2.5",SATA,SATA,1000,0.119,WD,CPL,WD 2.5" 1TB Sata RED Internal HDD WD10JFCX
+2019-11-24,87.00,2.5",USB,USB 3.0,2000,0.043,WD,MSY,WD 2.5" 2TB Elements SE (WDBEPK0020BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,89.00,2.5",USB,USB 3.0,2000,0.044,WD,MSY,WD 2.5" 2TB Elements SE (WDBEPK0020BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,91.00,2.5",USB,USB 3.0,2000,0.045,WD,MSY,WD 2.5" 2TB Elements SE (WDBEPK0020BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,93.00,2.5",USB,USB 3.0,2000,0.046,WD,MSY,WD 2.5" 2TB Elements SE (WDBEPK0020BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -1350,26 +1447,33 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-17,100.00,2.5",USB,USB 3.0,3000,0.033,WD,MSY,WD 2.5" 3TB Elements (WDBU6Y0030BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,103.00,2.5",USB,USB 3.0,3000,0.034,WD,MSY,WD 2.5" 3TB Elements (WDBU6Y0030BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,106.00,2.5",USB,USB 3.0,3000,0.035,WD,MSY,WD 2.5" 3TB Elements (WDBU6Y0030BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
+2019-11-24,98.00,2.5",USB,USB 3.0,3000,0.033,WD,MSY,WD 2.5" 3TB Elements (WDBU6Y0030BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
+2019-11-24,144.00,2.5",USB,USB 3.0,4000,0.036,WD,MSY,WD 2.5" 4TB Element SE (WDBJRT0040BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,147.00,2.5",USB,USB 3.0,4000,0.037,WD,MSY,WD 2.5" 4TB Element SE (WDBJRT0040BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,151.00,2.5",USB,USB 3.0,4000,0.038,WD,MSY,WD 2.5" 4TB Element SE (WDBJRT0040BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,155.00,2.5",USB,USB 3.0,4000,0.039,WD,MSY,WD 2.5" 4TB Element SE (WDBJRT0040BBK-WESN) USB3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,168.00,2.5",USB,USB 3.0,4000,0.042,WD,MSY,WD 2.5" 4TB My Passport WDBYFT0040BBK-WESN USB3.0 Black Portable Hard Disk Drive
+2019-11-24,157.00,2.5",USB,USB 3.0,4000,0.039,WD,MSY,WD 2.5" 4TB My Passport WDBYFT0040BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,161.00,2.5",USB,USB 3.0,4000,0.040,WD,MSY,WD 2.5" 4TB My Passport WDBYFT0040BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-10,165.00,2.5",USB,USB 3.0,4000,0.041,WD,MSY,WD 2.5" 4TB My Passport WDBYFT0040BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,168.00,2.5",USB,USB 3.0,4000,0.042,WD,MSY,WD 2.5" 4TB My Passport WDBYFT0040BBK-WESN USB3.0 Black Portable Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,79.00,2.5",SATA,RPM:  7200,500,0.158,WD,MSY,WD 2.5" Notebook 500GB WD5000LPLX SATA 6.0Gb/s 7200RPM HDD
 2019-10-30,189.00,3.5",SATA?,?,2000,0.095,WD,CPL,WD 2TB 3.5 Inch Caviar Black Internal Hard WD2003FZEX
 2019-10-30,158.00,3.5",USB,USB 3.0,4000,0.040,WD,MSY,WD 3.5" 4TB Elements (WDBBKG0040HBK-AESN) USB3.0 External Hard Disk Drive
+2019-11-24,143.00,3.5",USB,USB 3.0,4000,0.036,WD,MSY,WD 3.5" 4TB Elements (WDBBKG0040HBK-AESN) USB3.0 External Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,146.00,3.5",USB,USB 3.0,4000,0.036,WD,MSY,WD 3.5" 4TB Elements (WDBBKG0040HBK-AESN) USB3.0 External Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-10,149.00,3.5",USB,USB 3.0,4000,0.037,WD,MSY,WD 3.5" 4TB Elements (WDBBKG0040HBK-AESN) USB3.0 External Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,158.00,3.5",USB,USB 3.0,4000,0.040,WD,MSY,WD 3.5" 4TB Elements (WDBBKG0040HBK-AESN) USB3.0 External Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,177.00,3.5",USB,USB 3.0,4000,0.044,WD,MSY,WD 3.5" 4TB Mybook WDBBGB0040HBK-AESN USB3.0 External Hard Disk
 2019-10-30,209.00,3.5",USB,USB 3.0,6000,0.035,WD,MSY,WD 3.5" 6TB Element (WDBBKG0060HBK-AESN) USB 3.0 Black Portable External Hard Disk
+2019-11-24,199.00,3.5",USB,USB 3.0,6000,0.033,WD,MSY,WD 3.5" 6TB Element (WDBBKG0060HBK-AESN) USB 3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,204.00,3.5",USB,USB 3.0,6000,0.034,WD,MSY,WD 3.5" 6TB Element (WDBBKG0060HBK-AESN) USB 3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,209.00,3.5",USB,USB 3.0,6000,0.035,WD,MSY,WD 3.5" 6TB Element (WDBBKG0060HBK-AESN) USB 3.0 Black Portable External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,229.00,3.5",USB,USB 3.0,6000,0.038,WD,MSY,WD 3.5" 6TB Mybook WDBBGB0060HBK-AESN USB3.0 External Hard Disk
+2019-11-24,219.00,3.5",USB,USB 3.0,6000,0.036,WD,MSY,WD 3.5" 6TB Mybook WDBBGB0060HBK-AESN USB3.0 External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,224.00,3.5",USB,USB 3.0,6000,0.037,WD,MSY,WD 3.5" 6TB Mybook WDBBGB0060HBK-AESN USB3.0 External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,229.00,3.5",USB,USB 3.0,6000,0.038,WD,MSY,WD 3.5" 6TB Mybook WDBBGB0060HBK-AESN USB3.0 External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
+2019-11-24,288.00,3.5",USB,USB 3.0,8000,0.036,WD,MSY,WD 3.5" 8TB Mybook WDBBGB0080HBK-AESN USB3.0 External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,294.00,3.5",USB,USB 3.0,8000,0.037,WD,MSY,WD 3.5" 8TB Mybook WDBBGB0080HBK-AESN USB3.0 External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,301.00,3.5",USB,USB 3.0,8000,0.038,WD,MSY,WD 3.5" 8TB Mybook WDBBGB0080HBK-AESN USB3.0 External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,308.00,3.5",USB,USB 3.0,8000,0.038,WD,MSY,WD 3.5" 8TB Mybook WDBBGB0080HBK-AESN USB3.0 External Hard DiskCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -1386,6 +1490,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,124.00,3.5",SATA,RPM:  5400,3000,0.041,WD,MSY,WD 3.5" Purple 3TB WD30PURZ Surveillance 5400RPM 64MB Cache SATA3 HDD
 2019-10-30,155.00,3.5",SATA,RPM:  5400,4000,0.039,WD,MSY,WD 3.5" Purple 4TB WD40PURZ Surveillance 5400RPM 64MB Cache SATA3 HDD
 2019-10-30,269.00,3.5",SATA,RPM:  5400,6000,0.045,WD,MSY,WD 3.5" Purple 6TB WD60PURZ Surveillance 5400RPM 64MB Cache SATA3 HDD
+2019-11-24,300.00,3.5",SATA,RPM:  5400,8000,0.037,WD,MSY,WD 3.5" Purple 8TB (WD81PURZ) Surveillance 5400RPM 256MB Cache SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,307.00,3.5",SATA,RPM:  5400,8000,0.038,WD,MSY,WD 3.5" Purple 8TB (WD81PURZ) Surveillance 5400RPM 256MB Cache SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,314.00,3.5",SATA,RPM:  5400,8000,0.039,WD,MSY,WD 3.5" Purple 8TB (WD81PURZ) Surveillance 5400RPM 256MB Cache SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,321.00,3.5",SATA,RPM:  5400,8000,0.040,WD,MSY,WD 3.5" Purple 8TB (WD81PURZ) Surveillance 5400RPM 256MB Cache SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -1398,6 +1503,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,269.00,3.5",SATA,RPM:  5400,6000,0.045,WD,MSY,WD 3.5" Red NAS 6TB (WD60EFAX) 256MB 5400RPM SATA3 HDD
 2019-11-10,335.00,3.5",SATA,SATA3,8000,0.042,WD,MSY,WD 3.5" Red NAS 8TB (WD80EFAX) 256MB SATA3 HDD
 2019-10-30,348.00,3.5",SATA,SATA3,8000,0.043,WD,MSY,WD 3.5" Red NAS 8TB (WD80EFAX) 256MB SATA3 HDD
+2019-11-24,828.00,3.5",SATA,RPM:  7200,12000,0.069,WD,MSY,WD 3.5" Ultrastar DC HC520 12TB (HUH721212ALE604) (0F30146) 256MB 7200 RPM SATA Enterprise HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,845.00,3.5",SATA,RPM:  7200,12000,0.070,WD,MSY,WD 3.5" Ultrastar DC HC520 12TB (HUH721212ALE604) (0F30146) 256MB 7200 RPM SATA Enterprise HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,863.00,3.5",SATA,RPM:  7200,12000,0.072,WD,MSY,WD 3.5" Ultrastar DC HC520 12TB (HUH721212ALE604) (0F30146) 256MB 7200 RPM SATA Enterprise HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,881.00,3.5",SATA,RPM:  7200,12000,0.073,WD,MSY,WD 3.5" Ultrastar DC HC520 12TB (HUH721212ALE604) (0F30146) 256MB 7200 RPM SATA Enterprise HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -1427,6 +1533,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,519.00,?,?,?,8000,0.065,WD,CPL,WD HUH721008ALE604 Ultrastar DC HC510 8TB HDD
 2019-11-17,28.00,?,?,?,?,?,WD,CPL,WD Hard Case for My Passport Wireless PRO WDBNAR0000NBK
 2019-10-30,114.00,3.5",SATA?,?,2000,0.057,WD,CPL,WD Red 2TB WD20EFAX 3.5in NAS Hard Drive 
+2019-11-24,72.00,?,SATA,SATA3,1000,0.072,WD,MSY,WD Red NAS 1TB WD10EFRX 64M SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,74.00,?,SATA,SATA3,1000,0.074,WD,MSY,WD Red NAS 1TB WD10EFRX 64M SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,76.00,?,SATA,SATA3,1000,0.076,WD,MSY,WD Red NAS 1TB WD10EFRX 64M SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,78.00,?,SATA,SATA3,1000,0.078,WD,MSY,WD Red NAS 1TB WD10EFRX 64M SATA3 HDDCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
@@ -1457,6 +1564,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-01,265.00,3.5",SATA?,?,4000,0.066,WD,CPL,WD WD4003FFBX 4TB Red Pro 256MB 3.5" NAS Hard Drive
 2019-10-30,269.00,3.5",SATA?,?,4000,0.067,WD,CPL,WD WD4003FFBX 4TB Red Pro 256MB 3.5" NAS Hard Drive
 2019-10-30,274.00,?,?,?,4000,0.069,WD,CPL,WD WD4005FZBX 4TB Black 256MB HDD
+2019-11-24,279.00,?,?,?,4000,0.070,WD,CPL,WD WD4005FZBX 4TB Black 256MB HDD
 2019-10-30,168.00,3.5",SATA,SATA3,4000,0.042,WD,CPL,WD WD40EFRX 4TB Red 3.5 Inch SATA3 63MB Internal Hard Drive for NAS
 2019-10-30,154.00,3.5",SATA,RPM:  5400,4000,0.038,WD,CPL,WD WD40EZRZ 4TB Blue 3.5" 5400RPM SATA3 Hard Drive
 2019-11-10,155.00,3.5",SATA?,?,4000,0.039,WD,CPL,WD WD40PURZ 4TB Purple Internal 3.5" Desktop Hard Drive
@@ -1480,6 +1588,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,209.00,?,?,?,4000,0.052,WD,CPL,WD WDBA2F0040BBL-WESN My Passport 4TB For Mac Portable Hard Drive
 2019-11-07,249.00,?,?,?,5000,0.050,WD,CPL,WD WDBA2F0050BBL-WESN My Passport 5TB For Mac Portable Hard Drive
 2019-11-07,699.00,?,?,?,2000,0.349,WD,CPL,WD WDBAMJ0020BGY-PESN My Passport Wireless SSD 2TB - BLK
+2019-11-24,339.00,?,?,?,250,1.356,WD,CPL,WD WDBAMJ2500AGY-PESN My Passport Wireless SSD 250GB - BLK
 2019-11-07,399.00,?,?,?,500,0.798,WD,CPL,WD WDBAMJ5000AGY-PESN My Passport Wireless SSD 500GB - BLK
 2019-11-07,170.00,?,USB,USB 3.0,4000,0.043,WD,CPL,WD WDBBGB0040HBK 4TB My Book Desktop USB 3.0 External Hard Drive 
 2019-11-07,179.00,?,USB,USB 3.0,4000,0.045,WD,CPL,WD WDBBGB0040HBK-AESN My Book 4TB USB3.0 Desktop Drive - Black
@@ -1495,19 +1604,26 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,115.00,?,?,?,2000,0.058,WD,CPL,WD WDBDFF0020BBK-WESN 2TB Gaming Drive works with PlayStation 4
 2019-11-07,83.00,?,USB,USB 3.0,1000,0.083,WD,CPL,WD WDBEPK0010BBK Elements USB 3.0 1TB Portable - Black
 2019-11-07,74.00,?,?,?,1000,0.074,WD,CPL,WD WDBEPK0010BBK-WESN Elements Portable SPEC EDIT 1TB
+2019-11-24,379.00,3.5",USB,USB 3.0,?,?,WD,CPL,WD WDBFBE0040JBK MY Book Duo 3.5" 2BAY 4TB(2 x 2TB) RAID-0 USB3.0 Enclosure 3YR
+2019-11-24,429.00,3.5",USB,USB 3.0,?,?,WD,CPL,WD WDBFBE0060JBK MY Book Duo 3.5" 2BAY 6TB(2 x 3TB) RAID-0 USB3.0 Enclosure 3YR
 2019-11-07,549.00,?,?,?,8000,0.069,WD,CPL,WD WDBFBE0080JBK-AESN My Book Duo 8TB Desktop RAID External Hard Drive USB 3.1 Gen2 - Black
 2019-11-07,84.00,?,?,?,1000,0.084,WD,CPL,WD WDBFKF0010BBK-WESE My Passport 1TB FOR MAC BLACK
+2019-11-24,129.00,?,USB,USB 3.0,2000,0.065,WD,CPL,WD WDBFKT0020BGY-WESN My Passport Ultra 2TB USB3.0 Portable Storage with Metal Finish - Black/Grey
 2019-11-07,179.00,?,?,?,4000,0.045,WD,CPL,WD WDBFKT0040BGY-WESN My Passport Ultra 4TB GRAY
 2019-11-07,219.00,?,?,?,4000,0.055,WD,CPL,WD WDBFTM0040BBL-WESN My Passport Ultra 4TB Blue Portable Hard Drive
 2019-11-07,219.00,?,?,?,4000,0.055,WD,CPL,WD WDBFTM0040BSL-WESN My Passport Ultra 4TB Silver Portable Hard Drive
 2019-11-07,269.00,?,?,?,5000,0.054,WD,CPL,WD WDBFTM0050BBL-WESN My Passport Ultra 5TB Blue Portable Hard Drive
+2019-11-24,119.00,?,?,?,2000,0.059,WD,CPL,WD WDBJRT0020BBK-WESN Elements Portable SPEC EDIT 2TB
 2019-11-07,99.00,?,?,?,2000,0.050,WD,CPL,WD WDBJRT0020BBK-WESN Elements Portable SPEC EDIT 2TB
 2019-11-07,158.00,?,?,?,4000,0.040,WD,CPL,WD WDBJRT0040BBK-WESN Elements Portable SPEC EDIT 4TB
 2019-11-07,239.00,?,?,?,5000,0.048,WD,CPL,WD WDBJRT0050BBK-WESN Elements Se Portable 5TB Black Hard Drive
+2019-11-24,129.00,?,USB,USB 3.0,256,0.504,WD,CPL,WD WDBK3E2560PSL My Passport Portable 256GB SSD Portable External USB3.0 HDD
 2019-11-07,299.00,?,?,?,1000,0.299,WD,CPL,WD WDBKVX0010PSL-WESN My Passport SSD_ 1TB_ USB 3.1_ Type C & Type A compatible
+2019-11-24,509.00,?,?,?,2000,0.255,WD,CPL,WD WDBKVX0020PSL-WESN My Passport SSD 2TB
 2019-11-07,129.00,?,?,?,256,0.504,WD,CPL,WD WDBKVX2560PSL-WESN My Passport SSD_ 256GB_ USB 3.1_ Type C & Type A compatible
 2019-11-07,155.00,?,?,?,512,0.303,WD,CPL,WD WDBKVX5120PSL-WESN My Passport SSD_ 512GB_ USB 3.1_ Type C & Type A compatible
 2019-11-07,109.00,?,?,?,2000,0.054,WD,CPL,WD WDBLPG0020BBK-WESE My Passport 2TB FOR MAC BLACK
+2019-11-24,195.00,?,?,?,4000,0.049,WD,CPL,WD WDBM1M0040BBK-WESN 4TB Gaming Drive works with PlayStation 4
 2019-11-07,375.00,?,?,?,1000,0.375,WD,CPL,WD WDBMCG0010BBT-WESN My Passport Go Portable SSD 1TB COLBALT
 2019-11-07,375.00,?,?,?,1000,0.375,WD,CPL,WD WDBMCG0010BYT-WESN My Passport Go Portable SSD 1TB AMBER
 2019-11-07,649.00,?,?,?,2000,0.325,WD,CPL,WD WDBMCG0020BBT-WESN 2TB MY PASSPORT GO PORTABLE SSD
@@ -1531,8 +1647,12 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,69.00,?,?,?,1000,0.069,WD,CPL,WD WDBTLG0010BGD-WESN My Passport Ultra 1TB GOLD
 2019-11-07,99.00,?,?,?,1000,0.099,WD,CPL,WD WDBTLG0010BGY-WESN My Passport Ultra 1TB GRAY
 2019-11-07,109.00,?,?,?,2000,0.054,WD,CPL,WD WDBTLG0020BGD-WESN My Passport Ultra 2TB GOLD
+2019-11-24,124.00,?,?,?,2000,0.062,WD,CPL,WD WDBTLG0020BGY-WESN My Passport Ultra 2TB GRAY
+2019-11-24,95.00,?,USB,USB 3.0,2000,0.048,WD,CPL,WD WDBU6Y0020BBK-WESN 2TB Elements USB 3.0 portable hard drive
 2019-11-07,169.00,?,USB,USB 3.0,4000,0.042,WD,CPL,WD WDBU6Y0040BBK-WESN 4TB Elements USB 3.0 high-capacity portable hard drive
+2019-11-24,79.00,?,USB,USB 3.0,1000,0.079,WD,CPL,WD WDBUZG0010BBK-WESN 1TB Element USB 3.0 portable hard drive
 2019-11-07,115.00,?,USB,USB 3.0,2000,0.058,WD,CPL,WD WDBYFT0020BRD 2TB My Passport USB 3.0 Portable Hard Drive - Red
+2019-11-24,195.00,2.5",SATA?,?,4000,0.049,WD,CPL,WD WDBYFT0040BBK 4TB MY Passport Portable 2.5" Black
 2019-11-07,165.00,?,?,?,4000,0.041,WD,CPL,WD WDBYFT0040BBK-WESN 4TB My Passport Portable Hard Drive-Black
 2019-11-17,169.00,?,?,?,4000,0.042,WD,CPL,WD WDBYFT0040BRD-WESN 4TB My Passport Portable Hard Drive-Red
 2019-11-07,179.00,?,?,?,4000,0.045,WD,CPL,WD WDBYFT0040BRD-WESN 4TB My Passport Portable Hard Drive-Red
@@ -1546,6 +1666,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-07,135.00,?,?,?,2000,0.068,WD,CPL,WD WDBYVG0020BBL-WESN My Passport 2TB Blue Portable Hard Drive
 2019-11-07,135.00,?,?,?,2000,0.068,WD,CPL,WD WDBYVG0020BRD-WESN My Passport 2TB Red Portable Hard Drive
 2019-11-07,139.00,?,?,?,2000,0.070,WD,CPL,WD WDBZGE0020BBK-WESN 2TB My Passport Gaming Storage for PS4
+2019-11-24,199.00,?,?,?,4000,0.050,WD,CPL,WD WDBZGE0040BBK-WESN 4TB My Passport Gaming Storage for PS4
 2019-11-07,33.00,?,?,?,64,0.516,WD,CPL,WD WDD064G1P0A Purple 64GB Surveillance MicroSD Card
 2019-11-07,65.00,?,?,?,128,0.508,WD,CPL,WD WDD128G1P0A Purple 128GB MicroSDXC
 2019-10-30,199.00,2.5",SATA,SATA,1000,0.199,WD,CPL,WD WDS100T2B0A 1TB Blue 3D NAND SSD 2.5 SATA CSSD 3Yr
@@ -1554,6 +1675,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,329.00,M.2,NVME,PCIe3 x4,1000,0.329,WD,CPL,WD WDS100T3X0C Black SN750 1TB NVMe M.2 (2280) PCIe 3x4 3D NAND SSD
 2019-10-30,389.00,M.2,NVME,?,1000,0.389,WD,CPL,WD WDS100T3XHC 1TB BLACK SN750 NVME SSD M.2 2280 with heatsink
 2019-10-30,32.00,?,?,?,120,0.267,WD,CPL,WD WDS120G2G0A 120GB Green 3D NAND SSD
+2019-11-24,32.00,M.2,SATA,SATA,120,0.267,WD,CPL,WD WDS120G2G0B 120GB Green 3D NAND SSD_ M.2 SATA
 2019-10-30,33.00,M.2,SATA,SATA,120,0.275,WD,CPL,WD WDS120G2G0B 120GB Green 3D NAND SSD_ M.2 SATA
 2019-10-30,449.00,2.5",SATA,SATA,2000,0.225,WD,CPL,WD WDS200T2B0A 2TB Blue 3D NAND SSD 2.5 SATA CSSD 3Yr
 2019-10-30,432.00,M.2,SATA,SATA,2000,0.216,WD,CPL,WD WDS200T2B0B 2TB Blue 3D NAND SSD M.2 SATA CSSD 3Yr
@@ -1568,6 +1690,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-11-10,102.00,M.2,NVME,PCIe3 x4,250,0.408,WD,CPL,WD WDS250G3X0C Black SN750 250GB NVMe M.2 (2280) PCIe 3x4 3D NAND SSD
 2019-10-30,105.00,M.2,NVME,PCIe3 x4,250,0.420,WD,CPL,WD WDS250G3X0C Black SN750 250GB NVMe M.2 (2280) PCIe 3x4 3D NAND SSD
 2019-10-30,82.00,?,?,?,480,0.171,WD,CPL,WD WDS480G2G0A 480GB Green PC SSD 
+2019-11-24,75.00,M.2,?,?,480,0.156,WD,CPL,WD WDS480G2G0B Green 480GB M.2 2280 SSD
 2019-10-30,79.00,M.2,?,?,480,0.165,WD,CPL,WD WDS480G2G0B Green 480GB M.2 2280 SSD
 2019-10-30,118.00,M.2,NVME,?,500,0.236,WD,CPL,WD WDS500G1B0C 500GB Blue NVME M.2 2280 SSD
 2019-10-30,99.00,2.5",SATA,SATA,500,0.198,WD,CPL,WD WDS500G2B0A 500GB Blue 3D NAND SSD 2.5 SATA CSSD 3Yr
@@ -1578,6 +1701,7 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,925.00,3.5",SATA?,?,14000,0.066,WD,CPL,WD WUH721414ALE6L4(0F31284) Ultrastar 14TB 3.5 inch HDD
 2019-10-30,625.00,3.5",SATA,SATA,10000,0.062,?,CPL,WD/HGST 0F27606 10TB Ultrastar Enterprise 3.5" SATA HDD
 2019-11-17,45.00,M.2,SATA,SATA,?,?,?,CPL,Wavlink WL-ST237C M.2 NGFF SATA Enclosure - USB 3.1 (up to 10Gbps)
+2019-11-24,15.00,2.5",SATA,SATA,?,?,?,CPL,Welland EZSTOR ME-951E 2.5" SATA 6G to USB 3.0 Enclosure
 2019-11-17,34.50,3.5",SATA,SATA,?,?,?,CPL,Welland ME-746E 3.5 Inch SATA to USB3.0 Black Aluminium
 2019-11-17,39.00,2.5",USB,USB 3.0,?,?,?,CPL,Welland Speed Master 2.5/3.5" SATA3 to USB 3.0 HDD Docking Station ME-604E 
 2019-11-17,25.00,?,USB,USB 3.0,?,?,?,CPL,mBeat HCR518 SD/MicroSD Card Reader and 3 Port USB 3.0 Hub
@@ -1590,9 +1714,11 @@ date,price,form,interface,speed,gig,sgig,brand,supplier,comment
 2019-10-30,34.00,?,SATA,SATA3,120,0.283,SanDisk,MSY, Sandisk SSD PLUS SDSSDA-120G 120GB SATA3 SSD Solid State Drive
 2019-10-30,49.00,?,SATA,SATA3,240,0.204,SanDisk,MSY, Sandisk SSD PLUS SDSSDA-240G 240GB SATA3 SSD Solid State Drive
 2019-10-30,262.00,3.5",SATA,RPM:  7200,6000,0.044,Seagate,MSY, Seagate 3.5" BarraCuda PRO 6TB ST6000DM004 SATA3 7200rpm 256MB Cache Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
+2019-11-24,184.00,3.5",SATA?,RPM:  7200,3000,0.061,Seagate,MSY, Seagate 3.5" Constellation ES.3 3TB ST3000NM0033 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,188.00,3.5",SATA?,RPM:  7200,3000,0.063,Seagate,MSY, Seagate 3.5" Constellation ES.3 3TB ST3000NM0033 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,192.00,3.5",SATA?,RPM:  7200,3000,0.064,Seagate,MSY, Seagate 3.5" Constellation ES.3 3TB ST3000NM0033 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,196.00,3.5",SATA?,RPM:  7200,3000,0.065,Seagate,MSY, Seagate 3.5" Constellation ES.3 3TB ST3000NM0033 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
+2019-11-24,226.00,3.5",SATA?,RPM:  7200,6000,0.038,Seagate,MSY, Seagate 3.5" Constellation ES.3 6TB ST6000NM0024 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-17,231.00,3.5",SATA?,RPM:  7200,6000,0.038,Seagate,MSY, Seagate 3.5" Constellation ES.3 6TB ST6000NM0024 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-11-07,236.00,3.5",SATA?,RPM:  7200,6000,0.039,Seagate,MSY, Seagate 3.5" Constellation ES.3 6TB ST6000NM0024 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
 2019-10-30,241.00,3.5",SATA?,RPM:  7200,6000,0.040,Seagate,MSY, Seagate 3.5" Constellation ES.3 6TB ST6000NM0024 SATA6Gb/s 7200RPM Enterprise Hard Disk DriveCLEARANCE ITEM. Product may be refurbished or ex-demo or missing package/accessories. Please check before purchase.
