@@ -41,7 +41,9 @@ my $matchtable = {
 
     # size
     # (most sizes are have a general regex, below. these are the exceptions)
+    ' 64G '           => { gig => '64' },
     ' 120G '          => { gig => '120' },
+    ' 128G '          => { gig => '128' },
     ' 1920GB/1.92TB ' => { gig => '1920' },
     ' 200G$'          => { gig => '200' },
     ' 240G '          => { gig => '240' },
@@ -70,6 +72,15 @@ my $matchtable = {
     ' u\.2 '          => { form => 'U.2' }, # Not really a form-factor
 
     # interface
+    ' cf( |$)'            => { interface => 'CF', form => 'CF' },
+    ' compact flash( |$)' => { interface => 'CF', form => 'CF' },
+    ' micro sd '          => { interface => 'SD', form => 'MicroSD' },
+    ' micro sdhc '        => { interface => 'SD', form => 'MicroSD' },
+    ' micro sdxc '        => { interface => 'SD', form => 'MicroSD' },
+    ' micro-sd '          => { interface => 'SD', form => 'MicroSD' },
+    ' microsd '           => { interface => 'SD', form => 'MicroSD' },
+    ' microsdhc( |$)'     => { interface => 'SD', form => 'MicroSD' },
+    ' microsdxc( |$)'     => { interface => 'SD', form => 'MicroSD' },
     ' nvme '              => { interface => 'NVME' },
     ' nvme gen 3x2 '      => { interface => 'NVME', speed => 'PCIe3 x2' },
     ' nvme gen 3x4 '      => { interface => 'NVME', speed => 'PCIe3 x4' },
@@ -87,9 +98,25 @@ my $matchtable = {
     ' sata( |_|$)'        => { interface => 'SATA', speed => 'SATA' },
     ' sata3( |$)'         => { interface => 'SATA', speed => 'SATA3' },
     ' sataiii( |$)'       => { interface => 'SATA', speed => 'SATA3' },
+    ' sd card '           => { interface => 'SD' },
+    ' sd micro '          => { interface => 'SD', form => 'MicroSD' },
+    ' sdhc '              => { interface => 'SD' },
+    ' sdxc '              => { interface => 'SD' },
     ' usb ?3\.0 '         => { interface => 'USB', speed => 'USB 3.0' },
     ' usb3\.1 '           => { interface => 'USB', speed => 'USB 3.1' },
     ' type-c drive( |$)'  => { interface => 'USB' },
+
+    # speed
+    ' class 10( |$)' => { speed => 'U1', interface => 'SD' },
+    ' class10 '      => { speed => 'U1', interface => 'SD' },
+    ' c10 '          => { speed => 'U1' },
+    ' class 4 '      => { speed => 'C4' },
+    '\(class 4\)'    => { speed => 'C4' },
+    ' u1 '           => { speed => 'U1' },
+    ' vpg-65 '       => { speed => 'VPG-65' },
+
+    # ' uhs-i '       => { speed => 'UHS-I' }, this is both a speed and a spec
+    # ' uhs-ii '      => { speed => 'UHS-II' }, this is a spec version.
 
     # brand
     'adata '        => { brand => 'Adata' },
