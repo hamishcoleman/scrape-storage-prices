@@ -46,13 +46,13 @@ cplstorage-13.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&or
 cplstorage-14.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=14
 cplstorage-15.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=15
 cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=16
-cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=17
-cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=18
-cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=19
-cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=20
-cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=21
-cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=22
-cplstorage-16.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=23
+cplstorage-17.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=17
+cplstorage-18.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=18
+cplstorage-19.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=19
+cplstorage-20.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=20
+cplstorage-21.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=21
+cplstorage-22.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=22
+cplstorage-23.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=23
 EOF
 ) | while read -r name url; do
     curl_h "$PREFIX$name" "$url"
