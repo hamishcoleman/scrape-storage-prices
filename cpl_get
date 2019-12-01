@@ -30,7 +30,7 @@ curl_h() {
 }
 
 (cat <<EOF
-cplstorage-01.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity
+cplstorage-01.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=1
 cplstorage-02.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=2
 cplstorage-03.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=3
 cplstorage-04.html     https://cplonline.com.au/storage.html?dir=asc&limit=60&order=popularity&p=4
