@@ -41,7 +41,7 @@ sub scrape2products {
     my $timestamp = shift;
 
     my $products = $tree->look_down(
-        '_tag', 'div',
+        '_tag', 'article',
         'class', 'category-products',
     );
     if (!$products) {

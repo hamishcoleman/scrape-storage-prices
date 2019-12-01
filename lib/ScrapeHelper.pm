@@ -16,6 +16,7 @@ sub file2tree {
     return undef if (!$fh);
 
     my $tree = HTML::TreeBuilder->new;
+    $tree->ignore_unknown(0);
     $tree->parse_file($fh);
     $tree->eof;
     $tree->elementify;
