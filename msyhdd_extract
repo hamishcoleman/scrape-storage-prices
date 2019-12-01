@@ -82,6 +82,7 @@ sub main {
         open($outfile, '>', $outfilename);
     }
 
+    binmode($outfile, ":utf8");
     $outfile->print(join(',', @fields), "\n");
 
     for my $prod (sort {$a->{comment} cmp $b->{comment}} @products) {
