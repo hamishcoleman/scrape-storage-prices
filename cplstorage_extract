@@ -137,18 +137,7 @@ sub main {
 
     my @fields = qw(price form interface speed gig sgig brand supplier comment);
 
-    my $outfile;
-    if ($outfilename eq '-') {
-        $outfile = *STDOUT;
-    } else {
-        open($outfile, '>', $outfilename);
-    }
-
-    $outfile->print(join(',', @fields), "\n");
-
-    for my $prod (sort {$a->{comment} cmp $b->{comment}} @products) {
-        $outfile->print(join(',', map({$prod->{$_}} @fields)), "\n");
-    }
+    ScrapeHelper::outputcsv($outfilename, \@fields, @products);
 
     print("Match counts:\n");
     my $matchtable = ScrapeExtractStorage::matchtable();

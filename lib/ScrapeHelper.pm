@@ -7,6 +7,7 @@ use strict;
 
 use HTML::TreeBuilder;
 use IO::HTML;
+use Text::CSV;
 
 $IO::HTML::default_encoding = 'utf8';
 
@@ -40,4 +41,27 @@ sub look_down2text {
     return $found->as_trimmed_text();
 }
 
+sub outputcsv {
+    my $outfilename = shift;
+    my $fields = shift;
+
+    my $outfile;
+    if ($outfilename eq '-') {
+        $outfile = *STDOUT;
+        binmode($outfile, ":utf8");
+    } else {
+        open($outfile, '>:encoding(utf8)', $outfilename);
+    }
+
+    my $csv = Text::CSV->new();
+
+    $csv->print($outfile, $fields);
+    $outfile->print("\n");
+
+    while (my $row = shift) {
+        my @row_fields = map({$row->{$_}} @{$fields});
+        $csv->print($outfile, \@row_fields);
+        $outfile->print("\n");
+    }
+}
 1;
