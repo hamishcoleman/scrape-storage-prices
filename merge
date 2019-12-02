@@ -15,6 +15,7 @@ use lib "$FindBin::RealBin/lib";
 use lib "/home/hamish/s/bin/lib";
 
 use POSIX qw(strftime);
+use Text::CSV;
 
 use Data::Dumper;
 $Data::Dumper::Indent = 1;
@@ -23,6 +24,9 @@ $Data::Dumper::Quotekeys = 0;
 
 sub read_merged {
     my $fd = shift;
+
+    # Dont use Text::CSV until the old merged file has been correctly turned
+    # into CSV
 
     # read the header
     <$fd>;
@@ -46,10 +50,16 @@ sub write_merged {
     my $db = shift;
     my $fd = shift;
 
+    my $csv = Text::CSV->new();
+
     my @fields = qw(date price form interface speed gig sgig brand supplier comment);
-    $fd->print(join(',', @fields), "\n");
+    $csv->print($fd, \@fields);
+    $fd->print("\n");
+
     for my $row (sort(keys(%{$db}))) {
-        $fd->print(join(',', @{$db->{$row}}), "\n");
+
+        $csv->print($fd, $db->{$row});
+        $fd->print("\n");
     }
 }
 
@@ -59,23 +69,22 @@ sub read_export_and_merge {
     my $fd = shift;
 
     my $date = strftime("%Y-%m-%d", gmtime($timestamp));
+    my $csv = Text::CSV->new();
 
     # read the header
-    <$fd>;
+    my $fields = $csv->getline($fd);
 
-    while(<$fd>) {
-        chomp;
-        my @f = split(/,/);
-        unshift @f, $date;
+    while(my $f = $csv->getline($fd)) {
+        unshift @{$f}, $date;
         # Key is comment,supplier,price
-        my $key = join(',', $f[9], $f[8], $f[1]);
+        my $key = join(',', $f->[9], $f->[8], $f->[1]);
 
         if (defined($db->{$key})) {
             # Keep the old date, but update any other changes
-            $f[0] = $db->{$key}[0];
+            $f->[0] = $db->{$key}[0];
         }
 
-        @{$db->{$key}} = @f;
+        $db->{$key} = $f;
     }
 }
 
@@ -89,7 +98,7 @@ sub main {
 
     my $db;
     my $infile;
-    if (open($infile, "<", $merged_old)) {
+    if (open($infile, "<:encoding(utf8)", $merged_old)) {
         $db = read_merged($infile);
         close($infile);
     } else {
@@ -99,12 +108,12 @@ sub main {
 
     for my $file (@ARGV) {
         my $mtime = (stat($file))[9];
-        open($infile, "<", $file);
+        open($infile, "<:encoding(utf8)", $file);
         read_export_and_merge($db, $mtime, $infile);
     }
 
     my $outfile;
-    open($outfile, '>', $merged_new);
+    open($outfile, '>:encoding(utf8)', $merged_new);
 
     write_merged($db, $outfile);
 }
