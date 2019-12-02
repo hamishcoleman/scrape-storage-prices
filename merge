@@ -25,23 +25,20 @@ $Data::Dumper::Quotekeys = 0;
 sub read_merged {
     my $fd = shift;
 
-    # Dont use Text::CSV until the old merged file has been correctly turned
-    # into CSV
+    my $csv = Text::CSV->new();
 
     # read the header
-    <$fd>;
+    my $fields = $csv->getline($fd);
 
     my $db = {};
-    while(<$fd>) {
-        chomp;
-        my @f = split(/,/);
-
+    while(my $f = $csv->getline($fd)) {
         # If there is no comment, we cannot process the line
-        next if (!defined($f[9]));
+        next if (!defined($f->[9]));
 
         # Key is comment,supplier,price
-        my $key = join(',', $f[9], $f[8], $f[1]);
-        @{$db->{$key}} = @f;
+        my $key = join(',', $f->[9], $f->[8], $f->[1]);
+        $db->{$key} = $f;
+
     }
     return $db;
 }
