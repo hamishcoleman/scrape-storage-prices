@@ -157,6 +157,9 @@ my $table_skip = {
     # TODO - find a way to allow this HDD without making all the regex horrid
 };
 
+# A table of exact comment matches to simply ignore
+my $table_ignore = { };
+
 # once a regex match is found, set the data fields
 sub set_from_match {
     my $data = shift;
@@ -197,6 +200,10 @@ sub extract1product {
 
     # TODO - ensure price starts with a dollarsign
     $data->{date} = strftime("%Y-%m-%d", gmtime($data->{timestamp}));
+
+    if (defined($table_ignore->{$t})) {
+        return undef;
+    }
 
     while (my ($re,$entry) = each(%{$table_skip})) {
         if ($t =~ m/$re/i) {
@@ -256,7 +263,10 @@ sub extractproducts {
         $seen{$prod->{comment}} ++;
         next if ($seen{$prod->{comment}} > 1);
 
-        push @products, extract1product($prod);
+        my $cooked = extract1product($prod);
+        if (defined($cooked)) {
+            push @products, $cooked;
+        }
     }
     return @products;
 }
@@ -264,6 +274,11 @@ sub extractproducts {
 # Allow checking how many matches there were
 sub matchtable {
     return $matchtable;
+}
+
+# Allow adding entries to the ignore list
+sub table_ignore {
+    return $table_ignore;
 }
 
 1;

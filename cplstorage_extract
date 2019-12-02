@@ -101,12 +101,29 @@ sub file2tree {
     return $tree;
 }
 
+sub load_table_ignore {
+    my $filename = 'cplstorage_ignore.txt';
+    my $fh;
+    if (!open($fh, "<", $filename)) {
+        warn("Could not open $filename");
+        return;
+    }
+
+    my $table_ignore = ScrapeExtractStorage::table_ignore();
+    while (<$fh>) {
+        chomp;
+        $table_ignore->{$_} = 1;
+    }
+}
+
 sub main {
     if (scalar(@ARGV) <2) {
         print("Usage: $0 outfile infile...\n");
         exit(1);
     }
     my $outfilename = shift @ARGV;
+
+    load_table_ignore();
 
     my @products;
     for my $file (@ARGV) {
