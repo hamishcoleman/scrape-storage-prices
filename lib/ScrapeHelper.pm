@@ -8,6 +8,8 @@ use strict;
 use HTML::TreeBuilder;
 use IO::HTML;
 
+$IO::HTML::default_encoding = 'utf8';
+
 # Load a file from disk into a HTML::TreeBuilder object
 sub file2tree {
     my $file = shift;
