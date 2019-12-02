@@ -31,6 +31,10 @@ sub read_merged {
     while(<$fd>) {
         chomp;
         my @f = split(/,/);
+
+        # If there is no comment, we cannot process the line
+        next if (!defined($f[9]));
+
         # Key is comment,supplier,price
         my $key = join(',', $f[9], $f[8], $f[1]);
         @{$db->{$key}} = @f;
