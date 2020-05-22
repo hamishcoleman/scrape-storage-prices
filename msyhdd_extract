@@ -21,8 +21,8 @@ sub scrape1product {
 
     $data->{comment} = ScrapeHelper::look_down2text(
         $node,
-        '_tag', 'div',
-        'class', 'description'
+        '_tag', 'h2',
+        'class', 'product-title'
     );
 
     # TODO - url
