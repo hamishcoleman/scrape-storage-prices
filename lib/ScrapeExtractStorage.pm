@@ -41,6 +41,7 @@ my $matchtable = {
 
     # size
     # (most sizes are have a general regex, below. these are the exceptions)
+    ' 32G '           => { gig => '32' },
     ' 64G '           => { gig => '64' },
     ' 120G '          => { gig => '120' },
     ' 128G '          => { gig => '128' },
@@ -54,11 +55,14 @@ my $matchtable = {
     ' 480GB_ '        => { gig => '480' },
     ' 500G '          => { gig => '500' },
     ' 512G '          => { gig => '512' },
+    ' 512G$'          => { gig => '512' },
     ' 960G '          => { gig => '960' },
     ' 1000G '         => { gig => '1000' },
     '/120G '          => { gig => '120' },
     '/240G '          => { gig => '240' },
     '/480G '          => { gig => '480' },
+    '\(3.84TB '       => { gig => '3840' },
+    '\(4.0TB_'        => { gig => '4000' },
 
     # form factor
     ' 2\.5([^0-9]|$)' => { form => '2.5"' },
@@ -73,6 +77,8 @@ my $matchtable = {
 
     # interface
     ' cf( |$)'            => { interface => 'CF', form => 'CF' },
+    ' cfexpress '         => { interface => 'NVME', form => 'CFexpress', speed => 'PCIe3' },
+    ' classic sd memory card ' => { interface => 'SD', form => 'SD' },
     ' compact flash( |$)' => { interface => 'CF', form => 'CF' },
     ' micro sd '          => { interface => 'SD', form => 'MicroSD' },
     ' micro sdhc '        => { interface => 'SD', form => 'MicroSD' },
@@ -85,6 +91,7 @@ my $matchtable = {
     ' nvme gen 3x2 '      => { interface => 'NVME', speed => 'PCIe3 x2' },
     ' nvme gen 3x4 '      => { interface => 'NVME', speed => 'PCIe3 x4' },
     ' nvme gen 3.0 x 4$'  => { interface => 'NVME', speed => 'PCIe3 x4' },
+    ' pcie '              => { interface => 'NVME' },
     ' pcie 3\.0 '         => { interface => 'NVME', speed => 'PCIe3' },
     ' pcie 3\.1 x4'       => { interface => 'NVME', speed => 'PCIe3.1 x4' },
     ' pcie 3x4 '          => { interface => 'NVME', speed => 'PCIe3 x4' },
@@ -102,8 +109,11 @@ my $matchtable = {
     ' sd micro '          => { interface => 'SD', form => 'MicroSD' },
     ' sdhc '              => { interface => 'SD' },
     ' sdxc '              => { interface => 'SD' },
-    ' usb ?3\.0 '         => { interface => 'USB', speed => 'USB 3.0' },
+    ' thunderbolt 3 '     => { interface => 'USB-C', speed => 'Thunderbolt 3' },
+    ' usb ?3\.0[ _]'      => { interface => 'USB', speed => 'USB 3.0' },
     ' usb3\.1 '           => { interface => 'USB', speed => 'USB 3.1' },
+    ' usb 3\.1[ _]'       => { interface => 'USB', speed => 'USB 3.1' },
+    ' usb type-c( |$)'    => { interface => 'USB-C' },
     ' type-c drive( |$)'  => { interface => 'USB' },
 
     # speed
@@ -123,6 +133,7 @@ my $matchtable = {
     'asus '         => { brand => 'ASUS' },
     'corsair '      => { brand => 'Corsair' },
     'crucial '      => { brand => 'Crucial' },
+    'dell '         => { brand => 'Dell' },
     'galax '        => { brand => 'Galax' },
     'gigabyte '     => { brand => 'Gigabyte' },
     'hitachi '      => { brand => 'Hitachi' },
@@ -152,6 +163,8 @@ my $table_skip = {
     'Bay Rafter 2.5 Inch to 3.5 Inch Convertor' => 'Not storage',
     'Type-C Black External HDD Enclosure' => 'Not storage',
     'One-Touch NFC for easy connection' => 'Not storage',
+    '2.5" to 3.5" SSD/HDD Mounting' => 'Not storage',
+    'M.2 to U.2-Mini-SAS Add-in Card' => 'Not storage',
 
     '2.5" PCIe 3.1 x4_ OPTANE_ W/ M.2' => 'Too many matching size buzzwords',
     # TODO - find a way to allow this HDD without making all the regex horrid
