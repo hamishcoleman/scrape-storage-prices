@@ -1,4 +1,6 @@
-language: minimal
+os: linux
+dist: xenial
+language: shell
 
 install:
   - sudo apt-get update
@@ -14,8 +16,9 @@ before_deploy:
 
 deploy:
     provider: pages
-    skip-cleanup: true
-    github-token: $GITHUB_TOKEN
+    strategy: git
+    skip_cleanup: true
+    token: $GITHUB_TOKEN
     keep_history: true
     local_dir: deploy
     on:
