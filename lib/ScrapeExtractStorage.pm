@@ -80,6 +80,7 @@ my $matchtable = {
     ' cfexpress '         => { interface => 'NVME', form => 'CFexpress', speed => 'PCIe3' },
     ' classic sd memory card ' => { interface => 'SD', form => 'SD' },
     ' compact flash( |$)' => { interface => 'CF', form => 'CF' },
+    ' compactflash( |$)'  => { interface => 'CF', form => 'CF' },
     ' micro sd '          => { interface => 'SD', form => 'MicroSD' },
     ' micro sdhc '        => { interface => 'SD', form => 'MicroSD' },
     ' micro sdxc '        => { interface => 'SD', form => 'MicroSD' },
@@ -112,6 +113,7 @@ my $matchtable = {
     ' thunderbolt 3 '     => { interface => 'USB-C', speed => 'Thunderbolt 3' },
     ' usb ?3\.0[ _]'      => { interface => 'USB', speed => 'USB 3.0' },
     ' usb3\.1 '           => { interface => 'USB', speed => 'USB 3.1' },
+    ' usb3\.2 '           => { interface => 'USB', speed => 'USB 3.2' },
     ' usb 3\.1[ _]'       => { interface => 'USB', speed => 'USB 3.1' },
     ' usb type-c( |$)'    => { interface => 'USB-C' },
     ' type-c drive( |$)'  => { interface => 'USB' },
@@ -242,9 +244,9 @@ sub extract1product {
     }
 
     if (!defined($data->{gig})) {
-             if ($t =~ m/ ([0-9][0-9.]*) ?tb( |_|$)/i) {
+             if ($t =~ m/ ([0-9][0-9.]*) ?tb(\(| |_|$)/i) {
             $data->{gig} = $1 * 1000;
-        } elsif ($t =~ m/ (\d+) ?gb( |_|$)/i) {
+        } elsif ($t =~ m/ (\d+) ?gb(\(| |_|$)/i) {
             $data->{gig} = $1;
         }
     }
