@@ -6,11 +6,11 @@
 GITHUB_USER=$(echo "$TRAVIS_REPO_SLUG" | cut -d/ -f1)
 GITHUB_REPO=$(echo "$TRAVIS_REPO_SLUG" | cut -d/ -f2)
 
-if [ -z "$GITHUB_USER"]; then
+if [ -z "$GITHUB_USER" ]; then
     # use a default
     GITHUB_USER=hamishcoleman
 fi
-if [ -z "$GITHUB_REPO"]; then
+if [ -z "$GITHUB_REPO" ]; then
     # use a default
     GITHUB_REPO=scrape-storage-prices
 fi
