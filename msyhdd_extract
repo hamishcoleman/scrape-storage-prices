@@ -21,8 +21,8 @@ sub scrape1product {
 
     $data->{comment} = ScrapeHelper::look_down2text(
         $node,
-        '_tag', 'h2',
-        'class', 'product-title'
+        '_tag', 'div',
+        'itemprop', 'description'
     );
 
     # TODO - url
@@ -31,7 +31,7 @@ sub scrape1product {
     $data->{price} = ScrapeHelper::look_down2text(
         $node,
         '_tag', 'span',
-        'class', 'price actual-price'
+        'itemprop', 'price'
     );
 
     if (!$data->{comment}) {
@@ -48,7 +48,7 @@ sub scrape2products {
     my @products;
     for my $node ($tree->look_down(
             '_tag', 'div',
-            'class', 'product-item',
+            'class', 'product-meta',
         )) {
         my $data = scrape1product($node);
         $data->{timestamp} = $timestamp;
