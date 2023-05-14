@@ -3,8 +3,13 @@
 # Fetch the previous published merged database
 #
 
-GITHUB_USER=$(echo "$TRAVIS_REPO_SLUG" | cut -d/ -f1)
-GITHUB_REPO=$(echo "$TRAVIS_REPO_SLUG" | cut -d/ -f2)
+SLUG=hamishcoleman/scrape-storage-prices
+if [ -n "$GITHUB_REPOSITORY" ]; then
+    SLUG="$GITHUB_REPOSITORY"
+fi
+
+GITHUB_USER=$(echo "$SLUG" | cut -d/ -f1)
+GITHUB_REPO=$(echo "$SLUG" | cut -d/ -f2)
 
 if curl -f -o merged.csv.old "https://$GITHUB_USER.github.io/$GITHUB_REPO/merged.csv"; then
     true

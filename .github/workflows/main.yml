@@ -1,0 +1,36 @@
+---
+name: CI
+
+on:
+    push:
+    schedule:
+      - cron: '0 0 1 * *'
+
+permissions:
+  contents: write
+
+jobs:
+    scrape:
+        name: make test
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install Dependencies
+              run: |
+                sudo apt-get update
+                sudo make build-depends
+
+            - name: Run scraper
+              run: make test
+
+            - name: Arrange deploy files
+              run: |
+                mkdir deploy
+                mv *.csv deploy
+                mv tmp deploy
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                folder: deploy
