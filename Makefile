@@ -25,7 +25,6 @@ clean:
 get:
 	mkdir -p tmp
 	./cpl_get tmp
-	./msy_get tmp
 
 %_extract: $(wildcard lib/*.pm)
 	touch $@
@@ -43,13 +42,13 @@ extract.diff: extract.csv
 	-[ -e $<.old ] && git diff --no-index $<.old $<
 	cp -p $< $<.old
 
-extract.csv: extract-cplstorage.csv extract-msyhdd.csv
+extract.csv: extract-cplstorage.csv
 	cat $^ >$@
 
 merged.csv.old:
 	./merged-old_get
 
-merged.csv: merged.csv.old extract-cplstorage.csv extract-msyhdd.csv
+merged.csv: merged.csv.old extract-cplstorage.csv
 	./merge $@ $^
 
 .PHONY: check
