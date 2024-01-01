@@ -30,29 +30,32 @@ curl_h() {
 }
 
 (cat <<EOF
-cplstorage-desk01.html https://cplonline.com.au/storage/desktop-hard-drive.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-desk02.html https://cplonline.com.au/storage/desktop-hard-drive.html?dir=asc&limit=60&order=popularity&p=2
-cplstorage-lap01.html  https://cplonline.com.au/storage/laptop-hard-drive.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-sas01.html  https://cplonline.com.au/storage/enterprise-hard-drives.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-sas02.html  https://cplonline.com.au/storage/enterprise-hard-drives.html?dir=asc&limit=60&order=popularity&p=2
-cplstorage-ssd01.html  https://cplonline.com.au/storage/ssd.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-ssd02.html  https://cplonline.com.au/storage/ssd.html?dir=asc&limit=60&order=popularity&p=2
-cplstorage-ssd03.html  https://cplonline.com.au/storage/ssd.html?dir=asc&limit=60&order=popularity&p=3
-cplstorage-ssd04.html  https://cplonline.com.au/storage/ssd.html?dir=asc&limit=60&order=popularity&p=4
-cplstorage-ssd05.html  https://cplonline.com.au/storage/ssd.html?dir=asc&limit=60&order=popularity&p=5
-cplstorage-ext01.html  https://cplonline.com.au/storage/external-hard-drives.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-ext02.html  https://cplonline.com.au/storage/external-hard-drives.html?dir=asc&limit=60&order=popularity&p=2
-cplstorage-ext03.html  https://cplonline.com.au/storage/external-hard-drives.html?dir=asc&limit=60&order=popularity&p=3
-cplstorage-ext04.html  https://cplonline.com.au/storage/external-hard-drives.html?dir=asc&limit=60&order=popularity&p=4
-cplstorage-extssd.html https://cplonline.com.au/storage/external-portable-ssd.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-usb01.html  https://cplonline.com.au/storage/usb-keys.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-usb02.html  https://cplonline.com.au/storage/usb-keys.html?dir=asc&limit=60&order=popularity&p=2
-cplstorage-usb03.html  https://cplonline.com.au/storage/usb-keys.html?dir=asc&limit=60&order=popularity&p=3
-cplstorage-usb04.html  https://cplonline.com.au/storage/usb-keys.html?dir=asc&limit=60&order=popularity&p=4
-cplstorage-sd01.html   https://cplonline.com.au/storage/sd-card-micro-sd.html?dir=asc&limit=60&order=popularity&p=1
-cplstorage-sd02.html   https://cplonline.com.au/storage/sd-card-micro-sd.html?dir=asc&limit=60&order=popularity&p=2
-cplstorage-sd03.html   https://cplonline.com.au/storage/sd-card-micro-sd.html?dir=asc&limit=60&order=popularity&p=3
-cplstorage-cf03.html   https://cplonline.com.au/storage/comapact-flash.html?dir=asc&limit=60&order=popularity&p=1
+cplstorage-desk01.html https://cplonline.com.au/storage/desktop-hard-drive.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-desk02.html https://cplonline.com.au/storage/desktop-hard-drive.html?p=2&product_list_limit=36&product_list_order=popularity
+cplstorage-desk03.html https://cplonline.com.au/storage/desktop-hard-drive.html?p=3&product_list_limit=36&product_list_order=popularity
+cplstorage-lap01.html  https://cplonline.com.au/storage/laptop-hard-drive.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-sas01.html  https://cplonline.com.au/storage/enterprise-hard-drives.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-sas02.html  https://cplonline.com.au/storage/enterprise-hard-drives.html?p=2&product_list_limit=36&product_list_order=popularity
+cplstorage-ssd01.html  https://cplonline.com.au/storage/ssd.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-ssd02.html  https://cplonline.com.au/storage/ssd.html?p=2&product_list_limit=36&product_list_order=popularity
+cplstorage-ssd03.html  https://cplonline.com.au/storage/ssd.html?p=3&product_list_limit=36&product_list_order=popularity
+cplstorage-ssd04.html  https://cplonline.com.au/storage/ssd.html?p=4&product_list_limit=36&product_list_order=popularity
+cplstorage-ssd05.html  https://cplonline.com.au/storage/ssd.html?p=5&product_list_limit=36&product_list_order=popularity
+cplstorage-ssd06.html  https://cplonline.com.au/storage/ssd.html?p=6&product_list_limit=36&product_list_order=popularity
+cplstorage-ssd07.html  https://cplonline.com.au/storage/ssd.html?p=7&product_list_limit=36&product_list_order=popularity
+cplstorage-ext01.html  https://cplonline.com.au/storage/external-hard-drives.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-ext02.html  https://cplonline.com.au/storage/external-hard-drives.html?p=2&product_list_limit=36&product_list_order=popularity
+cplstorage-ext03.html  https://cplonline.com.au/storage/external-hard-drives.html?p=3&product_list_limit=36&product_list_order=popularity
+cplstorage-ext04.html  https://cplonline.com.au/storage/external-hard-drives.html?p=4&product_list_limit=36&product_list_order=popularity
+cplstorage-extss1.html https://cplonline.com.au/storage/external-portable-ssd.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-extss2.html https://cplonline.com.au/storage/external-portable-ssd.html?p=2&product_list_limit=36&product_list_order=popularity
+cplstorage-usb01.html  https://cplonline.com.au/storage/usb-keys.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-usb02.html  https://cplonline.com.au/storage/usb-keys.html?p=2&product_list_limit=36&product_list_order=popularity
+cplstorage-usb03.html  https://cplonline.com.au/storage/usb-keys.html?p=3&product_list_limit=36&product_list_order=popularity
+cplstorage-sd01.html   https://cplonline.com.au/storage/sd-card-micro-sd.html?p=1&product_list_limit=36&product_list_order=popularity
+cplstorage-sd02.html   https://cplonline.com.au/storage/sd-card-micro-sd.html?p=2&product_list_limit=36&product_list_order=popularity
+cplstorage-sd03.html   https://cplonline.com.au/storage/sd-card-micro-sd.html?p=3&product_list_limit=36&product_list_order=popularity
+cplstorage-cf01.html   https://cplonline.com.au/storage/comapact-flash.html?p=1&product_list_limit=36&product_list_order=popularity
 EOF
 ) | while read -r name url; do
     curl_h "$PREFIX$name" "$url"
