@@ -65,45 +65,6 @@ sub scrape2products {
     return @products;
 }
 
-# HACK!
-# - CPL might fix their HTML, if so, move this back into the library
-# - if not, figure out a better solution
-#
-use HTML::TreeBuilder;
-use IO::HTML;
-sub file2tree {
-    my $file = shift;
-
-    my $fh = html_file($file);
-    return undef if (!$fh);
-
-    # apply hack filter
-    my $txt = '';
-    my $found_bad = 0;
-    while (<$fh>) {
-        if (m/<ul class="add-to-links">/) {
-            $found_bad = 1;
-            next;
-        }
-        if ($found_bad && m%</ul>%) {
-            $found_bad = 0;
-            next;
-        }
-        if ($found_bad) {
-            next;
-        }
-        $txt .= $_;
-    }
-
-    my $tree = HTML::TreeBuilder->new;
-    $tree->ignore_unknown(0);
-    $tree->parse($txt);
-    $tree->eof;
-    $tree->elementify;
-
-    return $tree;
-}
-
 sub load_table_ignore {
     my $filename = 'cplstorage_ignore.txt';
     my $fh;
@@ -131,7 +92,7 @@ sub main {
     my @products;
     for my $file (@ARGV) {
         my $mtime = (stat($file))[9];
-        my $tree = file2tree($file);
+        my $tree = ScrapeHelper::file2tree($file);
         print("Processing ",$file,"\n");
         push @products, scrape2products($tree, $mtime);
     }
