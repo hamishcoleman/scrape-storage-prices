@@ -48,6 +48,8 @@ sub scrape2products {
         'class', 'products wrapper grid products-grid',
     );
     if (!$products) {
+        printf("DEBUG: this is the html that had issues:\n");
+        printf($tree->as_HTML(),"\n\n");
         die("Could not find products");
         return undef;
     }
