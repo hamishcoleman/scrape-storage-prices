@@ -162,6 +162,7 @@ my $matchtable = {
     'samsung '      => { brand => 'Samsung' },
     'sandisk '      => { brand => 'SanDisk' },
     'seagate '      => { brand => 'Seagate' },
+    'synology '     => { brand => 'Synology' },
     'team '         => { brand => 'Team' },
     'toshiba '      => { brand => 'Toshiba' },
     'transcend '    => { brand => 'Transcend' },
