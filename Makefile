@@ -9,9 +9,12 @@ all:
 .PHONY: build-depends
 build-depends:
 	sudo apt-get -y install \
-	    libio-html-perl \
+	    chromium-driver \
+	    flake8 \
 	    libhtml-tree-perl \
+	    libio-html-perl \
 	    libtext-csv-perl \
+	    python3-selenium \
 	    shellcheck \
 
 .PHONY: clean
@@ -22,9 +25,9 @@ clean:
 	    extract-msyhdd.csv \
 
 .PHONY: get
-get:
+get: chromium_get.py cpl.urls
 	mkdir -p tmp
-	./cpl_get tmp
+	./chromium_get.py --pause 10 --prefix tmp/cplstorage --urls cpl.urls
 
 %_extract: $(wildcard lib/*.pm)
 	touch $@
@@ -52,11 +55,15 @@ merged.csv: merged.csv.old extract-cplstorage.csv
 	./merge $@ $^
 
 .PHONY: check
-check: check.shell
+check: check.shell check.python
 
 .PHONY: check.shell
 check.shell:
-	shellcheck cpl_get msy_get merged-old_get
+	shellcheck msy_get merged-old_get
+
+.PHONY: check.python
+check.python:
+	flake8 chromium_get.py
 
 .PHONY: test
 test: check get merged.csv
