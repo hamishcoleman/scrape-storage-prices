@@ -32,7 +32,7 @@ get: chromium_get.py cpl.urls
 %_extract: $(wildcard lib/*.pm)
 	touch $@
 
-extract-%.csv: %_extract $(wildcard tmp/*.html)
+extract-%.csv: %_extract %_ignore.txt $(wildcard tmp/*.html)
 	./$*_extract $@ tmp/$**.html
 
 # FIXME
