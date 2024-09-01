@@ -69,7 +69,13 @@ def do_one_url(browser, args, fileindex, url):
 def main():
     args = argparser()
 
-    browser = selenium.webdriver.Chrome()
+    opt = selenium.webdriver.chrome.options.Options()
+
+    # While this does work, some websites detect the user as not having
+    # javascript turned on - so it is not actully useful
+    # opt.add_argument("--headless=new")
+
+    browser = selenium.webdriver.Chrome(options=opt)
 
     i = 0
     for url in args.url:
