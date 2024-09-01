@@ -55,13 +55,13 @@ def do_one_url(browser, args, fileindex, url):
     filename = f"{args.prefix}{fileindex}.html"
 
     if args.verbose:
-        print(f"GET {url}")
+        print(f"GET {url}", flush=True)
     browser.get(url)
 
     f = open(filename, "w")
     f.write(browser.page_source)
     if args.verbose:
-        print(f"GOT {filename}")
+        print(f"GOT {filename}", flush=True)
 
     time.sleep(int(args.pause))
 
