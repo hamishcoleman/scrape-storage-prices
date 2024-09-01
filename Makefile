@@ -16,7 +16,7 @@ build-depends:
 	    libtext-csv-perl \
 	    python3-selenium \
 	    shellcheck \
-	    xfvb \
+	    xvfb \
 
 .PHONY: clean
 clean:
