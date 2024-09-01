@@ -23,7 +23,10 @@ jobs:
                 sudo make build-depends
 
             - name: Run scraper
-              run: make test
+              run: |
+                Xvfb :5 &
+                export DISPLAY=:5
+                make test
 
             - name: Arrange deploy files
               run: |
