@@ -49,7 +49,7 @@ sub scrape2products {
     );
     if (!$products) {
         printf("DEBUG: this is the html that had issues:\n");
-        printf($tree->as_HTML(),"\n\n");
+        print($tree->as_HTML(),"\n\n");
         die("Could not find products");
         return undef;
     }
