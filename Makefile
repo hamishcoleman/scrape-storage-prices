@@ -24,11 +24,20 @@ clean:
 	    tmp/* \
 	    extract-cplstorage.csv \
 	    extract-msyhdd.csv \
+	    extract-scoptec.csv \
 
 .PHONY: get
-get: chromium_get.py cpl.urls
+get: get.cpl get.scorptec
+
+.PHONY: get.cpl
+get.cpl: chromium_get.py cpl.urls
 	mkdir -p tmp
-	./chromium_get.py --pause 10 --prefix tmp/cplstorage --urls cpl.urls
+	./chromium_get.py --pause 15 --prefix tmp/cplstorage --urls cpl.urls
+
+.PHONY: get.scorptec
+get.scorptec: chromium_get.py scorptec.urls
+	mkdir -p tmp
+	./chromium_get.py --pause 15 --prefix tmp/scorptec --newsession --urls scorptec.urls
 
 %_extract: $(wildcard lib/*.pm)
 	touch $@
@@ -46,13 +55,13 @@ extract.diff: extract.csv
 	-[ -e $<.old ] && git diff --no-index $<.old $<
 	cp -p $< $<.old
 
-extract.csv: extract-cplstorage.csv
+extract.csv: extract-cplstorage.csv extract-scorptec.csv
 	cat $^ >$@
 
 merged.csv.old:
 	./merged-old_get
 
-merged.csv: merged.csv.old extract-cplstorage.csv
+merged.csv: merged.csv.old extract-cplstorage.csv extract-scorptec.csv
 	./merge $@ $^
 
 .PHONY: check
@@ -78,6 +87,6 @@ deploy_branch:
 	git rm tmp/*
 	mv deploy/* ./
 	git add tmp
-	git add extract-cplstorage.csv merged.csv
+	git add extract-cplstorage.csv extract-scorptec.csv merged.csv
 	git commit -m "Auto create deployable files"
 	git checkout main
