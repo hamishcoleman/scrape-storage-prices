@@ -42,6 +42,13 @@ def argparser():
     )
 
     args.add_argument(
+        "--newsession",
+        default=False,
+        action="store_true",
+        help="Start a new browser session for each url",
+    )
+
+    args.add_argument(
         "url",
         nargs='*',
         help="Add URLs from commandline",
@@ -51,8 +58,30 @@ def argparser():
     return r
 
 
-def do_one_url(browser, args, fileindex, url):
+browser = None
+
+
+def browser_session():
+    global browser
+
+    if browser is not None:
+        # Just use the existing session
+        return
+
+    opt = selenium.webdriver.chrome.options.Options()
+
+    # While this does work, some websites detect the user as not having
+    # javascript turned on - so it is not actully useful
+    # opt.add_argument("--headless=new")
+
+    browser = selenium.webdriver.Chrome(options=opt)
+
+
+def do_one_url(args, fileindex, url):
     filename = f"{args.prefix}{fileindex}.html"
+
+    global browser
+    browser_session()
 
     if args.verbose:
         print(f"GET {url}", flush=True)
@@ -65,21 +94,16 @@ def do_one_url(browser, args, fileindex, url):
 
     time.sleep(int(args.pause))
 
+    if args.newsession:
+        browser = None
+
 
 def main():
     args = argparser()
 
-    opt = selenium.webdriver.chrome.options.Options()
-
-    # While this does work, some websites detect the user as not having
-    # javascript turned on - so it is not actully useful
-    # opt.add_argument("--headless=new")
-
-    browser = selenium.webdriver.Chrome(options=opt)
-
     i = 0
     for url in args.url:
-        do_one_url(browser, args, i, url)
+        do_one_url(args, i, url)
         i += 1
 
     if args.urls is None:
@@ -94,7 +118,7 @@ def main():
         if not url:
             continue
 
-        do_one_url(browser, args, i, url)
+        do_one_url(args, i, url)
         i += 1
 
 
