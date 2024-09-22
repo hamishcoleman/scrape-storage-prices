@@ -73,9 +73,9 @@ my $matchtable = {
     ' 4096G '         => { gig => '4096' },
 
     # form factor
-    ' 2\.5([^0-9]|$)' => { form => '2.5"' },
+    ' 2\.5([^0-9m]|$)' => { form => '2.5"' },
     ' 2_5" '          => { form => '2.5"' },
-    ' 3\.5([^0-9]|$)' => { form => '3.5"' },
+    ' 3\.5([^0-9m]|$)' => { form => '3.5"' },
     ' M2( |$)'        => { form => 'M.2' },
     ' M\.2([^0-9]|$)' => { form => 'M.2' },
     ' M\.2280 '       => { form => 'M.2' },
@@ -186,6 +186,7 @@ my $matchtable = {
     'transcend '    => { brand => 'Transcend' },
     'verbatim '     => { brand => 'Verbatim' },
     'wd '           => { brand => 'WD' },
+    'western digital ' => { brand => 'WD' },
 };
 
 # A list of regular expresions to match problem entries
