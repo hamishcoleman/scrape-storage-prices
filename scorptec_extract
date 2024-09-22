@@ -1,0 +1,112 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+#
+# Grab the hard drives data from CPL
+#
+
+# allow the libs to be in the bin dir
+use FindBin;
+use lib "$FindBin::RealBin/lib";
+use lib "/home/hamish/s/bin/lib";
+
+use ScrapeHelper;
+use ScrapeExtractStorage;
+
+sub scrape1product {
+    my $node = shift;
+    my $data = {};
+
+    $data->{comment} = $node->attr('data-intro');
+    # could extract data->{url}, but it is unused in later processing
+    $data->{supplier} = 'scorptec';
+    $data->{price} = $node->attr('data-price');
+
+    $data->{_date} = $node->attr('data-date');
+    $data->{_size} = $node->attr('data-f38');
+    $data->{_make} = $node->attr('data-f42');
+    $data->{_cache} = $node->attr('data-f43');
+    $data->{_speed} = $node->attr('data-f44');
+    $data->{_model} = $node->attr('data-model');
+
+    if (!$data->{comment}) {
+        print("Strange: ", $node->as_HTML(), "\n\n");
+    }
+
+    return $data;
+}
+
+sub scrape2products {
+    my $tree = shift;
+    my $timestamp = shift;
+
+    my $products = $tree->look_down(
+        '_tag', 'div',
+        'id', 'product-list-detail-wrapper',
+    );
+    if (!$products) {
+        printf("DEBUG: this is the html that had issues:\n");
+        print($tree->as_HTML(),"\n\n");
+        die("Could not find products");
+        return undef;
+    }
+
+    my @products;
+    for my $node ($products->look_down(
+            '_tag', 'div',
+            'id', qr/product-list-detail-\d/,
+        )) {
+        my $data = scrape1product($node);
+        $data->{timestamp} = $timestamp;
+        push @products, $data;
+    }
+
+    return @products;
+}
+
+sub load_table_ignore {
+    my $filename = shift;
+    my $fh;
+    if (!open($fh, "<", $filename)) {
+        warn("Could not open $filename");
+        return;
+    }
+
+    my $table_ignore = ScrapeExtractStorage::table_ignore();
+    while (<$fh>) {
+        chomp;
+        $table_ignore->{$_} = 1;
+    }
+}
+
+sub main {
+    if (scalar(@ARGV) <2) {
+        print("Usage: $0 outfile infile...\n");
+        exit(1);
+    }
+    my $outfilename = shift @ARGV;
+
+    load_table_ignore('scorptec_ignore.txt');
+
+    my @products;
+    for my $file (@ARGV) {
+        my $mtime = (stat($file))[9];
+        my $tree = ScrapeHelper::file2tree($file);
+        print("Processing ",$file,"\n");
+        push @products, scrape2products($tree, $mtime);
+    }
+
+    @products = ScrapeExtractStorage::extractproducts(@products);
+
+    my @fields = qw(price form interface speed gig sgig brand supplier comment);
+
+    ScrapeHelper::outputcsv($outfilename, \@fields, @products);
+
+    print("Match counts:\n");
+    my $matchtable = ScrapeExtractStorage::matchtable();
+    for my $re (sort(keys(%{$matchtable}))) {
+        print($matchtable->{$re}{_matches}||0,"\t'",$re,"'\n");
+    }
+}
+
+main();

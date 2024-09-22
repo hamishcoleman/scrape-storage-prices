@@ -1,0 +1,4 @@
+qnap ts-464-8g tower 4 bay nas_ 2x seagate ironwolf 10tb nas hdd (20tb total)
+qnap ts-233 tower 2 bay nas_ 2x seagate ironwolf 8tb nas hdd (16tb total)
+synology diskstation ds423+ tower 4 bay nas for smb; seagate ironwolf nas 8tb hdd_ st8000vn004
+qnap ts-433-4g tower 4 bay nas_ arm 4 core_ 4gb ram; seagate ironwolf nas 8tb hdd_ st8000vn004
