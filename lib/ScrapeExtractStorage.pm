@@ -273,7 +273,7 @@ sub extract1product {
     }
 
     if (!defined($data->{gig})) {
-             if ($t =~ m/ ([0-9][0-9.]*) ?tb( |_|$)/i) {
+        if ($t =~ m/ ([0-9][0-9.]*) ?tb( |_|$)/i) {
             $data->{gig} = $1 * 1000;
         } elsif ($t =~ m/ (\d+) ?gb( |_|$)/i) {
             $data->{gig} = $1;
