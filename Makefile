@@ -14,6 +14,7 @@ build-depends:
 	    libhtml-tree-perl \
 	    libio-html-perl \
 	    libtext-csv-perl \
+	    python3-pandas \
 	    python3-selenium \
 	    shellcheck \
 	    xvfb \
@@ -80,13 +81,15 @@ test: check get merged.csv
 
 .PHONY: deploy_branch
 deploy_branch:
-	mkdir deploy
+	mkdir -p deploy
 	mv *.csv deploy
 	mv tmp deploy
 	git checkout gh-pages
 	git rm tmp/*
-	mv deploy/* ./
+	cp -a deploy/* ./
 	git add tmp
 	git add extract-cplstorage.csv extract-scorptec.csv merged.csv
 	git commit -m "Auto create deployable files"
 	git checkout main
+	mv deploy/* ./
+	rmdir deploy
