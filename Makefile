@@ -8,7 +8,7 @@ all:
 
 .PHONY: build-depends
 build-depends:
-	sudo apt-get -y install \
+	sudo apt-get -q -y install \
 	    chromium \
 	    chromium-driver \
 	    flake8 \
