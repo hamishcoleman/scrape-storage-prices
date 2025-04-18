@@ -9,6 +9,7 @@ all:
 .PHONY: build-depends
 build-depends:
 	sudo apt-get -y install \
+	    chromium \
 	    chromium-driver \
 	    flake8 \
 	    libhtml-tree-perl \
