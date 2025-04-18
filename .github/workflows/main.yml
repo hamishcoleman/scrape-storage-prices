@@ -22,6 +22,11 @@ jobs:
                 sudo apt-get update
                 sudo make build-depends
 
+            - name: Test environment
+              run: |
+                chromium --version
+                chromedriver --version
+
             - name: Run scraper
               run: |
                 Xvfb :5 &
