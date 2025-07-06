@@ -69,6 +69,7 @@ def argparser():
 browser = None
 fix_new_selenium = False
 
+
 def browser_session():
     global browser
     global fix_new_selenium
