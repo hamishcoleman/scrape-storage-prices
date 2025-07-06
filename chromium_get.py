@@ -68,13 +68,14 @@ def browser_session():
         # Just use the existing session
         return
 
-    opt = selenium.webdriver.chrome.options.Options()
+    opt = selenium.webdriver.ChromeOptions()
+    svc = selenium.webdriver.chrome.service.Service()
 
     # While this does work, some websites detect the user as not having
     # javascript turned on - so it is not actully useful
     # opt.add_argument("--headless=new")
 
-    browser = selenium.webdriver.Chrome(options=opt)
+    browser = selenium.webdriver.Chrome(service=svc, options=opt)
 
 
 def do_one_url(args, fileindex, url):
