@@ -34,12 +34,17 @@ get: get.cpl get.scorptec
 .PHONY: get.cpl
 get.cpl: chromium_get.py cpl.urls
 	mkdir -p tmp
-	./chromium_get.py --pause 15 --prefix tmp/cplstorage --urls cpl.urls
+	./chromium_get.py \
+		--fix-new-selenium \
+		--pause 15 --prefix tmp/cplstorage --urls cpl.urls
 
 .PHONY: get.scorptec
 get.scorptec: chromium_get.py scorptec.urls
 	mkdir -p tmp
-	./chromium_get.py --pause 15 --prefix tmp/scorptec --newsession --urls scorptec.urls
+	./chromium_get.py \
+		--fix-new-selenium \
+		--newsession \
+		--pause 15 --prefix tmp/scorptec --urls scorptec.urls
 
 %_extract: $(wildcard lib/*.pm)
 	touch $@
