@@ -26,6 +26,8 @@ jobs:
               run: |
                 chromium --version
                 chromedriver --version
+                type chromium
+                type chromedriver
 
             - name: Run scraper
               run: |
