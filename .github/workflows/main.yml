@@ -13,7 +13,7 @@ permissions:
 jobs:
     scrape:
         name: make test
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-22.04
 
         steps:
             - uses: actions/checkout@v4
@@ -28,6 +28,7 @@ jobs:
                 chromedriver --version
                 type chromium
                 type chromedriver
+                dpkg -l python3-selenium chromium chromium-driver
 
             - name: Run scraper
               run: |
