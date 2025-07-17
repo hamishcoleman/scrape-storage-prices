@@ -2,6 +2,9 @@
 """fetch pages from a website, looking as much like a human as possible"""
 # If they just had a data endpoint, I would use it ..
 
+# Copyright (C) 2025 Hamish Coleman
+# SPDX-License-Identifier: GPL-2.0-only
+#
 # :dotsctl:
 #   dpkg:
 #     - chromium-driver

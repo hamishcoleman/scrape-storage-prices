@@ -4,6 +4,8 @@ use strict;
 #
 # Bundle some routines that are helpful for scraping
 #
+# Copyright (C) 2025 Hamish Coleman
+# SPDX-License-Identifier: GPL-2.0-only
 
 use HTML::TreeBuilder;
 use IO::HTML;

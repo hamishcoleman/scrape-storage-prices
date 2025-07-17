@@ -4,6 +4,8 @@ use strict;
 #
 # Grab the hard drives data from MSY
 #
+# Copyright (C) 2025 Hamish Coleman
+# SPDX-License-Identifier: GPL-2.0-only
 
 # allow the libs to be in the bin dir
 use FindBin;

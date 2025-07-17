@@ -2,6 +2,9 @@
 use warnings;
 use strict;
 #
+# Copyright (C) 2025 Hamish Coleman
+# SPDX-License-Identifier: GPL-2.0-only
+#
 # Given an old database (with dates) and one or more new databases, merge them
 #
 # If the price,supplier,comment is unique, then we just store it

@@ -5,6 +5,8 @@ use strict;
 # Given the text description string from a vendor of storage,
 # Attempt to extract details in a normalised way
 #
+# Copyright (C) 2025 Hamish Coleman
+# SPDX-License-Identifier: GPL-2.0-only
 
 use Data::Dumper;
 $Data::Dumper::Indent = 1;

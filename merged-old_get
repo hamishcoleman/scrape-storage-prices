@@ -2,6 +2,9 @@
 #
 # Fetch the previous published merged database
 #
+# Copyright (C) 2025 Hamish Coleman
+# SPDX-License-Identifier: GPL-2.0-only
+#
 
 SLUG=hamishcoleman/scrape-storage-prices
 if [ -n "$GITHUB_REPOSITORY" ]; then

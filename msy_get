@@ -1,5 +1,8 @@
 #!/bin/bash
 #
+# Copyright (C) 2025 Hamish Coleman
+# SPDX-License-Identifier: GPL-2.0-only
+#
 # Get the MSY raw html files, ready for processing with the extractor
 #
 # TODO
