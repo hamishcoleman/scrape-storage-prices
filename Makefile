@@ -36,14 +36,14 @@ get: get.cpl get.scorptec
 .PHONY: get.cpl
 get.cpl: chromium_get.py cpl.urls
 	mkdir -p tmp
-	./chromium_get.py \
+	xvfb-run ./chromium_get.py \
 		--fix-new-selenium \
 		--pause 15 --prefix tmp/cplstorage --urls cpl.urls
 
 .PHONY: get.scorptec
 get.scorptec: chromium_get.py scorptec.urls
 	mkdir -p tmp
-	./chromium_get.py \
+	xvfb-run ./chromium_get.py \
 		--fix-new-selenium \
 		--newsession \
 		--pause 15 --prefix tmp/scorptec --urls scorptec.urls
